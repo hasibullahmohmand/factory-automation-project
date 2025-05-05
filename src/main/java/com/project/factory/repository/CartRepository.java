@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.security.core.parameters.P;
 
+import java.util.List;
+
 public interface CartRepository extends JpaRepository<Cart, Integer>
 {
     @Modifying
@@ -26,4 +28,6 @@ public interface CartRepository extends JpaRepository<Cart, Integer>
     void updateCartStatus(int cartId);
 
 
+    @Query(value = "SELECT * FROM cart WHERE user_id = :userId", nativeQuery = true)
+    List<Cart> findAllByUserId(int userId);
 }

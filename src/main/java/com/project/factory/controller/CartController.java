@@ -26,11 +26,11 @@ public class CartController
         return ResponseEntity.ok(addCart);
     }
 
-//    @GetMapping()
-//    public ResponseEntity<?> getAllCart(@RequestParam int userId)
-//    {
-//        return ResponseEntity.ok(cartService.getAllCartsByUserId());
-//    }
+    @GetMapping()
+    public ResponseEntity<?> getAllCart(@RequestParam int userId)
+    {
+        return ResponseEntity.ok(cartService.getAllCartsByUserId(userId));
+    }
 
     @GetMapping("/update")
     public ResponseEntity<?> updateCart(@RequestParam int cartId, @RequestParam int quantity , Principal principal)

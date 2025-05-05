@@ -20,9 +20,9 @@ public class ProductController
 
 
     @GetMapping()
-    private ResponseEntity<?> getProductsById(@RequestParam int id)
+    private ResponseEntity<?> getProductsById(@RequestParam int categoryId)
     {
-        List<Product> product = productService.getProductsById(id);
+        List<Product> product = productService.getProductsById(categoryId);
 
         if(product == null)
         {

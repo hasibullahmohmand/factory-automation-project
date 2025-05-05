@@ -25,6 +25,7 @@ public class OrderController
     }
 
     @GetMapping("/get")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> getOrder()
     {
         return ResponseEntity.ok(orderService.getOrder());
