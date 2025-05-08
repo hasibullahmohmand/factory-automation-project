@@ -5,9 +5,9 @@ namespace BlazorApp1.Models
     public class LoginModel
     {
         [Required(ErrorMessage = "Email required!")]
-        public string email { get; set; }
+        public string Email { get; set; }
         [Required(ErrorMessage = "Password required!")]
-        public string password { get; set; }
+        public string Password { get; set; }
 
     }
 }
