@@ -1,0 +1,265 @@
+id,name,imageurl,description,stock,price,category_id
+1,ÜLKER WHITE CHOCOLATE BUTTON,https://www.ulker.com.tr/documents/pastacilik/beyazpulcikolata.png,"A delicious chocolate made with sugar, cocoa, cocoa butter.",10000,891,1
+2,ÜLKER DARK CHOCOLATE BUTTON,https://www.ulker.com.tr/documents/pastacilik/pulbittercikolata.png,"A delicious chocolate made with cocoa butter, sugar, cocoa.",10000,881,1
+3,ÜLKER DARK CHOCOLATE DROP,https://www.ulker.com.tr/documents/pastacilik/b.png,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,1321,1
+4,ÜLKER DARK COUVERTURE CHOCOLATE,https://www.ulker.com.tr/documents/pastacilik/kuvertur_cikolata.png,"A delicious chocolate made with cocoa, milk solids, cocoa butter.",10000,1833,1
+5,ÜLKER COCOA,https://www.ulker.com.tr/documents/pastacilik/ulkerkakao50g.png,"A delicious chocolate made with sugar, milk solids, cocoa.",10000,526,1
+6,ÜLKER COCOA,https://www.ulker.com.tr/documents/pastacilik/ulkerkakao1000g.png,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,1497,1
+7,ÜLKER CHOCOLATE MILK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ulker-cikolata-sutlu-kare.png,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,1771,1
+8,ÜLKER CHOCOLATE MILK CHOCOLATE WITH WHOLE PISTACHIOS,https://www.ulker.com.tr/documents/ulker_cikolata/ulker-cikolata-antep-fistikli-sutlu-kare.png,"A delicious chocolate made with sugar, cocoa, cocoa butter.",10000,1474,1
+9,ÜLKER CHOCOLATE 60% DARK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/55.png,"A delicious chocolate made with milk solids, cocoa butter, cocoa.",10000,700,1
+10,ÜLKER CHOCOLATE MILK CHOCOLATE WITH HAZELNUTS,https://www.ulker.com.tr/documents/ulker_cikolata/56.png,"A delicious chocolate made with cocoa, cocoa butter, sugar.",10000,1550,1
+11,ÜLKER CHOCOLATE MILK CHOCOLATE WITH HAZELNUTS AND GRAPES,https://www.ulker.com.tr/documents/ulker_cikolata/5.png,"A delicious chocolate made with cocoa, cocoa butter, sugar.",10000,1333,1
+12,ÜLKER CHOCOLATE WHITE CHOCOLATE WITH PISTACHIOS,https://www.ulker.com.tr/documents/ulker_cikolata/54.png,"A delicious chocolate made with cocoa butter, sugar, cocoa.",10000,635,1
+13,ÜLKER CHOCOLATE %60 DARK CHOCOLATE WITH WHOLE PISTACHIOS,https://www.ulker.com.tr/documents/ulker_cikolata/57.png,"A delicious chocolate made with milk solids, cocoa butter, sugar.",10000,1139,1
+14,ÜLKER CHOCOLATE 80% DARK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/58.png,"A delicious chocolate made with cocoa, sugar, cocoa butter.",10000,1357,1
+15,ÜLKER CHOCOLATE DARK CHOCOLATE WITH MULBERRY,https://www.ulker.com.tr/documents/ulker_cikolata/51.png,"A delicious chocolate made with cocoa, sugar, cocoa butter.",10000,1020,1
+16,ÜLKER CHOCOLATE GOLDEN CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ulker_altin.png,"A delicious chocolate made with milk solids, cocoa butter, sugar.",10000,750,1
+17,"ÜLKER CHOCOLATE, 52% DARK CHOCOLATE SQUARES W/O ADDED SUGAR",https://www.ulker.com.tr/documents/ucgsekersiz.png,"A delicious chocolate made with sugar, cocoa butter, milk solids.",10000,783,1
+18,ÜLKER CHOCOLATE VEGAN 53% DARK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ulkercikolatavegan.png,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,666,1
+19,ÜLKER CHOCOLATE EXTRA MILK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/2.png,"A delicious chocolate made with cocoa butter, cocoa, milk solids.",10000,1825,1
+20,ÜLKER CHOCOLATE MILK CHOCOLATE WITH PISTACHIOS,https://www.ulker.com.tr/documents/ulker_cikolata/4.png,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,938,1
+21,ÜLKER CHOCOLATE 60% DARK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ulkerbitterbaton.png,"A delicious chocolate made with cocoa, milk solids, cocoa butter.",10000,539,1
+22,ÜLKER CHOCOLATE MILK CHOCOLATE WITH HAZELNUTS,https://www.ulker.com.tr/documents/ulker_cikolata/3.png,"A delicious chocolate made with sugar, milk solids, cocoa.",10000,1812,1
+23,ÜLKER CHOCOLATE MILK CHOCOLATE WITH HAZELNUT CREAM AND WHOLE HAZELNUTS,https://www.ulker.com.tr/documents/ulker_cikolata/ucfindikruyasiyeni.png,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,594,1
+24,ÜLKER CHOCOLATE THIN BATON MILK CHOCOLATE WITH RICE PATTIES,https://www.ulker.com.tr/documents/ulker_cikolata/sutlucikolata.png,"A delicious chocolate made with cocoa butter, sugar, milk solids.",10000,1793,1
+25,ÜLKER CHOCOLATE THIN BATON MILK CHOCOLATE WITH PISTACHIOS,https://www.ulker.com.tr/documents/ulker_cikolata/antepfistikliincebaton.png,"A delicious chocolate made with milk solids, cocoa butter, cocoa.",10000,1290,1
+26,ÜLKER CHOCOLATE THIN BATON DARK CHOCOLATE WITH RICE PATTIES,https://www.ulker.com.tr/documents/ulker_cikolata/bitter_ince.png,"A delicious chocolate made with cocoa, cocoa butter, milk solids.",10000,1316,1
+27,ÜLKER CHOCOLATE THIN BATON MILK CHOCOLATE WITH NUT CROQUANT AND RICE BURST,https://www.ulker.com.tr/documents/ulker_cikolata/findikkrokanince.png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,1069,1
+28,ÜLKER CHOCOLATE THIN BATON MILK CHOCOLATE WITH RICE PATTIES AND ORANGE,https://www.ulker.com.tr/documents/ulker_cikolata/portakalince.png,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,1277,1
+29,ÜLKER CHOCOLATE THIN BATON MILK CHOCOLATE WITH BISCUITS,https://www.ulker.com.tr/documents/ulker_cikolata/biskuvili_cikolata.png,"A delicious chocolate made with sugar, cocoa, milk solids.",10000,1346,1
+30,ÜLKER CHOCOLATE FINGER DARK CHOCOLATE WITH COCOA CREAM FILLING,https://www.ulker.com.tr/documents/ulker_cikolata/sutlufinger.png,"A delicious chocolate made with sugar, cocoa, milk solids.",10000,689,1
+31,ÜLKER CHOCOLATE FINGER MILK CHOCOLATE WITH COCOA CREAM FILLING,https://www.ulker.com.tr/documents/ulker_cikolata/bitter_finger.png,"A delicious chocolate made with cocoa butter, sugar, cocoa.",10000,1907,1
+32,ÜLKER CHOCOLATE 60% DARK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ucgbitter.png,"A delicious chocolate made with cocoa butter, milk solids, sugar.",10000,1373,1
+33,ÜLKER CHOCOLATE EXTRA MILK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ucgsutlu.png,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,1835,1
+34,ÜLKER CHOCOLATE WHITE CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/uc-beyaz-tablet.png,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,1732,1
+35,ÜLKER CHOCOLATE FAMOUS DUBAI CHOCOLATE,https://www.ulker.com.tr/documents/dubailezzeti3dv1.png,"A delicious chocolate made with cocoa, milk solids, cocoa butter.",10000,823,1
+36,ÜLKER CHOCOLATE NEAPOLITAN MILK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_cikolata/ulker_sutlu_napoliten_33g_1.png,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,851,1
+37,CARAMIO BATON MILK CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/caramio32gsutlubaton.webp,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,1833,1
+38,CARAMIO BATON DARK CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/caramiobitter.webp,"A delicious chocolate made with cocoa, milk solids, cocoa butter.",10000,1674,1
+39,CARAMİO DUO,https://www.ulker.com.tr/documents/gv_crmio09-caramio-duo-baton-32g-birim.png,"A delicious chocolate made with milk solids, cocoa, cocoa butter.",10000,1070,1
+40,CARAMIO FINGER CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/gv_crmio09-caramio-baton-16g-birim1-brdd.webp,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,1425,1
+41,CARAMIO THIN BATON MILK CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/gv_crmio09caramiofingersutlu7gbirim.webp,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,1185,1
+42,CARAMIO SQUARE DARK CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/caramiokare.webp,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,1744,1
+43,CARAMIO MINI TREAT MILK CHOCOLATE WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/ulker_caramio/caramio(2).png,"A delicious chocolate made with cocoa butter, milk solids, sugar.",10000,1362,1
+44,DANKEK TART CAKE STRAWBERRY,https://www.ulker.com.tr/documents/dankektart.webp,"A delicious cake made with sugar, butter, flour.",10000,597,2
+45,DANKEK TART CAKE ORANGE,https://www.ulker.com.tr/documents/dankektartkekportakalli.webp,"A delicious cake made with sugar, butter, flour.",10000,1971,2
+46,DANKEK DONUT MARSHMALLOW CAKE,https://www.ulker.com.tr/documents/dankekdonut_kek.webp,"A delicious cake made with eggs, butter, flour.",10000,1690,2
+47,DANKEK DONUT CHOCOLATE CAKE,https://www.ulker.com.tr/documents/dankekdonut(1).webp,"A delicious cake made with flour, sugar, butter.",10000,1113,2
+48,DANKEK BATON CAKE with CACAO,https://www.ulker.com.tr/documents/ulker_dankek/dankekkakao.png,"A delicious cake made with butter, eggs, flour.",10000,1250,2
+49,DANKEK BATON CAKE MOSAIC,https://www.ulker.com.tr/documents/ulker_dankek/dankekmozaik.png,"A delicious cake made with butter, flour, eggs.",10000,1642,2
+50,DANKEK BATON CAKE with FRUITS,https://www.ulker.com.tr/documents/ulker_dankek/dankekmeyve1.png,"A delicious cake made with eggs, flour, sugar.",10000,1017,2
+51,DANKEK BATON CAKE with CHOCOLATE SAUCE,https://www.ulker.com.tr/documents/dankekcikolatasoslubaton.webp,"A delicious cake made with sugar, flour, eggs.",10000,1112,2
+52,DANKEK BATON CAKE with MANDARIN SAUCE,https://www.ulker.com.tr/documents/dankekbatonkekmandalinasoslu.webp,"A delicious cake made with butter, eggs, flour.",10000,544,2
+53,DANKEK ROLL CAKE CHOCOLATE,https://www.ulker.com.tr/documents/ulker_dankek/dankekrulocikolata.png,"A delicious cake made with flour, butter, eggs.",10000,630,2
+54,DANKEK ROLL CAKE BANANA,https://www.ulker.com.tr/documents/ulker_dankek/dankekrulomuz.png,"A delicious cake made with sugar, butter, flour.",10000,1926,2
+55,DANKEK ROLL CAKE STRAWBERRY,https://www.ulker.com.tr/documents/ulker_dankek/dankekrulocilek.png,"A delicious cake made with eggs, flour, butter.",10000,1522,2
+56,DANKEK LOKMALIK MINI GRAPE,https://www.ulker.com.tr/documents/ulker_dankek/dankeklokmalikuzum.png,"A delicious cake made with butter, flour, sugar.",10000,968,2
+57,DANKEK LOKMALIK MINI CINNAMON&CARROT,https://www.ulker.com.tr/documents/ulker_dankek/dankeklokmaliktarcin.png,"A delicious cake made with butter, eggs, sugar.",10000,1585,2
+58,DANKEK LOKMALIK MINI CACAO,https://www.ulker.com.tr/documents/ulker_dankek/dankeklokmalikkakao.png,"A delicious cake made with sugar, flour, eggs.",10000,1512,2
+59,DANKEK LOKMALIK MINI COCONUT,https://www.ulker.com.tr/documents/ulker_dankek/dankekhindistancevizli.png,"A delicious cake made with butter, eggs, sugar.",10000,696,2
+60,DANKEK PÖTİ MUFFİN CAKE with HAZELNUT & CACAO,https://www.ulker.com.tr/documents/dakekpotifindiklikakaolu.webp,"A delicious cake made with eggs, sugar, butter.",10000,1712,2
+61,DANKEK PÖTİ MUFFIN CAKE with COCONUT,https://www.ulker.com.tr/documents/ulker_dankek/kekdankekpoti_hindistan_cevizli3delifdenizkayacan.png,"A delicious cake made with flour, butter, sugar.",10000,1916,2
+62,DANKEK PÖTİ MUFFIN CAKE with FRUIT,https://www.ulker.com.tr/documents/kekdankekpoti_meyveli3delifdenizkayacan2x.webp,"A delicious cake made with eggs, sugar, flour.",10000,1619,2
+63,DANKEK PÖTİ MUFFIN CAKE with CACAO,https://www.ulker.com.tr/documents/kekdankekpoti_kakaolu3delifdenizkayacan2x.webp,"A delicious cake made with sugar, flour, butter.",10000,1927,2
+64,DANKEK PÖTİ MUFFIN CAKE with CARROT & CINNAMON,https://www.ulker.com.tr/documents/kekdankekpoti_havuclu_tarcinli3delifdenizkayacan2x.webp,"A delicious cake made with flour, butter, sugar.",10000,886,2
+65,KEKSTRA JÖLEBOL STRAWBERRY,https://www.ulker.com.tr/documents/kekstrajolebolcilek.webp,"A delicious cake made with eggs, butter, sugar.",10000,797,2
+66,KEKSTRA JÖLEBOL ORANGE,https://www.ulker.com.tr/documents/kekstrajolebolportakal.webp,"A delicious cake made with butter, flour, eggs.",10000,581,2
+67,KEKSTRA KONFETI MUFFIN CAKE with CACAO,https://www.ulker.com.tr/documents/kekstrakonfetikakaolu500px.webp,"A delicious cake made with eggs, flour, sugar.",10000,1427,2
+68,KEKSTRA MINI,https://www.ulker.com.tr/documents/kekstra_jolebol_mini(1).png,"A delicious cake made with sugar, eggs, flour.",10000,807,2
+69,ÜLKER O'LALA CHOCOLATE SOUFFLES,https://www.ulker.com.tr/documents/ulker_olala/olalasuflecikolata_21.png,"A delicious cake made with eggs, sugar, butter.",10000,1080,2
+70,ÜLKER O'LALA RASPBERRY SOUFFLES,https://www.ulker.com.tr/documents/ulker_olala/olalasufle_frambuaz_21.png,"A delicious cake made with flour, butter, sugar.",10000,1072,2
+71,ÜLKER O'LALA MINI CHOCOLATE SOUFFLES,https://www.ulker.com.tr/documents/ulker_olala/olalasufle_mini.png,"A delicious cake made with sugar, eggs, flour.",10000,1868,2
+72,O'LALA TIRAMISU,https://www.ulker.com.tr/documents/olala_tiramisu(1).png,"A delicious cake made with flour, sugar, butter.",10000,1327,2
+73,O'LALA BOLD BAR CAKE,https://www.ulker.com.tr/documents/olala_bold_400x400.png,"A delicious cake made with butter, sugar, eggs.",10000,527,2
+74,O'LALA WAFFLE CAKE,https://www.ulker.com.tr/documents/olala-waffle-kek.png,"A delicious cake made with flour, eggs, sugar.",10000,1055,2
+75,DANKEK MAGMA CHOCOLATE CAKE,https://www.ulker.com.tr/documents/11.webp,"A delicious cake made with eggs, sugar, flour.",10000,1286,2
+76,DANKEK MAGMA CARAMEL CAKE,https://www.ulker.com.tr/documents/dankek_magma_karamelli.webp,"A delicious cake made with sugar, eggs, butter.",10000,701,2
+77,8KEK CHOCOLATE,https://www.ulker.com.tr/documents/8kek_ciko.png,"A delicious cake made with butter, sugar, eggs.",10000,926,2
+78,8 KEK FOREST FRUIT,https://www.ulker.com.tr/documents/8kek_orman.webp,"A delicious cake made with eggs, sugar, butter.",10000,1027,2
+79,8KEK BANANA,https://www.ulker.com.tr/documents/8kek_muz(1).png,"A delicious cake made with flour, butter, sugar.",10000,721,2
+80,8KEK STRAWBERRY,https://www.ulker.com.tr/documents/8kek_cilek(1).png,"A delicious cake made with sugar, eggs, butter.",10000,799,2
+81,8KEK MINI WITH BANANA,https://www.ulker.com.tr/documents/mini_8kek.png,"A delicious cake made with butter, sugar, eggs.",10000,718,2
+82,ONEO SLIMS STRAWBERRY FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneoslimscilek.png,"A delicious gum made with gum base, glucose syrup, sweeteners.",10000,1922,3
+83,ONEO SLIMS SPEARMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneoslimsnane.png,"A delicious gum made with flavorings, glucose syrup, sweeteners.",10000,959,3
+84,ONEO SLIMS PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneoslimsnane2.png,"A delicious gum made with gum base, glucose syrup, sweeteners.",10000,1415,3
+85,ONEO SLIMS WATERMELON FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneoslimskarpuz.png,"A delicious gum made with flavorings, glucose syrup, gum base.",10000,1656,3
+86,ONEO 60 MINUTES SLIMS PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/oneoslims_nane60.webp,"A delicious gum made with gum base, flavorings, sweeteners.",10000,1228,3
+87,ONEO 60 MINUTES STICK PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneostick60.png,"A delicious gum made with glucose syrup, sweeteners, flavorings.",10000,830,3
+88,ONEO 60 MINUTES BOTTLE PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneo602.png,"A delicious gum made with glucose syrup, flavorings, gum base.",10000,1557,3
+89,ONEO DRAGEE BOTTLE STRAWBERRY FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/12.png,"A delicious gum made with sweeteners, flavorings, glucose syrup.",10000,915,3
+90,ONEO DRAGEE BOTTLE PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/10.png,"A delicious gum made with sweeteners, glucose syrup, flavorings.",10000,1888,3
+91,ONEO DRAGEE BOTTLE WATERMELON FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/11.png,"A delicious gum made with gum base, sweeteners, glucose syrup.",10000,1589,3
+92,ONEO DOPDOLU BOTTLE PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/15.png,"A delicious gum made with glucose syrup, sweeteners, flavorings.",10000,1096,3
+93,"ONEO DOPDOLU BOTTLE STRAWBERRY, LIME AND MELON FLAVOUR",https://www.ulker.com.tr/documents/ulker_oneo/14.png,"A delicious gum made with glucose syrup, flavorings, gum base.",10000,1733,3
+94,ONEO FLIPTOP DRAGEE PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/17.png,"A delicious gum made with flavorings, glucose syrup, sweeteners.",10000,851,3
+95,ONEO FLIPTOP DRAGEE WATERMELON FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/18.png,"A delicious gum made with sweeteners, glucose syrup, gum base.",10000,1100,3
+96,ONEO STICK DRAGEE PEPPERMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/5.png,"A delicious gum made with glucose syrup, sweeteners, flavorings.",10000,689,3
+97,ONEO STICK DRAGEE STRAWBERRY FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/6.png,"A delicious gum made with gum base, flavorings, sweeteners.",10000,1202,3
+98,ONEO STICK DRAGEE SPEARMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/7.png,"A delicious gum made with glucose syrup, gum base, sweeteners.",10000,1717,3
+99,ONEO STICK DRAGEE WATERMELON FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/8.png,"A delicious gum made with glucose syrup, gum base, flavorings.",10000,510,3
+100,ONEO BUBBLE TUTTI FRUTTI FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneomeyvesakiz.png,"A delicious gum made with gum base, flavorings, sweeteners.",10000,1474,3
+101,ONEO BUBBLE COLA FLAVOUR,https://www.ulker.com.tr/documents/ulker_oneo/oneokola.png,"A delicious gum made with flavorings, glucose syrup, sweeteners.",10000,788,3
+102,ONEO BUBBLE,https://www.ulker.com.tr/documents/bubblemilkshake.webp,"A delicious gum made with flavorings, gum base, glucose syrup.",10000,1740,3
+103,ONEO BUBBLE MINI DRAJE,https://www.ulker.com.tr/documents/ulker_oneo/bubbleminisise.png,"A delicious gum made with sweeteners, flavorings, glucose syrup.",10000,1753,3
+104,PEPPERMINT FLAVOUR SUGARFREE CHEWING GUM WITH SWEETENERS,https://www.ulker.com.tr/documents/oneo60400x400px(1).png,"A delicious gum made with glucose syrup, gum base, flavorings.",10000,651,3
+105,YILDIZ STICK SPEARMINT FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_nane_paket.png,"A delicious gum made with glucose syrup, gum base, flavorings.",10000,1928,3
+106,YILDIZ STICK STRAWBERRY FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_cilek.png,"A delicious gum made with gum base, sweeteners, glucose syrup.",10000,1168,3
+107,YILDIZ STICK MASTIC FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_stick_paket.png,"A delicious gum made with flavorings, gum base, sweeteners.",10000,1667,3
+108,YILDIZ MONO MASTIC FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_mono.png,"A delicious gum made with sweeteners, gum base, flavorings.",10000,793,3
+109,YILDIZ STICK STRAWBERRY FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_cilek_avantaj.png,"A delicious gum made with sweeteners, glucose syrup, flavorings.",10000,1311,3
+110,YILDIZ STICK MULTIPACK MASTIC FLAVOUR,https://www.ulker.com.tr/documents/ulker_yildiz/yildiz_stick_avantaj_paket.png,"A delicious gum made with glucose syrup, flavorings, gum base.",10000,1441,3
+111,BISKREM CLASSIC,https://www.ulker.com.tr/documents/ulker_biskrem/1.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1929,4
+112,BISKREM CLASSIC ROLL BIG SIZE,https://www.ulker.com.tr/documents/ulker_biskrem/biskrem_kakaolu.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,643,4
+113,BISKREM CLASSIC BIG SIZE BAG,https://www.ulker.com.tr/documents/ulker_biskrem/6.png,"A delicious biscuit made with vegetable oil, wheat flour, sugar.",10000,1716,4
+114,BISKREM EXTRA,https://www.ulker.com.tr/documents/ulker_biskrem/3.png,"A delicious biscuit made with vegetable oil, sugar, wheat flour.",10000,636,4
+115,BİSKREM COOKIE,https://www.ulker.com.tr/documents/biskrem-cookie.png,"A delicious biscuit made with salt, vegetable oil, wheat flour.",10000,1824,4
+116,BİSKREM WITH ORANGE,https://www.ulker.com.tr/documents/0114600biskremportakalli90gx181.webp,"A delicious biscuit made with vegetable oil, wheat flour, salt.",10000,1809,4
+117,CANPARE HAZELNUT CREAM BISCUIT,https://www.ulker.com.tr/documents/ulker_canpare/canpare1.png,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,1641,4
+118,CANPARE CHOCOLATE CREAM BISCUIT,https://www.ulker.com.tr/documents/ulker_canpare/canpare2.png,"A delicious biscuit made with wheat flour, vegetable oil, salt.",10000,614,4
+119,ÇOKOMEL PLAIN JAR,https://www.ulker.com.tr/documents/0131601cokomelmarsh_sade15x12gx61.webp,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,699,4
+120,ÇOKOMEL STRAWBERRY JAR,https://www.ulker.com.tr/documents/0131600cokomelmarsh_cilekli15x12gx61.webp,"A delicious biscuit made with sugar, vegetable oil, wheat flour.",10000,1283,4
+121,ÇOKOMEL PLAIN,https://www.ulker.com.tr/documents/cokomel-sade-3lu.png,"A delicious biscuit made with salt, wheat flour, sugar.",10000,1533,4
+122,ÇOKOMEL STRAWBERRY,https://www.ulker.com.tr/documents/cokomel_cilekli_3_lu.png,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,1519,4
+123,ÇOKOMEL PLAİN BAG,https://www.ulker.com.tr/documents/ulker_cokomel/cokomelposet1.png,"A delicious biscuit made with vegetable oil, wheat flour, sugar.",10000,572,4
+124,ÇOKOMEL STRAWBERRY BAG,https://www.ulker.com.tr/documents/ulker_cokomel/cokomelposet2.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,555,4
+125,ÇOKOPRENS,https://www.ulker.com.tr/documents/ulker_cokoprens/cokoprens_tekli.png,"A delicious biscuit made with salt, wheat flour, sugar.",10000,1616,4
+126,ÇOKOPRENS BITE-SIZE,https://www.ulker.com.tr/documents/ulker_cokoprens/cokoprens_atistirmalik.png,"A delicious biscuit made with vegetable oil, wheat flour, sugar.",10000,1851,4
+127,ÇOKOPRENS MIDI,https://www.ulker.com.tr/documents/ulker_cokoprens/cokoprens_midi1.png,"A delicious biscuit made with sugar, vegetable oil, salt.",10000,913,4
+128,ÇOKOPRENS,https://www.ulker.com.tr/documents/ulker_cokoprens/cokoprens_10lu.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,680,4
+129,ÇOKOPRENS,https://www.ulker.com.tr/documents/ulker_cokoprens/cokoprens_20li.png,"A delicious biscuit made with wheat flour, salt, sugar.",10000,684,4
+130,ÇOKOPRENS BITE SIZE TRIO,https://www.ulker.com.tr/documents/cokoprens_atistirmalik_3_lu_mp.webp,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,1159,4
+131,ÇOKOPRENS DARK,https://www.ulker.com.tr/documents/cokoprens-dark-234g.png,"A delicious biscuit made with salt, sugar, wheat flour.",10000,702,4
+132,ÇOKOPRENS DARK PACKET,https://www.ulker.com.tr/documents/cokoprens-dark-234g(2).png,"A delicious biscuit made with wheat flour, salt, vegetable oil.",10000,667,4
+133,HANIMELLER CHOCOLATE CHIP ROLL PACK,https://www.ulker.com.tr/documents/ulker_hanimeller/hanimeller_cokodamla.png,"A delicious biscuit made with salt, wheat flour, vegetable oil.",10000,1208,4
+134,HANIMELLER HAZELNUT ROLL PACK,https://www.ulker.com.tr/documents/ulker_hanimeller/hanimeller_findikli.png,"A delicious biscuit made with vegetable oil, sugar, salt.",10000,704,4
+135,HANIMELLER SALTY COOKIES WITH MAHALEB,https://www.ulker.com.tr/documents/11-hanimeller_tuzlu_kurabiye_mahlepli_corekotlu.png,"A delicious biscuit made with salt, vegetable oil, wheat flour.",10000,677,4
+136,HANIMELLER LEMON GLAZED WHITE CHOCOLATE COOKIES,https://www.ulker.com.tr/documents/ulker_hanimeller/hanimeller_limon.png,"A delicious biscuit made with wheat flour, sugar, salt.",10000,1223,4
+137,HANIMELLER WITH OLIVE,https://www.ulker.com.tr/documents/hanimeller-zeytinli.png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,1832,4
+138,HANIMELLER CHOCOLATE CHIP BAGPACK,https://www.ulker.com.tr/documents/ulker_hanimeller/cokodamlaposet.png,"A delicious biscuit made with salt, wheat flour, sugar.",10000,1269,4
+139,HANIMELLER ASORTI BAGPACK,https://www.ulker.com.tr/documents/ulker_hanimeller/asortikurabiye.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,1957,4
+140,HANIMELLER SALTY COOKIE BAGPACK,https://www.ulker.com.tr/documents/ulker_hanimeller/tuzlukurabiye.png,"A delicious biscuit made with vegetable oil, wheat flour, sugar.",10000,1319,4
+141,HANIMELLER BUTTER COOKIE BAGPACK,https://www.ulker.com.tr/documents/ulker_hanimeller/tereyaglikurabiye.png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,813,4
+142,HANIMELLER WITH RASPBERRY,https://www.ulker.com.tr/documents/hanimellerfrabuaz150g.webp,"A delicious biscuit made with sugar, wheat flour, vegetable oil.",10000,1936,4
+143,HAYLAYF PLAIN BISCUIT,https://www.ulker.com.tr/documents/ulker_haylayf/gv_hylyf01-haylalf-64-g.png,"A delicious biscuit made with sugar, salt, wheat flour.",10000,1045,4
+144,HAYLAYF PLAIN BISCUIT,https://www.ulker.com.tr/documents/ulker_haylayf/gv_hylyf01-haylalf-4x64-g.png,"A delicious biscuit made with vegetable oil, salt, sugar.",10000,1722,4
+145,HAYLAYF MINI SUGAR BISCUITS,https://www.ulker.com.tr/documents/ulker_haylayf/haylayfyenipaket.png,"A delicious biscuit made with wheat flour, vegetable oil, salt.",10000,1189,4
+146,İKRAM CHOCOLATE CREAM BISCUIT,https://www.ulker.com.tr/documents/ikram_cikolatali_400x400px.png,"A delicious biscuit made with wheat flour, vegetable oil, salt.",10000,1083,4
+147,İKRAM HAZELNUT CREAM BISCUIT,https://www.ulker.com.tr/documents/ikram_findikli_400x400px.png,"A delicious biscuit made with salt, vegetable oil, sugar.",10000,1042,4
+148,İKRAM CHOCOLATE CREAM BISCUIT - MULTIPACK,https://www.ulker.com.tr/documents/ikram_cikolatali_84g_400x400px.webp,"A delicious biscuit made with salt, vegetable oil, wheat flour.",10000,1070,4
+149,İKRAM HAZELNUT CREAM BISCUIT - MULTIPACK,https://www.ulker.com.tr/documents/ikram_findikli_84g_400x400px.webp,"A delicious biscuit made with vegetable oil, salt, wheat flour.",10000,585,4
+150,KAT KAT TAT HAZELNUT CREAM FILLED,https://www.ulker.com.tr/documents/ulker_katkat_tat/katkattat_1.png,"A delicious biscuit made with salt, vegetable oil, wheat flour.",10000,1522,4
+151,KAT KAT TAT STRAWBERRY CREAM FILLED,https://www.ulker.com.tr/documents/ulker_katkat_tat/katkattat2.png,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,992,4
+152,PROBIS BITE-SIZE,https://www.ulker.com.tr/documents/ulker_probis/probIsatistirmaliksandvIcbIsk.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1739,4
+153,PROBIS FAMILY SIZE,https://www.ulker.com.tr/documents/ulker_probis/probis_packet16_new.png,"A delicious biscuit made with vegetable oil, wheat flour, salt.",10000,1750,4
+154,PROBİS MIDI,https://www.ulker.com.tr/documents/probis-midi-101g.png,"A delicious biscuit made with salt, wheat flour, vegetable oil.",10000,788,4
+155,RONDO BISCUITS WITH BANANA CREAM,https://www.ulker.com.tr/documents/ulker_rondo/2.png,"A delicious biscuit made with sugar, vegetable oil, wheat flour.",10000,521,4
+156,RONDO BISCUITS WITH STRAWBERRY CREAM MP,https://www.ulker.com.tr/documents/ulker_rondo/1.png,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,1207,4
+157,RONDO BISCUITS WITH STRAWBERRY CREAM,https://www.ulker.com.tr/documents/ulker_rondo/4.png,"A delicious biscuit made with wheat flour, sugar, salt.",10000,560,4
+158,FINGER BISCUITS,https://www.ulker.com.tr/documents/ulker_finger/finger5yenipaket.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1861,4
+159,SAKLIKÖY MILK CREAM WHOLEWHEAT SANDWICH BISCUIT,https://www.ulker.com.tr/documents/ulker_saklikoy/saklikoy4.png,"A delicious biscuit made with salt, vegetable oil, sugar.",10000,637,4
+160,SAKLIKÖY CHOCOLATE CREAM WHOLEWHEAT SANDWICH BISCUIT,https://www.ulker.com.tr/documents/ulker_saklikoy/saklikoy5.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,1713,4
+161,SAKLIKÖY HAZELNUT CREAM WHOLEWHEAT SANDWICH BISCUIT,https://www.ulker.com.tr/documents/ulker_saklikoy/saklikoy3.png,"A delicious biscuit made with vegetable oil, salt, wheat flour.",10000,924,4
+162,SAKLIKÖY MILK CREAM WHOLEWHEAT SANDWICH BISCUIT,https://www.ulker.com.tr/documents/ulker_saklikoy/saklikoy7.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1174,4
+163,SAKLIKÖY HAZELNUT CREAM WHOLEWHEAT SANDWICH BISCUIT 3 PACK,https://www.ulker.com.tr/documents/saklikoy_findikli_3_lu_mp.png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,1584,4
+164,SAKLIKÖY CHOCOLATE & MILK CREAM WHOLEWHEAT SANDWICH BISCUIT,https://www.ulker.com.tr/documents/ulker_saklikoy/saklikoy6.png,"A delicious biscuit made with vegetable oil, salt, wheat flour.",10000,1196,4
+165,SAKLIKÖY RASPBERRY CREAM CHEESECAKE,https://www.ulker.com.tr/documents/saklikoey-frambuaz-kremali-cheesecake-bicskuevic.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1539,4
+166,SAKLIKÖY LEMON CREAM CHEESECAKE,https://www.ulker.com.tr/documents/saklikoey-licmonlu-kremali-cheesecake-bicskuevic.png,"A delicious biscuit made with vegetable oil, salt, wheat flour.",10000,1892,4
+167,SAKLIKÖY KAVILCA WHEAT,https://www.ulker.com.tr/documents/saklikoy-kavilca.png,"A delicious biscuit made with wheat flour, sugar, salt.",10000,1788,4
+168,ÜLKER SANDWICH BISCUIT WITH PLAIN CREAM,https://www.ulker.com.tr/documents/08-gv_krmli03-ulkerkremali-biskuvi-61-g.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,1003,4
+169,ÜLKER KREMALI WITH CACAO CREAM,https://www.ulker.com.tr/documents/ulker-kremali-kakaolu.png,"A delicious biscuit made with wheat flour, vegetable oil, salt.",10000,1416,4
+170,ÜLKER KREMALI RONDO WITH STRAWBERRY CREAM,https://www.ulker.com.tr/documents/0109804ulkkre_bisk_cilekli61gx241.png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,1136,4
+171,ÜLKER KREMALI RONDO WITH BANANA CREAM,https://www.ulker.com.tr/documents/0111003ulkkre_bisk_muzlu61grx241.png,"A delicious biscuit made with sugar, vegetable oil, wheat flour.",10000,1706,4
+172,ÜLKER ÇİFTE LEZZET BISCUIT WITH RASPBERRY SAUCE,https://www.ulker.com.tr/documents/ulker_kremali_biskuvi/raspberry_package.png,"A delicious biscuit made with wheat flour, salt, sugar.",10000,1146,4
+173,ÜLKER ÇİFTE LEZZET BISCUIT WITH CHOCOLATE CREAM,https://www.ulker.com.tr/documents/ulker_kremali_biskuvi/kremabiskuvi_cikolata.png,"A delicious biscuit made with vegetable oil, salt, sugar.",10000,1985,4
+174,ÜLKER ÇİFTE LEZZET BISCUIT WITH ORANGE CREAM MINI,https://www.ulker.com.tr/documents/kremabiskuvi_portakal1.png,"A delicious biscuit made with vegetable oil, sugar, wheat flour.",10000,1787,4
+175,ÜLKER SANDWICH BISCUIT WITH PLAIN CREAM MP,https://www.ulker.com.tr/documents/ulker_kremali_biskuvi/kremali3.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,808,4
+176,ÜLKER KREMALI WITH CACAO CREAM 4 PACK,https://www.ulker.com.tr/documents/kakaolu_4lu_mp_3d.webp,"A delicious biscuit made with vegetable oil, wheat flour, sugar.",10000,587,4
+177,ÜLKER KREMALI WITH CACAO CREAM 8 PACK,https://www.ulker.com.tr/documents/kakaolu_8li_mp_3d.webp,"A delicious biscuit made with vegetable oil, sugar, wheat flour.",10000,1432,4
+178,ÜLKER KREMALI RONDO WITH STRAWBERRY CREAM 4 PACK,https://www.ulker.com.tr/documents/cilekli_4lu_mp_3d.webp,"A delicious biscuit made with sugar, salt, vegetable oil.",10000,1191,4
+179,ÜLKER KREMALI RONDO WITH STRAWBERRY CREAM 8 PACK,https://www.ulker.com.tr/documents/cilekli_8li_mp_3d.webp,"A delicious biscuit made with sugar, salt, wheat flour.",10000,1752,4
+180,ÜLKER KREMALI RONDO WITH BANANA CREAM 4 PACK,https://www.ulker.com.tr/documents/muzlu_4lu_mp_3d.png,"A delicious biscuit made with salt, vegetable oil, wheat flour.",10000,1481,4
+181,ÜLKER KREMALI RONDO WITH BANANA CREAM 8 PACK,https://www.ulker.com.tr/documents/muzlu_8li_mp_3d.png,"A delicious biscuit made with vegetable oil, salt, sugar.",10000,1541,4
+182,ÜLKER KREMALI RONDO WITH ORANGE CREAM 8 PACK,https://www.ulker.com.tr/documents/portakalli_8li_mp_3d(1).png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,954,4
+183,DORE COCOA CREAM FILLED BISCUIT,https://www.ulker.com.tr/documents/ulker_dore/ulker-dore.png,"A delicious biscuit made with salt, sugar, vegetable oil.",10000,1496,4
+184,ÜLKER BISCUITS WITH COCOA,https://www.ulker.com.tr/documents/ulker_kakao_biskuvi/kakaolu_biskuvi.png,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,1688,4
+185,PÖTIBÖR PLAIN,https://www.ulker.com.tr/documents/ulker_potibor/potibor1.png,"A delicious biscuit made with vegetable oil, wheat flour, salt.",10000,1162,4
+186,PÖTIBÖR PLAIN,https://www.ulker.com.tr/documents/ulker_potibor/potibor2.png,"A delicious biscuit made with salt, vegetable oil, sugar.",10000,1151,4
+187,PÖTIBÖR PLAIN,https://www.ulker.com.tr/documents/ulker_potibor/potibor3.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,904,4
+188,PÖTIBÖR COCOA,https://www.ulker.com.tr/documents/ulker_potibor/potibor4.png,"A delicious biscuit made with sugar, wheat flour, vegetable oil.",10000,1566,4
+189,PÖTIBÖR WITH COCOA,https://www.ulker.com.tr/documents/ulker_potibor/potibor5.png,"A delicious biscuit made with salt, vegetable oil, sugar.",10000,770,4
+190,PÖTIBÖR DOUBLE ROASTED,https://www.ulker.com.tr/documents/ulker_potibor/potibor6.png,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,1210,4
+191,PÖTIBÖR DOUBLE ROASTED,https://www.ulker.com.tr/documents/ulker_potibor/potibor7.png,"A delicious biscuit made with salt, vegetable oil, sugar.",10000,1137,4
+192,9 KAT TAT HAZELNUT CREAM WAFERS,https://www.ulker.com.tr/documents/9ktatfindikli39g.webp,"A delicious wafer made with milk powder, cocoa, wheat flour.",10000,1964,5
+193,9 KAT TAT BANANA CREAM WAFERS,https://www.ulker.com.tr/documents/9ktatmuzlu39g.webp,"A delicious wafer made with milk powder, wheat flour, palm oil.",10000,1812,5
+194,9 KAT TAT ORANGE CREAM WAFERS,https://www.ulker.com.tr/documents/9ktatportakalli39g.webp,"A delicious wafer made with palm oil, wheat flour, cocoa.",10000,974,5
+195,9 KAT TAT İNCE İNCE COCONUT CREAM THIN WAFERS,https://www.ulker.com.tr/documents/9_KatTat/9katincehindistancevizi.png,"A delicious wafer made with palm oil, wheat flour, milk powder.",10000,1205,5
+196,9 KAT TAT İNCE İNCE STRAWBERRY CREAM THIN WAFERS,https://www.ulker.com.tr/documents/9_KatTat/9katincecilek.png,"A delicious wafer made with milk powder, cocoa, palm oil.",10000,773,5
+197,9 KAT TAT İNCE İNCE HAZELNUT CREAM THIN WAFERS,https://www.ulker.com.tr/documents/9_KatTat/9katincefindik.png,"A delicious wafer made with cocoa, palm oil, wheat flour.",10000,1315,5
+198,9 KAT TAT FINE SUGAR-FREE / HAZELNUT CREAM,https://www.ulker.com.tr/documents/9_KatTat/9katsekersizfindik.png,"A delicious wafer made with milk powder, cocoa, palm oil.",10000,1428,5
+199,9 KAT TAT FINE SUGAR-FREE / ORANGE CREAM,https://www.ulker.com.tr/documents/9_KatTat/9katsekersizportakal.png,"A delicious wafer made with cocoa, palm oil, wheat flour.",10000,623,5
+200,RULOKAT CHOCOLATE CREAM ROLL WAFERS,https://www.ulker.com.tr/documents/gv_9ktat11_rulokatfindikli_42g400x400.webp,"A delicious wafer made with palm oil, wheat flour, cocoa.",10000,1129,5
+201,RULOKAT CHOCOLATE CREAM ROLL WAFERS,https://www.ulker.com.tr/documents/gv_9ktat13_rulokatfindikli_204g400x400.webp,"A delicious wafer made with palm oil, cocoa, wheat flour.",10000,1523,5
+202,RULOKAT CHOCOLATE CREAM ROLL WAFERS,https://www.ulker.com.tr/documents/gv_9ktat12rulokatfindikli170g3d400x400.webp,"A delicious wafer made with cocoa, palm oil, wheat flour.",10000,1651,5
+203,ÜLKER VANILLA CREAM WAFERS,https://www.ulker.com.tr/documents/vanilya.png,"A delicious wafer made with milk powder, palm oil, wheat flour.",10000,1369,5
+204,ÜLKER HAZELNUT CREAM WAFERS,https://www.ulker.com.tr/documents/findik1.webp,"A delicious wafer made with palm oil, cocoa, milk powder.",10000,1570,5
+205,ALBENİ MILK CHOCOLATE COATED   BAR,https://www.ulker.com.tr/documents/ulker_albeni/albeni_bar.png,"A delicious chocolate made with cocoa butter, cocoa, sugar.",10000,717,1
+206,ALBENİ MILK CHOCOLATE COATED BAR BIGGER SIZE,https://www.ulker.com.tr/documents/ulker_albeni/albenibuyukboyyeni.png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,1199,1
+207,ALBENİ WHITE CHOCOLATE COATED  VİVA BAR,https://www.ulker.com.tr/documents/ulker_albeni/albeniviva.png,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,1121,1
+208,ALBENİ MILK CHOCOLATE COATED COOKIE,https://www.ulker.com.tr/documents/ulker_albeni/albenikurabiye1.png,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,1137,1
+209,ALBENİ MILK CHOCOLATE COATED  BITE SIZE,https://www.ulker.com.tr/documents/ulker_albeni/albeniatistirmalikyeni1.png,"A delicious chocolate made with milk solids, cocoa butter, sugar.",10000,1054,1
+210,ALBENİ TANE TANE MILK CHOCOLATE COATED NIBBLES - BOX,https://www.ulker.com.tr/documents/ulker_albeni/albenitaneyeni.png,"A delicious chocolate made with cocoa butter, cocoa, milk solids.",10000,1496,1
+211,ALBENİ MILK CHOCOLATE COATED  BAR MINI PACK,https://www.ulker.com.tr/documents/ulker_albeni/albenimini1.png,"A delicious chocolate made with sugar, milk solids, cocoa.",10000,810,1
+212,ALBENİ MILK CHOCOLATE COATED BAR SHARING PACK,https://www.ulker.com.tr/documents/gv_ulker10ulkerpaylasmalikserisi4lupaketalbeni.webp,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,560,1
+213,ALBENİ CHOCOLATE COVERED CAKE,https://www.ulker.com.tr/documents/ulker_albeni/albenikekyeni.png,"A delicious chocolate made with cocoa, sugar, milk solids.",10000,1964,1
+214,ALPELLA 3GEN WHİTE CHOCOLATE WAFER,https://www.ulker.com.tr/documents/ulker_alpella/alpella-beyaz.png,"A delicious chocolate made with cocoa butter, sugar, milk solids.",10000,660,1
+215,ALPELLA MİNİ ROLL CAKE with MILK CREAM,https://www.ulker.com.tr/documents/ulker_alpella/alpella(1).png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,589,1
+216,COCO STAR COCONUT BAR COATED WITH MILK CHOCOLATE,https://www.ulker.com.tr/documents/ulker_coco_star/cocostar-1.png,"A delicious chocolate made with milk solids, cocoa, cocoa butter.",10000,1644,1
+217,COCO STAR MULTIPACK X5,https://www.ulker.com.tr/documents/ulker_coco_star/cocostar-5li.png,"A delicious chocolate made with sugar, milk solids, cocoa.",10000,547,1
+218,COCO STAR BITE SIZE PACK,https://www.ulker.com.tr/documents/ulker_coco_star/coco1.png,"A delicious chocolate made with cocoa, milk solids, sugar.",10000,1722,1
+219,COCO STAR BITE SIZE LARGE PACK,https://www.ulker.com.tr/documents/ulker_coco_star/ulk_cocostar_atistirmalik_300g.png,"A delicious chocolate made with sugar, milk solids, cocoa.",10000,1990,1
+220,ÇOKOMİLK,https://www.ulker.com.tr/documents/ulker_cokomilk/cokomilk1.png,"A delicious chocolate made with cocoa butter, sugar, milk solids.",10000,920,1
+221,ÇOKONAT,https://www.ulker.com.tr/documents/ulker_cokonat/cokonat_33gr.png,"A delicious chocolate made with milk solids, cocoa, cocoa butter.",10000,1000,1
+222,ÇOKONAT SHARING 3 PACK,https://www.ulker.com.tr/documents/gv_cknt03-cokonat-pasylasmalik-3lu-mp-3d-modelleme1.webp,"A delicious chocolate made with cocoa, milk solids, sugar.",10000,1270,1
+223,DİDO MILK CHOCOLATE COATED WAFER,https://www.ulker.com.tr/documents/ulker_dido/dido_klasik(1).png,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,1366,1
+224,DİDO TRİO WHITE & MILK CHOCOLATE COATED WAFER WITH DARK CHOCOLATE CREAM,https://www.ulker.com.tr/documents/ulker_dido/dido_sutlu.png,"A delicious chocolate made with cocoa butter, sugar, cocoa.",10000,1172,1
+225,DİDO MILK CHOCOLATE COATED WAFER WITH CARAMEL FILLING,https://www.ulker.com.tr/documents/ulker_dido/dido_karamel_1.png,"A delicious chocolate made with cocoa, sugar, cocoa butter.",10000,1091,1
+226,DİDO MILK CHOCOLATE COATED WAFER WITH RASPBERRY FLAVOUR CREAM,https://www.ulker.com.tr/documents/ulker_dido/dido_ruby.png,"A delicious chocolate made with cocoa butter, cocoa, sugar.",10000,784,1
+227,DİDO KARE MILK CHOCOLATE COATED WAFER,https://www.ulker.com.tr/documents/ulker_dido/dido_kare.png,"A delicious chocolate made with milk solids, sugar, cocoa.",10000,1112,1
+228,HALLEY,https://www.ulker.com.tr/documents/ulker_halley/halley1.png,"A delicious chocolate made with sugar, cocoa, cocoa butter.",10000,632,1
+229,HALLEY BITE-SIZE,https://www.ulker.com.tr/documents/ulker_halley/halley2.png,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,1393,1
+230,HALLEY BLACK MULBERRY BITE-SIZE,https://www.ulker.com.tr/documents/ulker_halley/halley3.png,"A delicious chocolate made with sugar, cocoa, milk solids.",10000,1095,1
+231,HALLEY BANANA BITE SIZE,https://www.ulker.com.tr/documents/halley-atistirmalik-muzlu-66g-final.png,"A delicious chocolate made with cocoa butter, milk solids, sugar.",10000,1345,1
+232,HALLEY CLASSİC,https://www.ulker.com.tr/documents/ulker_halley/halley4.png,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,1141,1
+233,HALLEY BLACK MULBERRY,https://www.ulker.com.tr/documents/ulker_halley/halley5.png,"A delicious chocolate made with cocoa, sugar, milk solids.",10000,530,1
+234,HALLEY BANANA,https://www.ulker.com.tr/documents/gv_hally20-halley-muzlu-mp.png,"A delicious chocolate made with cocoa butter, sugar, cocoa.",10000,548,1
+235,HALLEY WHITE,https://www.ulker.com.tr/documents/gv_hally21-halley-beyaz-mp-3d-modelleme-rev-artwork-1.png,"A delicious chocolate made with sugar, cocoa, milk solids.",10000,1464,1
+236,HALLEY ECONOMIC SIZE 2 PACK,https://www.ulker.com.tr/documents/halley2liekonomikpaket.webp,"A delicious chocolate made with milk solids, cocoa, sugar.",10000,852,1
+237,HALLEY MINI BAG,https://www.ulker.com.tr/documents/halleyminiposet.webp,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,1049,1
+238,HOBBY CHOCOLATE COVERED NUT BAR,https://www.ulker.com.tr/documents/ulker_hobby/gv_hobby01-hobby-hobby-25g.png,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,1861,1
+239,MINI HOBBY BITE SIZE FLOWPACK,https://www.ulker.com.tr/documents/ulker_hobby/2018_ulk_hobby_ikramlik_poset_250g.png,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,933,1
+240,MINI HOBBY BITE SIZE PACK,https://www.ulker.com.tr/documents/ulker_hobby/2018_ulk_hobby_mini_kutu_600g.png,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,779,1
+241,LAVIVA CLASSIC,https://www.ulker.com.tr/documents/ulker_laviva/ulker-lavva-dol_ve-bsk_ck_35-gr-esra-uslu.png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,1958,1
+242,LAVIVA WITH MILKY FILLING,https://www.ulker.com.tr/documents/ulker_laviva/gv_lvva01-laviva-sutlu-dolgulu-bar-35g-esra-uslu.png,"A delicious chocolate made with cocoa, milk solids, sugar.",10000,1733,1
+243,LAVİVA LEMON CHEESECAKE,https://www.ulker.com.tr/documents/gv_lvva06-laviva-limonlu-cheesecake-tadinda-3d-modelleme.png,"A delicious chocolate made with cocoa, milk solids, sugar.",10000,1271,1
+244,METRO BAR,https://www.ulker.com.tr/documents/ulker_metro/4.png,"A delicious chocolate made with cocoa butter, milk solids, sugar.",10000,822,1
+245,METRO BAR BIGGER SIZE,https://www.ulker.com.tr/documents/ulker_metro/1.png,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,978,1
+246,METRO BİG 3,https://www.ulker.com.tr/documents/metro_big3(1).png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,882,1
+247,METRO BAR MULTIPACK,https://www.ulker.com.tr/documents/gv_ulker10ulkerpaylasmalikserisi4lupaketmetro.webp,"A delicious chocolate made with sugar, cocoa butter, milk solids.",10000,1037,1
+248,METRO MINI,https://www.ulker.com.tr/documents/ulker_metro/metrominipaket.png,"A delicious chocolate made with cocoa butter, milk solids, cocoa.",10000,1982,1
+249,PIKO MILK CHOCOLATE COATED BAR WITH NATURAL ORANGE FLAVOURED CRISPED RICE,https://www.ulker.com.tr/documents/ulker_piko/piko-duz.png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,1846,1
+250,ÜLKER MINI ALL STAR,https://www.ulker.com.tr/documents/miniallstarpaket.png,"A delicious chocolate made with milk solids, sugar, cocoa butter.",10000,1090,1
+251,ÜLKER CHOCOLATE WAFER MILKY,https://www.ulker.com.tr/documents/ulker_cikolatali_gofret/ucg_klasik_sutlu.png,"A delicious chocolate made with cocoa, sugar, milk solids.",10000,1649,1
+252,ÜLKER CHOCOLATE WAFER BITTER,https://www.ulker.com.tr/documents/ulker_cikolatali_gofret/ucg_nefis.png,"A delicious chocolate made with cocoa butter, milk solids, sugar.",10000,1554,1
+253,ÜLKER CHOCOLATE WAFER WHITE,https://www.ulker.com.tr/documents/gv_ucg11-ulkrcklataligfrt-ucg-beyaz-3d.png,"A delicious chocolate made with milk solids, cocoa butter, cocoa.",10000,746,1
+254,ÜLKER CHOCOLATE WAFER SHARING 4 PACK,https://www.ulker.com.tr/documents/gv_ulker10ulkerpaylasmalikserisi4lupaketucg3.webp,"A delicious chocolate made with sugar, cocoa, milk solids.",10000,893,1
+255,ÜLKER CHOCOLATE WAFER MINI PACK,https://www.ulker.com.tr/documents/miniucg2x(1).webp,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,618,1
+256,ÜLKER CHOCOLATE WAFER EXTRA MILKY,https://www.ulker.com.tr/documents/ulker_cikolatali_gofret/ucgextrasutlu.png,"A delicious chocolate made with sugar, cocoa butter, cocoa.",10000,644,1
+257,ÜLKER CHOCOLATE WAFER EXTRA BITTER,https://www.ulker.com.tr/documents/ulker_cikolatali_gofret/ucgextrabitter.png,"A delicious chocolate made with sugar, cocoa butter, milk solids.",10000,1854,1
+258,ÜLKER ÇİKOLATALI GOFRET WITH McVitie’s BISCUIT,https://www.ulker.com.tr/documents/ucg_mcvities_karamel-3d-yeni.png,"A delicious chocolate made with cocoa, milk solids, sugar.",10000,597,1
+259,ÜLKER ÇİKOLATALI GOFRET MAXI,https://www.ulker.com.tr/documents/gv_ucg15-ulkrcklataligfrt-maxi-3d-modelleme-rev(1).png,"A delicious chocolate made with milk solids, cocoa butter, sugar.",10000,1660,1
+260,FINDIK AŞKI,https://www.ulker.com.tr/documents/gv_fndka-findik-aski-3d-modelleme(1).png,"A delicious chocolate made with cocoa butter, cocoa, milk solids.",10000,1449,1
+261,FINDIK AŞKI SHARING PACK,https://www.ulker.com.tr/documents/gv_fndka02-3lu-paylasmalik-3d-modelleme-1.webp,"A delicious chocolate made with sugar, milk solids, cocoa butter.",10000,1525,1
+262,ÜLKER BEBE MILKY BISCUITS FOR INFANTS AND YOUNG CHILDREN,https://www.ulker.com.tr/documents/ulker_bebe_biskuvi/ulkerbebebiskuvi400.png,"A delicious biscuit made with sugar, wheat flour, salt.",10000,670,4
+263,ÜLKER BEBE 3-GRAIN CINNAMON BISCUIT,https://www.ulker.com.tr/documents/bebe_172g_tahilli.webp,"A delicious biscuit made with wheat flour, vegetable oil, sugar.",10000,665,4
+264,ÜLKER BEBE MILKY BISCUITS FOR INFANTS AND YOUNG CHILDREN,https://www.ulker.com.tr/documents/0013801ulkbebebisk_4x250gx41.webp,"A delicious biscuit made with wheat flour, sugar, vegetable oil.",10000,947,4
