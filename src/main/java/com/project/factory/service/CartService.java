@@ -87,4 +87,24 @@ public class CartService
     {
        return cartRepository.findAllByUserId(userId);
     }
+
+    @Transactional
+    public void deleteCart(int cartId)
+    {
+        Cart cart = cartRepository.findById(cartId)
+                .orElseThrow(() -> new IllegalArgumentException("Cart not found"));
+
+        if (cart == null)
+        {
+            throw new IllegalArgumentException("Cart not found");
+        }
+
+        int quantity = -cart.getQuantity();
+
+        int productId = cart.getProduct().getId();
+
+        productRepository.updateStock(quantity, productId);
+
+        cartRepository.deleteById(cartId);
+    }
 }

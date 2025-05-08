@@ -40,5 +40,12 @@ public class CartController
         return ResponseEntity.ok(updateCart);
     }
 
+    @DeleteMapping("/delete")
+    public ResponseEntity<?> deleteCart(@RequestParam int cartId)
+    {
+        cartService.deleteCart(cartId);
+        return ResponseEntity.ok("Cart deleted successfully");
+    }
+
 
 }

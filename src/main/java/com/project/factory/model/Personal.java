@@ -21,7 +21,7 @@ public class Personal
 
     private String Identifier;
 
-    private String age;
+    private int age;
 
     private String gender;
 

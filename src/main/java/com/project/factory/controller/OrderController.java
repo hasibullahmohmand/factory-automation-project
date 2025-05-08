@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.Map;
 
 @RestController
@@ -38,5 +39,12 @@ public class OrderController
         int orderId = Integer.parseInt(payload.get("order_id"));
         String status = payload.get("status");
         return ResponseEntity.ok(orderService.updateOrder(orderId, status));
+    }
+
+    @GetMapping("/getByUser")
+    public ResponseEntity<?> getOrderById(Principal principal)
+    {
+        String username = principal.getName();
+        return ResponseEntity.ok(orderService.getOrderById(username));
     }
 }

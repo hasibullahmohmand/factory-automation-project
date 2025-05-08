@@ -26,5 +26,5 @@ public class Ingredient
 
     private LocalDate expiryDate;
 
-    private Integer measurement;
+    private String unit;
 }

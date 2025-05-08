@@ -6,11 +6,13 @@ import com.project.factory.model.Order;
 import com.project.factory.repository.CartRepository;
 import com.project.factory.repository.OrderRepository;
 
+import com.project.factory.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +24,9 @@ public class OrderService
 
     @Autowired
     private CartRepository cartRepository;
+
+    @Autowired
+    private UserRepository userRepository;
 
 
     @Transactional
@@ -63,5 +68,30 @@ public class OrderService
         order.setDelivered(statusBool);
         order.setDeliveryDate(LocalDateTime.now());
         return orderRepository.save(order);
+    }
+
+    public List<Order> getOrderById(String username)
+    {
+        int userId = userRepository.findUserIdByEmail(username);
+
+        List<Cart> cart = cartRepository.findAllByUserId(userId);
+
+        if (cart == null)
+        {
+            return null;
+        }
+
+        List<Order> orders = new ArrayList<>();
+
+        for (Cart c : cart)
+        {
+            Order order = orderRepository.findByCartId(c.getId());
+            if (order != null)
+            {
+                orders.add(order);
+            }
+        }
+
+        return orders;
     }
 }

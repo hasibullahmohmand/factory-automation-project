@@ -13,4 +13,6 @@ public interface OrderRepository extends JpaRepository<Order, Integer>
     @Query(value = "INSERT INTO orders (cart_id) VALUES (:cartId)",nativeQuery = true)
     int addOrderByCartId(int cartId);
 
+    @Query(value = "SELECT * FROM orders WHERE cart_id = :id",nativeQuery = true)
+    Order findByCartId(Integer id);
 }
