@@ -73,4 +73,17 @@ public class ProductController
         return ResponseEntity.ok("Product updated successfully");
     }
 
+    @DeleteMapping("/delete")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    private ResponseEntity<?> deleteProduct(@RequestParam int productId)
+    {
+        boolean deleted = productService.deleteProduct(productId);
+
+        if(!deleted)
+        {
+            return ResponseEntity.badRequest().body("Product not found");
+        }
+        return ResponseEntity.ok("Product deleted successfully");
+    }
+
 }

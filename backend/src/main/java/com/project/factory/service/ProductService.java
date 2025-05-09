@@ -45,4 +45,15 @@ public class ProductService
     {
         return productRepository.findAll();
     }
+
+    public boolean deleteProduct(int productId)
+    {
+        if (!productRepository.existsById(productId))
+        {
+            return false;
+        }
+
+        productRepository.deleteById(productId);
+        return true;
+    }
 }
