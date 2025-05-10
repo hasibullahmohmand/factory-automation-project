@@ -2,11 +2,15 @@
   "Files": [
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BlazorApp1.qmj59jvk1o.bundle.scp.css"
+      "PackagePath": "staticwebassets\\BlazorApp1.hqk1foc9m1.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\beyazpulcikolata.png",
+      "PackagePath": "staticwebassets\\beyazpulcikolata.png"
     },
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\bootstrap\\bootstrap.min.css",

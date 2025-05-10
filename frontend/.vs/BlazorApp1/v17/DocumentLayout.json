@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\biscuits.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\biscuits.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\biscuits.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\biscuits.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\layout\\authlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\layout\\authlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\layout\\authlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\layout\\authlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -57,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\chocolates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\chocolates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\components\\pages\\biscuits.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|solutionrelative:components\\pages\\biscuits.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{372E5EEC-CF86-47F7-B689-D8C53C55081B}|BlazorApp1.csproj|c:\\users\\envy 14\\desktop\\factory automation project\\frontend\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,29 +90,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Login.razor",
-              "RelativeToolTip": "Components\\Pages\\Login.razor",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T19:41:07.885Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T19:30:20.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cart.razor",
+              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Cart.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Cart.razor",
+              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Cart.razor",
+              "RelativeToolTip": "Components\\Pages\\Cart.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T19:29:01.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:41:07.885Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Biscuits.razor",
+              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Biscuits.razor",
+              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor",
+              "RelativeToolTip": "Components\\Pages\\Biscuits.razor",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwD8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T19:46:15.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Biscuits.razor.css",
+              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Biscuits.razor.css",
+              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Biscuits.razor.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-10T18:25:08.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.razor.css",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Login.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Login.razor.css",
@@ -136,103 +167,11 @@
               "RelativeToolTip": "Components\\Pages\\Login.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T12:56:39.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthLayout.razor.css",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\AuthLayout.razor.css",
-              "RelativeDocumentMoniker": "Components\\Layout\\AuthLayout.razor.css",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\AuthLayout.razor.css",
-              "RelativeToolTip": "Components\\Layout\\AuthLayout.razor.css",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T12:42:50.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthLayout.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\AuthLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\AuthLayout.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\AuthLayout.razor",
-              "RelativeToolTip": "Components\\Layout\\AuthLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T12:38:01.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T12:56:39.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "Components\\_Imports.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\_Imports.razor",
-              "RelativeToolTip": "Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T12:29:37.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Register.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Register.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Register.razor",
-              "RelativeToolTip": "Components\\Pages\\Register.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T20:51:35.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Profile.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Profile.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Profile.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Profile.razor",
-              "RelativeToolTip": "Components\\Pages\\Profile.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T20:11:08.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T19:54:47.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T20:02:59.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Error.razor",
@@ -240,12 +179,11 @@
               "RelativeToolTip": "Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T12:32:14.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T12:32:14.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "Chocolates.razor",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Chocolates.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Chocolates.razor",
@@ -257,19 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Biscuits.razor",
-              "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Biscuits.razor",
-              "ToolTip": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Biscuits.razor",
-              "RelativeToolTip": "Components\\Pages\\Biscuits.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T19:46:15.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Waffers.razor",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Waffers.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Waffers.razor",
@@ -281,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "Cakes.razor",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Cakes.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Cakes.razor",
@@ -293,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Gums.razor",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Components\\Pages\\Gums.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Gums.razor",
@@ -305,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginModel.cs",
@@ -317,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -329,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterModel.cs",
@@ -341,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "ResultCategory.cs",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Models\\ResultCategory.cs",
               "RelativeDocumentMoniker": "Models\\ResultCategory.cs",
@@ -353,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "ResultProduct.cs",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\Models\\ResultProduct.cs",
               "RelativeDocumentMoniker": "Models\\ResultProduct.cs",
@@ -365,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\app.css",
@@ -377,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -389,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "favicon.png - PNG [32x32, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\favicon.png",
               "RelativeDocumentMoniker": "wwwroot\\favicon.png",
@@ -401,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "BlazorApp1.csproj",
               "DocumentMoniker": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\BlazorApp1.csproj",
               "RelativeDocumentMoniker": "BlazorApp1.csproj",

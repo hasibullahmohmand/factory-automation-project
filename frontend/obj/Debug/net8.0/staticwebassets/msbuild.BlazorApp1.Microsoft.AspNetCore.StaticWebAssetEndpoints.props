@@ -12,17 +12,29 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ig7omnkojj"},{"Name":"integrity","Value":"sha256-wg2c1iWLCjlTMzW\u002BIh2Pf9Vpqvu3QZhfORAIS4mq\u002BRk="},{"Name":"label","Value":"_content/BlazorApp1/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2600"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wg2c1iWLCjlTMzW\u002BIh2Pf9Vpqvu3QZhfORAIS4mq\u002BRk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 20:19:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BlazorApp1/BlazorApp1.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazorApp1.qmj59jvk1o.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp1/beyazpulcikolata.5ap19pqgaj.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\beyazpulcikolata.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XkhaH68W6Yb84vZMAFjJJQtT5fnEq4DflYCqTbtLRcQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6429"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XkhaH68W6Yb84vZMAFjJJQtT5fnEq4DflYCqTbtLRcQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:43:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ap19pqgaj"},{"Name":"integrity","Value":"sha256-w3wMust7ix3IiwZHeqUYywaQHC6yq2YrAFJRuyjn4ug="},{"Name":"label","Value":"_content/BlazorApp1/beyazpulcikolata.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"40678"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022w3wMust7ix3IiwZHeqUYywaQHC6yq2YrAFJRuyjn4ug=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:11:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BlazorApp1/BlazorApp1.qmj59jvk1o.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazorApp1.qmj59jvk1o.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp1/beyazpulcikolata.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\beyazpulcikolata.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qmj59jvk1o"},{"Name":"integrity","Value":"sha256-XkhaH68W6Yb84vZMAFjJJQtT5fnEq4DflYCqTbtLRcQ="},{"Name":"label","Value":"_content/BlazorApp1/BlazorApp1.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6429"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XkhaH68W6Yb84vZMAFjJJQtT5fnEq4DflYCqTbtLRcQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:43:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w3wMust7ix3IiwZHeqUYywaQHC6yq2YrAFJRuyjn4ug="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"40678"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022w3wMust7ix3IiwZHeqUYywaQHC6yq2YrAFJRuyjn4ug=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:11:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp1/BlazorApp1.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazorApp1.hqk1foc9m1.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q\u002BsPpOI/hwUQM2UCOvM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Oe5fe8ceJpUtvynpl1H6Fne5Q\u002BsPpOI/hwUQM2UCOvM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:28:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp1/BlazorApp1.hqk1foc9m1.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazorApp1.hqk1foc9m1.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hqk1foc9m1"},{"Name":"integrity","Value":"sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q\u002BsPpOI/hwUQM2UCOvM="},{"Name":"label","Value":"_content/BlazorApp1/BlazorApp1.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Oe5fe8ceJpUtvynpl1H6Fne5Q\u002BsPpOI/hwUQM2UCOvM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:28:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlazorApp1/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>

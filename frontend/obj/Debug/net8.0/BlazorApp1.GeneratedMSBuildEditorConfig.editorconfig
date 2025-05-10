@@ -27,12 +27,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Biscuits.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCaXNjdWl0cy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Cakes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWtlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Chocolates.razor]
@@ -82,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope = b-j65y7q72mt
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-5bndfk4shp
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Biscuits.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCaXNjdWl0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-kjkwp6xwvh
 
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
