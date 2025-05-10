@@ -12,6 +12,49 @@ body[b-rfrxgsqmbi] {
     flex-direction: column;
 }
 
+.page-top[b-j65y7q72mt]{
+    display: flex;
+    border-bottom: 1px solid grey;
+    height: 50px;
+    justify-content:space-around;
+    align-items:center;
+    background-color:rgb(240, 240, 240);
+    font-size:small;
+}
+.page-top img[b-j65y7q72mt]{
+    height: 25px;
+}
+
+.search-bar[b-j65y7q72mt]{
+    display:flex;
+}
+.search-bar img[b-j65y7q72mt]{
+    height: 34.5px;
+    border: 1px solid black;
+    margin-right: -2px;
+    border-right: none;
+}
+.search-bar input[b-j65y7q72mt]{
+    height: 35px;
+}
+
+.order-icon[b-j65y7q72mt]{
+    margin-left: 4px;
+}
+.profile-icon[b-j65y7q72mt] {
+    margin-left: 6px;
+}
+.logout-icon[b-j65y7q72mt]{
+    margin-left:8px;
+}
+
+.navigation-item[b-j65y7q72mt] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main[b-j65y7q72mt] {
     flex: 1;
 }
@@ -271,3 +314,6 @@ main[b-j65y7q72mt] {
 body[b-1flbdmqp2j] {
 }
 
+/* _content/BlazorApp1/Components/Pages/Order.razor.rz.scp.css */
+body[b-ibemok96xv] {
+}

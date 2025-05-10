@@ -22,6 +22,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer>
     @Query("UPDATE Product p SET p.stock = p.stock - :quantity WHERE p.id = :id")
     void updateStock(@Param("quantity") int quantity, @Param("id") int id);
 
-
+    @Query("SELECT CASE WHEN COUNT(p) > 0 THEN true ELSE false END FROM Product p WHERE p.name = :name")
+    boolean existsByName(String name);
 
 }

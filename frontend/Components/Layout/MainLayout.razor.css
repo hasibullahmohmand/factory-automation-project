@@ -4,6 +4,49 @@
     flex-direction: column;
 }
 
+.page-top{
+    display: flex;
+    border-bottom: 1px solid grey;
+    height: 50px;
+    justify-content:space-around;
+    align-items:center;
+    background-color:rgb(240, 240, 240);
+    font-size:small;
+}
+.page-top img{
+    height: 25px;
+}
+
+.search-bar{
+    display:flex;
+}
+.search-bar img{
+    height: 34.5px;
+    border: 1px solid black;
+    margin-right: -2px;
+    border-right: none;
+}
+.search-bar input{
+    height: 35px;
+}
+
+.order-icon{
+    margin-left: 4px;
+}
+.profile-icon {
+    margin-left: 6px;
+}
+.logout-icon{
+    margin-left:8px;
+}
+
+.navigation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     flex: 1;
 }

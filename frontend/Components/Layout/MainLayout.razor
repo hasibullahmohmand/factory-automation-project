@@ -6,18 +6,51 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <span name="search-icon"></span>
-            <input type="search" name="search-bar" class="" placeholder="Search" />
-            <NavLink class="nav-item" href="cart">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Cart
+        <div class="page-top">
+            <div class="search-bar"> 
+                <img src="find.png" />
+                <input type="search" name="search-bar" class="" placeholder="Search" />
+            </div>
+            <div class="navigation-item">
+            <NavLink href="order">
+                <div class="order-icon">
+                    <img src="order.png" />
+                </div> 
+                <div>
+                    Order
+                </div>
             </NavLink>
-            <NavLink class="nav-item" href="profile">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Profile
+            </div>
+            <div class="navigation-item">
+            <NavLink href="cart">
+                <div>
+                     <img src="shopping-cart.png" />
+                </div> 
+                <div>
+                    Cart
+                </div>
             </NavLink>
-            <NavLink class="" >
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Logout
+            </div>
+            <div class="navigation-item">
+            <NavLink href="profile">
+                <div class="profile-icon">
+                    <img src="user.png" /> 
+                </div>
+                <div>
+                    Profile
+                </div>
             </NavLink>
+            </div>
+            <div class="navigation-item">
+            <NavLink href="$">
+                <div class="logout-icon">
+                    <img src="logout.png" />
+                </div>
+                <div>
+                    Logout
+                </div>
+            </NavLink>
+            </div>
         </div>
 
         <article class="content px-4">

@@ -19,7 +19,7 @@ public class Personal
 
     private String name;
 
-    private String Identifier;
+    private String identifier;
 
     private int age;
 

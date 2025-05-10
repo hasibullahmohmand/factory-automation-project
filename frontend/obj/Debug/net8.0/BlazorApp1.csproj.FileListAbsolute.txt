@@ -116,3 +116,4 @@ C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\obj\Debug\net8.0\re
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\obj\Debug\net8.0\scopedcss\Components\Layout\AuthLayout.razor.rz.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Login.razor.rz.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Biscuits.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\obj\Debug\net8.0\scopedcss\Components\Pages\Order.razor.rz.scp.css

@@ -1,6 +1,7 @@
 package com.project.factory.controller;
 
 
+import com.project.factory.dto.ProductCreationDTO;
 import com.project.factory.model.Product;
 import com.project.factory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,13 +50,16 @@ public class ProductController
 
     @PostMapping("/add")
     @PreAuthorize("hasAuthority('ADMIN')")
-    private ResponseEntity<?> addProduct(@RequestBody Product product)
+    private ResponseEntity<?> addProduct(@RequestBody ProductCreationDTO productCreationDTO)
     {
-        Product addProduct = productService.addProduct(product);
+        Product addProduct = productService.addProductWithIngredients(
+                productCreationDTO.getProduct(),
+                productCreationDTO.getIngredientIds()
+        );
 
         if(addProduct == null)
         {
-            return ResponseEntity.badRequest().body("Product already exists");
+            return ResponseEntity.badRequest().body("Product creation failed");
         }
         return ResponseEntity.ok("Product added successfully");
     }

@@ -90,3 +90,7 @@ build_metadata.AdditionalFiles.CssScope = b-kjkwp6xwvh
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-1flbdmqp2j
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/Components/Pages/Order.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ibemok96xv

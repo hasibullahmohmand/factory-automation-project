@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tYLu7adQYm2tLzANtLre/wTnWEj7MIxTAPgdqtcDUP0=",
+  "Hash": "kit7lm2a3IIpjWqDoKPLa3vsuR75bfMax1iHR2ZbtA4=",
   "Source": "BlazorApp1",
   "BasePath": "_content/BlazorApp1",
   "Mode": "Default",
@@ -2446,8 +2446,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "hqk1foc9m1",
-      "Integrity": "Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=",
+      "Fingerprint": "n26lu42l56",
+      "Integrity": "ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css"
@@ -2467,8 +2467,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "hqk1foc9m1",
-      "Integrity": "Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=",
+      "Fingerprint": "n26lu42l56",
+      "Integrity": "ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css"
@@ -2530,8 +2530,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bpk8xqwxhs",
-      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
@@ -2577,6 +2577,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\find.png",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "find#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sey2ynapts",
+      "Integrity": "tBim8W2tlMcYDRb8yoQ9YCDhA/TFyRvfpvCs0GhvBkA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\find.png"
+    },
+    {
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\logout.png",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "logout#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c9xt9jc6kd",
+      "Integrity": "oGJY27hasQ8xTD+14Jw1cToY2s2eYEEWITJ3LPtM+II=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logout.png"
+    },
+    {
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\order.png",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "order#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1pw0rvhkqq",
+      "Integrity": "e3MCDvrd3P6+PejvdP2TH9t9TNGdwU93MfUynC8NXzQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\order.png"
+    },
+    {
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\shopping-cart.png",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "shopping-cart#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gp31edgdtc",
+      "Integrity": "/NTGAYkydBvJS1+V6g+23ABGjqkvBkVZgP0vjyEtXYY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\shopping-cart.png"
+    },
+    {
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\user.png",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jmjswv0de2",
+      "Integrity": "pXGugoYzAxTO8APvjHaNDX6btaa0GkSQNCE/fQ7IDVI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user.png"
     }
   ],
   "Endpoints": [
@@ -9159,7 +9264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 20:19:40 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9196,7 +9301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 20:19:40 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9241,7 +9346,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:11:58 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9286,7 +9391,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:11:58 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9311,7 +9416,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7281"
+          "Value": "8210"
         },
         {
           "Name": "Content-Type",
@@ -9319,11 +9424,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=\""
+          "Value": "\"ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:28:15 GMT"
+          "Value": "Sat, 10 May 2025 21:08:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9333,12 +9438,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM="
+          "Value": "sha256-ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg="
         }
       ]
     },
     {
-      "Route": "BlazorApp1.hqk1foc9m1.bundle.scp.css",
+      "Route": "BlazorApp1.n26lu42l56.bundle.scp.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9348,7 +9453,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7281"
+          "Value": "8210"
         },
         {
           "Name": "Content-Type",
@@ -9356,11 +9461,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=\""
+          "Value": "\"ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:28:15 GMT"
+          "Value": "Sat, 10 May 2025 21:08:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9370,7 +9475,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hqk1foc9m1"
+          "Value": "n26lu42l56"
         },
         {
           "Name": "label",
@@ -9378,12 +9483,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM="
+          "Value": "sha256-ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg="
         }
       ]
     },
     {
-      "Route": "BlazorApp1.hqk1foc9m1.styles.css",
+      "Route": "BlazorApp1.n26lu42l56.styles.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9393,7 +9498,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7281"
+          "Value": "8210"
         },
         {
           "Name": "Content-Type",
@@ -9401,11 +9506,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=\""
+          "Value": "\"ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:28:15 GMT"
+          "Value": "Sat, 10 May 2025 21:08:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9415,7 +9520,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hqk1foc9m1"
+          "Value": "n26lu42l56"
         },
         {
           "Name": "label",
@@ -9423,7 +9528,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM="
+          "Value": "sha256-ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg="
         }
       ]
     },
@@ -9438,7 +9543,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7281"
+          "Value": "8210"
         },
         {
           "Name": "Content-Type",
@@ -9446,11 +9551,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM=\""
+          "Value": "\"ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:28:15 GMT"
+          "Value": "Sat, 10 May 2025 21:08:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9460,12 +9565,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oe5fe8ceJpUtvynpl1H6Fne5Q+sPpOI/hwUQM2UCOvM="
+          "Value": "sha256-ASAPn2Efa1jDxqH4bP4JOw59hIMA+8Fgpwxc60pJGLg="
         }
       ]
     },
     {
-      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9475,7 +9580,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -9483,11 +9588,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9497,7 +9602,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bpk8xqwxhs"
+          "Value": "6gzpyzhau4"
         },
         {
           "Name": "label",
@@ -9505,7 +9610,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
@@ -9520,7 +9625,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -9528,11 +9633,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9542,7 +9647,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
@@ -9569,7 +9674,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9614,7 +9719,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9651,7 +9756,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9696,7 +9801,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 19:23:24 GMT"
+          "Value": "Sat, 10 May 2025 19:50:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9707,6 +9812,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "find.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\find.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBim8W2tlMcYDRb8yoQ9YCDhA/TFyRvfpvCs0GhvBkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 20:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tBim8W2tlMcYDRb8yoQ9YCDhA/TFyRvfpvCs0GhvBkA="
+        }
+      ]
+    },
+    {
+      "Route": "find.sey2ynapts.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\find.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBim8W2tlMcYDRb8yoQ9YCDhA/TFyRvfpvCs0GhvBkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 20:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sey2ynapts"
+        },
+        {
+          "Name": "label",
+          "Value": "find.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tBim8W2tlMcYDRb8yoQ9YCDhA/TFyRvfpvCs0GhvBkA="
+        }
+      ]
+    },
+    {
+      "Route": "logout.c9xt9jc6kd.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\logout.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oGJY27hasQ8xTD+14Jw1cToY2s2eYEEWITJ3LPtM+II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 20:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9xt9jc6kd"
+        },
+        {
+          "Name": "label",
+          "Value": "logout.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oGJY27hasQ8xTD+14Jw1cToY2s2eYEEWITJ3LPtM+II="
+        }
+      ]
+    },
+    {
+      "Route": "logout.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\logout.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oGJY27hasQ8xTD+14Jw1cToY2s2eYEEWITJ3LPtM+II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 20:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oGJY27hasQ8xTD+14Jw1cToY2s2eYEEWITJ3LPtM+II="
+        }
+      ]
+    },
+    {
+      "Route": "order.1pw0rvhkqq.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\order.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e3MCDvrd3P6+PejvdP2TH9t9TNGdwU93MfUynC8NXzQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pw0rvhkqq"
+        },
+        {
+          "Name": "label",
+          "Value": "order.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e3MCDvrd3P6+PejvdP2TH9t9TNGdwU93MfUynC8NXzQ="
+        }
+      ]
+    },
+    {
+      "Route": "order.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\order.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e3MCDvrd3P6+PejvdP2TH9t9TNGdwU93MfUynC8NXzQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e3MCDvrd3P6+PejvdP2TH9t9TNGdwU93MfUynC8NXzQ="
+        }
+      ]
+    },
+    {
+      "Route": "shopping-cart.gp31edgdtc.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\shopping-cart.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/NTGAYkydBvJS1+V6g+23ABGjqkvBkVZgP0vjyEtXYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:16:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp31edgdtc"
+        },
+        {
+          "Name": "label",
+          "Value": "shopping-cart.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/NTGAYkydBvJS1+V6g+23ABGjqkvBkVZgP0vjyEtXYY="
+        }
+      ]
+    },
+    {
+      "Route": "shopping-cart.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\shopping-cart.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/NTGAYkydBvJS1+V6g+23ABGjqkvBkVZgP0vjyEtXYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:16:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/NTGAYkydBvJS1+V6g+23ABGjqkvBkVZgP0vjyEtXYY="
+        }
+      ]
+    },
+    {
+      "Route": "user.jmjswv0de2.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pXGugoYzAxTO8APvjHaNDX6btaa0GkSQNCE/fQ7IDVI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:20:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jmjswv0de2"
+        },
+        {
+          "Name": "label",
+          "Value": "user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pXGugoYzAxTO8APvjHaNDX6btaa0GkSQNCE/fQ7IDVI="
+        }
+      ]
+    },
+    {
+      "Route": "user.png",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pXGugoYzAxTO8APvjHaNDX6btaa0GkSQNCE/fQ7IDVI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 21:20:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pXGugoYzAxTO8APvjHaNDX6btaa0GkSQNCE/fQ7IDVI="
         }
       ]
     }
