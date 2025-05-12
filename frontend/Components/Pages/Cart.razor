@@ -1,0 +1,170 @@
+﻿@page "/cart"
+
+<PageTitle>Cart</PageTitle>
+
+<h3>Cart</h3>
+<div class="main-container">
+    <div class="cart-product">
+        <div class="product">
+            <div class="cart-img">
+                <img src="beyazpulcikolata.png" alt="Product image" />
+            </div>
+            <div class="product-detail">
+                <div>
+                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
+                </div>
+                <div class="product-detail">
+                    A delicious chocolate made with sugar, cocoa, cocoa butter.
+                </div>
+                <div class="product-price">
+                    891TL
+                </div>
+                <div class="cart-buttons">
+                    <select class="cart-select">
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                        <option value="250">250</option>
+                        <option value="300">300</option>
+                        <option value="350">350</option>
+                        <option value="400">400</option>
+                        <option value="450">450</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                    </select>
+                    <button class="btn btn-primary">Update</button>
+                    <button class="btn btn-secondary">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="cart-img">
+                <img src="beyazpulcikolata.png" alt="Product image" />
+            </div>
+            <div class="product-detail">
+                <div>
+                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
+                </div>
+                <div class="product-detail">
+                    A delicious chocolate made with sugar, cocoa, cocoa butter.
+                </div>
+                <div class="product-price">
+                    891TL
+                </div>
+                <div class="cart-buttons">
+                    <select class="cart-select">
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                        <option value="250">250</option>
+                        <option value="300">300</option>
+                        <option value="350">350</option>
+                        <option value="400">400</option>
+                        <option value="450">450</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                    </select>
+                    <button class="btn btn-primary">Update</button>
+                    <button class="btn btn-secondary">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="cart-img">
+                <img src="beyazpulcikolata.png" alt="Product image" />
+            </div>
+            <div class="product-detail">
+                <div>
+                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
+                </div>
+                <div class="product-detail">
+                    A delicious chocolate made with sugar, cocoa, cocoa butter.
+                </div>
+                <div class="product-price">
+                    891TL
+                </div>
+                <div class="cart-buttons">
+                    <select class="cart-select">
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                        <option value="250">250</option>
+                        <option value="300">300</option>
+                        <option value="350">350</option>
+                        <option value="400">400</option>
+                        <option value="450">450</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                    </select>
+                    <button class="btn btn-primary">Update</button>
+                    <button class="btn btn-secondary">Delete</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="product-total">
+        <EditForm Model="CartModel" OnValidSubmit="PlaceOrder">
+            <div>
+                <div>
+                    <b>Order sumary:</b>
+                </div>
+                <div class="summary-row">
+                    <div>
+                        Items(150):
+                    </div>
+                    <div class="item-price">
+                        2673TL
+                    </div>
+                </div>
+                <div class="summary-row">
+                    <div>
+                        Shipping and Handling:
+                    </div>
+                    <div class="items-price">
+                        0TL
+                    </div>
+                </div>
+                <div class="summary-row">
+                    <div>
+                        Total Before Tax:
+                    </div>
+                    <div class="items-price">
+                        2673TL
+                    </div>
+                </div>
+                <div class="summary-row">
+                    <div>
+                        Estimated Tax:
+                    </div>
+                    <div class="items-price">
+                        534.6TL
+                    </div>
+                </div>
+                <div class="summary-row">
+                    <div class="product-price">
+                        Order Total:
+                    </div>
+                    <div class="product-price">
+                        3207.6TL
+                    </div>
+                </div>
+                <button class="btn btn-primary order-button" type="submit">Place Order</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+@code {
+    void CartModel()
+    {
+
+    }
+    void PlaceOrder()
+    {
+        
+    }
+}
