@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "Hash": "0TKgI5WGhnlyiavblBOXz5Gqocw+qwWGJEt/ybHYO/4=",
-  "Source": "BlazorApp1",
-  "BasePath": "_content/BlazorApp1",
+  "Hash": "SmNvkcDLKEh7rbiza9l0CSOMo8fE5A7Ppf6/VFSN7dg=",
+  "Source": "FactoryProject",
+  "BasePath": "_content/FactoryProject",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "BlazorApp1\\wwwroot",
-      "Source": "BlazorApp1",
+      "Name": "FactoryProject\\wwwroot",
+      "Source": "FactoryProject",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "Pattern": "**"
     }
   ],
@@ -2432,12 +2432,12 @@
       "OriginalItemSpec": "C:\\Users\\ENVY 14\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
-      "SourceId": "BlazorApp1",
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
+      "SourceId": "FactoryProject",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/BlazorApp1",
-      "RelativePath": "BlazorApp1#[.{fingerprint}]?.styles.css",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "FactoryProject#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -2446,19 +2446,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "2t2afpkso0",
-      "Integrity": "SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=",
+      "Fingerprint": "tm2u86a2mi",
+      "Integrity": "1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
-      "SourceId": "BlazorApp1",
+      "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "SourceId": "FactoryProject",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/BlazorApp1",
-      "RelativePath": "BlazorApp1#[.{fingerprint}]!.bundle.scp.css",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "FactoryProject#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -2467,18 +2467,18 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "2t2afpkso0",
-      "Integrity": "SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=",
+      "Fingerprint": "tm2u86a2mi",
+      "Integrity": "1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\app.css",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2496,10 +2496,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\beyazpulcikolata.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "beyazpulcikolata#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2517,10 +2517,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2538,10 +2538,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2559,10 +2559,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\favicon.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2580,10 +2580,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\find.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "find#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2601,10 +2601,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\logout.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "logout#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2622,10 +2622,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\order.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "order#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2643,10 +2643,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\shopping-cart.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "shopping-cart#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2664,10 +2664,10 @@
     },
     {
       "Identity": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\user.png",
-      "SourceId": "BlazorApp1",
+      "SourceId": "FactoryProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
+      "BasePath": "_content/FactoryProject",
       "RelativePath": "user#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -9406,170 +9406,6 @@
       ]
     },
     {
-      "Route": "BlazorApp1.2t2afpkso0.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10777"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 08:21:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2t2afpkso0"
-        },
-        {
-          "Name": "label",
-          "Value": "BlazorApp1.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM="
-        }
-      ]
-    },
-    {
-      "Route": "BlazorApp1.2t2afpkso0.styles.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10777"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 08:21:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2t2afpkso0"
-        },
-        {
-          "Name": "label",
-          "Value": "BlazorApp1.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM="
-        }
-      ]
-    },
-    {
-      "Route": "BlazorApp1.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10777"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 08:21:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM="
-        }
-      ]
-    },
-    {
-      "Route": "BlazorApp1.styles.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10777"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 08:21:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SiC6JVFxuGH7/DpKY3U1zbipA0C7hMZFC54OdwwhukM="
-        }
-      ]
-    },
-    {
       "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
@@ -9730,6 +9566,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.styles.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.tm2u86a2mi.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tm2u86a2mi"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.tm2u86a2mi.styles.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tm2u86a2mi"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WhDmzNxxili6E/UmMfotq5hGDG+DXx/RiEf2H3fYD8="
         }
       ]
     },

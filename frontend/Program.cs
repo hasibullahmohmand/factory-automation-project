@@ -1,6 +1,9 @@
-using BlazorApp1.Components;
+using FactoryProject.Components;
+using FactoryProject.DependencyInjection;
+using FactoryProject.Infrastructure.Extensions;
+using FactoryProject.Infrastructure.Utilities;
 
-namespace BlazorApp1
+namespace FactoryProject
 {
     public class Program
     {
@@ -10,25 +13,47 @@ namespace BlazorApp1
 
             // Add services to the container.
             builder.Services.AddRazorComponents()
-                .AddInteractiveServerComponents();
+                .AddInteractiveServerComponents()
+                .AddInteractiveWebAssemblyComponents();
 
+            builder.Services.AddRazorPages();
+            builder.Services.AddServerSideBlazor()
+                            .AddCircuitOptions(options =>
+                            { options.DetailedErrors = true; });
+
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.RegisterServices();
+            builder.Services.ConfigureAuthentication();
+            builder.Services.ConfigureApiSettings(builder.Configuration);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseWebAssemblyDebugging();
+            }
+            else
             {
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+            app.UseRouting();
+            app.UseCookiePolicy();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseAntiforgery();
 
+
+            app.MapRazorPages();
             app.MapRazorComponents<App>()
-                .AddInteractiveServerRenderMode();
+                .AddInteractiveServerRenderMode()
+                .AddInteractiveWebAssemblyRenderMode()
+                .AddAdditionalAssemblies(typeof(Client._Imports).Assembly);
 
             app.Run();
         }

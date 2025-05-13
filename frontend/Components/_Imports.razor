@@ -1,5 +1,6 @@
 ﻿@using System.Net.Http
 @using System.Net.Http.Json
+@using System.Net.Http.Headers
 @using System.ComponentModel.DataAnnotations
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
@@ -7,7 +8,11 @@
 @using static Microsoft.AspNetCore.Components.Web.RenderMode
 @using Microsoft.AspNetCore.Components.Web.Virtualization
 @using Microsoft.JSInterop
-@using BlazorApp1
-@using BlazorApp1.Components.Layout
-@using BlazorApp1.Models
+@using FactoryProject
+@using FactoryProject.Components.Layout
+@using FactoryProject.Models
 @using System.Diagnostics
+@using FactoryProject.Contracts
+@using FactoryProject.Models.ProductDtos
+@using Microsoft.AspNetCore.Authorization
+@using FactoryProject.Models.UserDtos

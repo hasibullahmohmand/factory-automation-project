@@ -1,61 +1,62 @@
-.page[b-j65y7q72mt] {
+.page[b-tgn1r5xgxa] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.page-top[b-j65y7q72mt]{
+.page-top[b-tgn1r5xgxa] {
     display: flex;
     border-bottom: 1px solid grey;
     height: 50px;
-    justify-content:space-around;
-    align-items:center;
-    background-color:rgb(240, 240, 240);
-    font-size:small;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    font-size: small;
+    position: fixed;
 }
-.page-top img[b-j65y7q72mt]{
+.page-top img[b-tgn1r5xgxa]{
     height: 25px;
 }
 
-.search-bar[b-j65y7q72mt]{
+.search-bar[b-tgn1r5xgxa]{
     display:flex;
 }
-.search-bar img[b-j65y7q72mt]{
+.search-bar img[b-tgn1r5xgxa]{
     height: 34.5px;
     border: 1px solid black;
     margin-right: -2px;
     border-right: none;
 }
-.search-bar input[b-j65y7q72mt]{
+.search-bar input[b-tgn1r5xgxa]{
     height: 35px;
 }
 
-.order-icon[b-j65y7q72mt]{
+.order-icon[b-tgn1r5xgxa]{
     margin-left: 4px;
 }
-.profile-icon[b-j65y7q72mt] {
+.profile-icon[b-tgn1r5xgxa] {
     margin-left: 6px;
 }
-.logout-icon[b-j65y7q72mt]{
+.logout-icon[b-tgn1r5xgxa]{
     margin-left:8px;
 }
 
-.navigation-item[b-j65y7q72mt] {
+.navigation-item[b-tgn1r5xgxa] {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main[b-j65y7q72mt] {
+main[b-tgn1r5xgxa] {
     flex: 1;
 }
 
-.sidebar[b-j65y7q72mt] {
+.sidebar[b-tgn1r5xgxa] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-j65y7q72mt] {
+.top-row[b-tgn1r5xgxa] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -64,62 +65,88 @@ main[b-j65y7q72mt] {
     align-items: center;
 }
 
-    .top-row[b-j65y7q72mt]  a, .top-row[b-j65y7q72mt]  .btn-link {
+    .top-row[b-tgn1r5xgxa]  a, .top-row[b-tgn1r5xgxa]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-j65y7q72mt]  a:hover, .top-row[b-j65y7q72mt]  .btn-link:hover {
+    .top-row[b-tgn1r5xgxa]  a:hover, .top-row[b-tgn1r5xgxa]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-j65y7q72mt]  a:first-child {
+    .top-row[b-tgn1r5xgxa]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row[b-j65y7q72mt] {
+    main[b-tgn1r5xgxa] {
+        margin-top: 55px;
+    }
+    .top-row[b-tgn1r5xgxa] {
         justify-content: space-between;
     }
 
-    .top-row[b-j65y7q72mt]  a, .top-row[b-j65y7q72mt]  .btn-link {
+    .top-row[b-tgn1r5xgxa]  a, .top-row[b-tgn1r5xgxa]  .btn-link {
         margin-left: 0;
+    }
+    .page-top[b-tgn1r5xgxa] {
+        top: 55px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .sidebar[b-tgn1r5xgxa] {
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 2;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-j65y7q72mt] {
+    .page[b-tgn1r5xgxa] {
         flex-direction: row;
     }
+    main[b-tgn1r5xgxa] {
+        margin-left: 250px;
+    }
 
-    .sidebar[b-j65y7q72mt] {
+    .sidebar[b-tgn1r5xgxa] {
         width: 250px;
         height: 100vh;
-        position: sticky;
+        position: fixed;
         top: 0;
     }
 
-    .top-row[b-j65y7q72mt] {
+    .top-row[b-tgn1r5xgxa] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-j65y7q72mt]  a:first-child {
+    .top-row.auth[b-tgn1r5xgxa]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-j65y7q72mt], article[b-j65y7q72mt] {
+    .top-row[b-tgn1r5xgxa], article[b-tgn1r5xgxa] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+
+    .page-top[b-tgn1r5xgxa]{
+        left:250px;
+        right:0;
+        top:0;
+        
+    }
 }
 
-#blazor-error-ui[b-j65y7q72mt] {
+#blazor-error-ui[b-tgn1r5xgxa] {
     background: lightyellow;
     bottom: 0;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
@@ -131,7 +158,7 @@ main[b-j65y7q72mt] {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss[b-j65y7q72mt] {
+    #blazor-error-ui .dismiss[b-tgn1r5xgxa] {
         cursor: pointer;
         position: absolute;
         right: 0.75rem;

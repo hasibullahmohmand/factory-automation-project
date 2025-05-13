@@ -1,83 +1,46 @@
 ﻿@page "/biscuits"
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject IUnitOfWork unitOfWork
+@layout MainLayout
+@attribute [Authorize]
 
 <PageTitle>Biscuits</PageTitle>
 
 <h3>Biscuits</h3>
 
 <div class="main-container">
-    <div class="product-container">
-        <div class="product-img">
-            <img src="beyazpulcikolata.png" alt="Product Image" />
-        </div>
-        <div class="product-name">
-            <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-        </div>
-        <div class="product-price">
-            891TL
-        </div>
-        <div class="product-detail">
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-        </div>
-        <button class=" btn btn-primary">
-            Add to cart
-        </button>
-    </div>
-    <div class="product-container">
-        <div class="product-img">
-            <img src="beyazpulcikolata.png" alt="Product Image" />
-        </div>
-        <div class="product-name">
-            <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-        </div>
-        <div>
-
-        </div>
-        <div class="product-price">
-            891TL
-        </div>
-        <div class="product-detail">
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-        </div>
-        <button class=" btn btn-primary">
-            Add to cart
-        </button>
-    </div>
-    <div class="product-container">
-        <div class="product-img">
-            <img src="beyazpulcikolata.png" alt="Product Image" />
-        </div>
-        <div class="product-name">
-            <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-        </div>
-        <div class="product-price">
-            891TL
-        </div>
-        <div class="product-detail">
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-        </div>
-        <button class=" btn btn-primary">
-            Add to cart
-        </button>
-    </div>
-    <div class="product-container">
-        <div class="product-img">
-            <img src="beyazpulcikolata.png" alt="Product Image" />
-        </div>
-        <div class="product-name">
-            <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-        </div>
-        <div class="product-price">
-            891TL
-        </div>
-        <div class="product-detail">
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-        </div>
-        <button class=" btn btn-primary">
-            Add to cart
-        </button>
-    </div>
+    @if (resultProducts != null && resultProducts.Count > 0)
+    {
+        @foreach (var product in resultProducts)
+        {
+            <div class="product-container">
+                <div class="product-img">
+                    <img src="@product.ImageUrl" alt="Product Image" />
+                </div>
+                <div class="product-name">
+                    <b>@product.Name</b>
+                </div>
+                <div class="product-price">
+                    @product.Price TL
+                </div>
+                <div class="product-detail">
+                    @product.Description
+                </div>
+                <button id="@product.Id" type="submit" class=" btn btn-primary">
+                    Add to cart
+                </button>
+            </div>
+            
+        }
+    }
 </div>
 
 @code {
+    List<ResultProductDto> resultProducts = [];
 
+    protected override async Task OnInitializedAsync()
+    {
+        
+    }
 }

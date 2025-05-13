@@ -1,6 +1,6 @@
-﻿namespace BlazorApp1.Models
+namespace FactoryProject.Models.CategoryDtos
 {
-    public class ResultCategory
+    public class ResultCategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

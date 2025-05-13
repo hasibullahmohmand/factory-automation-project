@@ -28,7 +28,7 @@
 .product-total[b-alrwdu2v4f] {
     border: 1px solid purple;
     display: grid;
-    min-width: 400px;
+    min-width: 430px;
     padding: 20px;
     height: 330px;
 }
@@ -41,7 +41,7 @@
 .product[b-alrwdu2v4f] {
     border: 1px solid darkblue;
     display: flex;
-    min-width: 400px;
+    min-width: 430px;
     padding: 10px;
     height: 178px;
     gap: 10px;
@@ -62,7 +62,7 @@
 }
 
 .cart-img img[b-alrwdu2v4f] {
-    width: 100%;
+    width: 150px;
     height: 100%;
     object-fit: contain;
 }
