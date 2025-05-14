@@ -93,10 +93,6 @@ public class CartService
         return cartRepository.updateCart(cartId, quantity, id);
     }
 
-    public List<Cart> getAllCartsByUserId(int userId)
-    {
-       return cartRepository.findAllByUserId(userId);
-    }
 
     @Transactional
     public void deleteCart(int cartId)
