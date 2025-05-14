@@ -27,9 +27,10 @@ public class CartController
     }
 
     @GetMapping()
-    public ResponseEntity<?> getAllCart(@RequestParam int userId)
+    public ResponseEntity<?> getAllCart(Principal principal)
     {
-        return ResponseEntity.ok(cartService.getAllCartsByUserId(userId));
+        String username = principal.getName();
+        return ResponseEntity.ok(cartService.getAllCartsByUserName(username));
     }
 
     @GetMapping("/update")
