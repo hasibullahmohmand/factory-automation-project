@@ -49,10 +49,20 @@ public class CartService
     }
 
 
-
-    public List<Cart> getAllCarts()
+    public List<Cart> getAllCartsByUserName(String username)
     {
-        return cartRepository.findAll();
+        if (username == null || username.isEmpty())
+        {
+            throw new IllegalArgumentException("Username cannot be empty");
+        }
+
+        int userId = userRepository.findUserIdByEmail(username);
+
+        if (userId <= 0)
+        {
+            throw new IllegalArgumentException("Invalid user ID");
+        }
+       return cartRepository.findAllByUserId(userId);
     }
 
     @Transactional
