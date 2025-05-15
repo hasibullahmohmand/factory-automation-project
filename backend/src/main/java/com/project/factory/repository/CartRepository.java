@@ -7,14 +7,15 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.security.core.parameters.P;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface CartRepository extends JpaRepository<Cart, Integer>
 {
     @Modifying
-    @Query(value = "INSERT INTO cart (quantity, product_id, user_id) VALUES (:quantity, :productId, :userId)",
+    @Query(value = "INSERT INTO cart (quantity,created_at, product_id, user_id) VALUES (:quantity, :createdAt , :productId, :userId)",
             nativeQuery = true)
-    int createCart(@Param("quantity") int quantity, @Param("productId") int productId, @Param("userId") int userId);
+    int createCart(@Param("quantity") int quantity, @Param("createdAt") LocalDateTime createdAt, @Param("productId") int productId, @Param("userId") int userId);
 
 
     @Modifying
