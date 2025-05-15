@@ -1,0 +1,248 @@
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.runtime.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.endpoints.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.runtime.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.endpoints.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.exe
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.deps.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.runtimeconfig.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.pdb
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.pdb
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.AssemblyReference.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfoInputs.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfo.cs
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.CoreCompileInputs.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cs
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.sourcelink.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminLayout.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminNavMenu.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AuthLayout.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Products\ProductsList.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Accessdenied.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Login.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\NotFoundPage.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Register.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Biscuits.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Cart.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\bundle\FactoryProject.styles.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\projectbundle\FactoryProject.bundle.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.build.FactoryProject.props
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FactoryProject.props
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FactoryProject.props
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryP.4CDDE59B.Up2Date
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\refint\FactoryProject.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.pdb
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.genruntimeconfig.cache
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\ref\FactoryProject.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.runtime.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.runtime.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.exe
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.deps.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.runtimeconfig.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.AssemblyReference.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfoInputs.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfo.cs
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.CoreCompileInputs.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cs
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.sourcelink.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminNavMenu.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AuthLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Products\ProductsList.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Accessdenied.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Login.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\NotFoundPage.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Register.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Biscuits.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Cart.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\bundle\FactoryProject.styles.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\projectbundle\FactoryProject.bundle.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.build.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryP.4CDDE59B.Up2Date
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\refint\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.genruntimeconfig.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\ref\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\appsettings.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.runtime.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.staticwebassets.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.runtime.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.staticwebassets.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.exe
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.deps.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.runtimeconfig.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\bin\Debug\net8.0\FactoryProject.Client.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.AssemblyReference.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfoInputs.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.AssemblyInfo.cs
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.csproj.CoreCompileInputs.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.RazorAssemblyInfo.cs
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.sourcelink.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AdminNavMenu.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\AuthLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Products\ProductsList.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Accessdenied.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Login.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\NotFoundPage.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Register.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Cart.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\bundle\FactoryProject.styles.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\projectbundle\FactoryProject.bundle.scp.css
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.build.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FactoryProject.props
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryP.4CDDE59B.Up2Date
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\refint\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.pdb
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.genruntimeconfig.cache
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\ref\FactoryProject.dll

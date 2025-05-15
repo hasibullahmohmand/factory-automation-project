@@ -1,0 +1,60 @@
+﻿@page "/waffers"
+@inject IJSRuntime JS
+@inject IUnitOfWork unitOfWork
+@rendermode InteractiveServer
+@attribute [Authorize]
+
+<PageTitle>Waffers</PageTitle>
+
+<h3 class="text-center">Waffers</h3>
+<div class="main-container">
+    @if (_products == null && _products?.Count == 0)
+    {
+        <p>
+            <em> Loading...</em>
+        </p>
+    }
+    else
+    {
+        @foreach (var product in _products)
+        {
+            <div class="product-container">
+                <div class="product-img">
+                    <img src="@product.ImageUrl" alt="Product Image" />
+                </div>
+                <div class="product-name">
+                    <b>@product.Name</b>
+                </div>
+                <div class="product-price">
+                    @product.Price TL
+                </div>
+                <div class="product-detail">
+                    @product.Description
+                </div>
+                <button class="btn btn-danger" @onclick="() => AddToCart(product.Id)">
+                    <i class="fas fa-plus "></i> Add To Cart
+                </button>
+            </div>
+        }
+    }
+</div>
+
+
+@code {
+    private List<ResultProductDto> _products = [];
+    private CreateCartDto createCartDto = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _products = await unitOfWork.ProductService.GetProductByCateogryIdAsync(5);
+        //5 for Waffers
+    }
+
+    private async Task AddToCart(int productId)
+    {
+        createCartDto.quantity = 50;
+
+        createCartDto.productId = productId;
+        await unitOfWork.CartService.CreateCartAsync(createCartDto);
+    }
+}

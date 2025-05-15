@@ -1,0 +1,63 @@
+.accessDenied[b-o2illu5bnr]{
+    background-color: #e1e1e1;
+    height: 100vh;
+    padding-top: 30px;
+    overflow-y: auto;
+}
+
+.content[b-o2illu5bnr]{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.content-message[b-o2illu5bnr]{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title[b-o2illu5bnr]{
+    font-size:1.9rem;
+    font-weight: 800;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: #7d7d7de4;
+}
+.code[b-o2illu5bnr]{
+    display: flex;
+    justify-content: center;
+}
+.text-code[b-o2illu5bnr]{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.boutton[b-o2illu5bnr]{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.message-phrase[b-o2illu5bnr]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.media-image[b-o2illu5bnr]{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+@media (min-width:641px){
+    .content[b-o2illu5bnr]{
+        flex-direction: column;
+    }
+}

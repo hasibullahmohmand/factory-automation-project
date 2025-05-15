@@ -1,0 +1,115 @@
+.page[b-8scneufdle] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+main[b-8scneufdle] {
+    flex: 1;
+    margin: 25px;
+}
+.main-container[b-8scneufdle]{
+    color:black;
+    padding: 20px;
+    height: 100%;
+}
+
+
+.sidebar[b-8scneufdle] {
+    margin-left:15px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    color:black;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
+   
+}
+
+.main-footer[b-8scneufdle]{
+    background-color: #ffffff;
+    
+}
+.top-row[b-8scneufdle] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-8scneufdle]  a, .top-row[b-8scneufdle]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-8scneufdle]  a:hover, .top-row[b-8scneufdle]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-8scneufdle]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-8scneufdle] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-8scneufdle]  a, .top-row[b-8scneufdle]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-8scneufdle] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-8scneufdle] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-8scneufdle] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-8scneufdle]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-8scneufdle], article[b-8scneufdle] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-8scneufdle] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-8scneufdle] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }

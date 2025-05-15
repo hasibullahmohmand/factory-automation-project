@@ -1,0 +1,22 @@
+.main-container[b-cj75r6i4mj]{
+    display: grid;
+}
+.order-container[b-cj75r6i4mj]{
+
+    border: 1px solid darkblue;
+    display: flex;
+    gap: 20px;
+    height: 170px;
+    align-items:center;
+    padding: 10px;
+}
+.order-img[b-cj75r6i4mj]{
+    height: 150px;
+
+}
+
+.order-img img[b-cj75r6i4mj] {
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FactoryProject.yjwmv3m7k9.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\beyazpulcikolata.png",
+      "PackagePath": "staticwebassets\\beyazpulcikolata.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\defaultlayout.css",
+      "PackagePath": "staticwebassets\\css\\defaultlayout.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\find.png",
+      "PackagePath": "staticwebassets\\icons\\find.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\logout.png",
+      "PackagePath": "staticwebassets\\icons\\logout.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\order.png",
+      "PackagePath": "staticwebassets\\icons\\order.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\shopping-cart.png",
+      "PackagePath": "staticwebassets\\icons\\shopping-cart.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\user.png",
+      "PackagePath": "staticwebassets\\icons\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\icons\\users.png",
+      "PackagePath": "staticwebassets\\icons\\users.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\accessdmedia.jpg",
+      "PackagePath": "staticwebassets\\src\\accessdmedia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\src\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\src\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\src\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\src\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\lrbg.jpg",
+      "PackagePath": "staticwebassets\\src\\lrbg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\notfoundpage.jpg",
+      "PackagePath": "staticwebassets\\src\\notfoundpage.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FactoryProject.props",
+      "PackagePath": "build\\FactoryProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FactoryProject.props",
+      "PackagePath": "buildMultiTargeting\\FactoryProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FactoryProject.props",
+      "PackagePath": "buildTransitive\\FactoryProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
