@@ -18,7 +18,7 @@ public static class JwtParser
         {
             var claimType = kvp.Key;
             var claimValue = kvp.Value.ToString() ?? string.Empty;
-            return new Claim(claimType=="role"? ClaimTypes.Role: claimType, claimValue);
+            return new Claim(claimType=="role"?ClaimTypes.Role:claimType, claimValue);
         });
     }
     public static DateTimeOffset GetExpirationDateFromClaims(IEnumerable<Claim> claims)

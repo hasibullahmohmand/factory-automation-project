@@ -1,12 +1,13 @@
 package com.project.factory.service;
 
 
-import com.project.factory.model.Ingredient;
-import com.project.factory.repository.IngredientRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.project.factory.model.Ingredient;
+import com.project.factory.repository.IngredientRepository;
 
 @Service
 public class IngredientService
@@ -32,4 +33,20 @@ public class IngredientService
 
         return ingredientRepository.save(ingredient);
     }
+    
+    public Ingredient updateIngredient(Ingredient ingredient)
+    {
+        if(ingredientRepository.existsById(ingredient.getId()))
+            return ingredientRepository.save(ingredient);
+        return null;
+    }
+    public int deleteIngredient(int ingredientId)
+    {
+        if(ingredientRepository.existsById(ingredientId)){
+            ingredientRepository.deleteById(ingredientId);
+            return 1;
+        }
+        return 0;
+    }
+
 }

@@ -1,10 +1,117 @@
 @page "/admin/createProduct"
+@using FactoryProject.Infrastructure.Utilities.Services
 @layout AdminLayout
-
+@attribute [Authorize(Roles="ADMIN")]
 @inject IUnitOfWork _unitOfWork
+@inject ProductStateService _productStateService
+@rendermode InteractiveServer
 @inject NavigationManager _navigationManager
+
+<PageTitle>Create Product</PageTitle>
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Product</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            @errorMessage
+        </div>
+    }
+    <EditForm FormName="CreateForm" Model="@product" OnValidSubmit="@CreateProductAsync" Enhance >
+        <DataAnnotationsValidator />
+        <div class="mb-3 form-div">
+            <label for="productName" class="form-label">Product Name</label>
+            <InputText type="text" class="@GetInputClass(nameof(product.name))" 
+            id="produtName" placeholder="Enter Product Name" @bind-Value="product.name"/>
+            <ValidationMessage For="@(() => product.name)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="productPrice" class="form-label">Price</label>
+            <InputNumber type="number" class="@GetInputClass(nameof(product.price))"
+             id="productPrice" placeholder="Enter Price" @bind-Value="product.price" />
+           <ValidationMessage For="@(() => product.price)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="productStock" class="form-label">Stock</label>
+            <InputNumber type="number" class="@GetInputClass(nameof(product.stock))"
+             id="productStock" placeholder="Enter Price" @bind-Value="product.stock" />
+           <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+        </div>
+
+        <div class="mb-3 form-div">
+            <label for="prod" class="form-label">Category</label>
+            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="product.CategoryId">
+                <option value="">Choose</option>
+                @foreach (var category in _categories)
+                {
+                    <option value="@category.Id">@category.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => product.CategoryId)"class="text-danger" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Create
+            </button>
+            <a href="/admin/products" class="btn btn-secondary ms-2">
+            <i class="fas fa-list"></i>
+                Products
+            </a>
+        </div>
+    </EditForm>
+</div>
 
 
 @code{
-    
+    private string errorMessage{get;set;}=string.Empty;
+    [SupplyParameterFromForm(FormName="CreateForm")]
+    private CreateProductDto product{get;set;}=new();
+    [CascadingParameter]
+    private EditContext? editContext {get;set;}
+    private List<ResultCategoryDto> _categories{get;set;}=[];
+    protected override async Task OnInitializedAsync()
+    {
+        _categories=await _unitOfWork
+                    .CategoryService
+                    .GetAllCategoriesAsync();
+        
+    } 
+    private async Task CreateProductAsync()
+    {
+        var dto=new ProductForInsertionDto
+        {
+            name=product.name,
+            price=product.price,
+            description=product.description,
+            stock=product.stock,
+            category=await _unitOfWork.CategoryService.GetCategoryByIdAsync(product.CategoryId),
+            imageUrl=product.imageUrl
+        };
+        var response= await _unitOfWork.ProductService.CreateProductAsync(dto);
+        if(!response){
+            errorMessage="An error occured when trying to delete this item";
+            StateHasChanged();
+            return;
+        }
+        _productStateService.AddItem( new ResultProductDto
+        {
+            Name=dto.name,
+            Price=dto.price,
+            Description=dto.description,
+            ImageUrl=dto.imageUrl,
+            Category=dto.category,
+        });
+        _navigationManager.NavigateTo("/admin/products");
+    }
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(product, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
 }

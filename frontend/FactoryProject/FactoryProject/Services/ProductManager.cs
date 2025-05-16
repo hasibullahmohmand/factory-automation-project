@@ -14,7 +14,7 @@ public class ProductManager : IProductService
     {
         _client = clientFactory.CreateClient("FactoryApi");
     }
-    public async Task<bool> CreateProductAsync(CreateProductDto createProductDto)
+    public async Task<bool> CreateProductAsync(ProductForInsertionDto createProductDto)
     {
         var jsonData = JsonConvert.SerializeObject(createProductDto);
         var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
@@ -64,7 +64,7 @@ public class ProductManager : IProductService
     {
         var jsonData = JsonConvert.SerializeObject(updateProductDto);
         var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var request = await _client.PutAsync("product/update",content);
+        var request = await _client.PostAsync("product/update",content);
         return request.IsSuccessStatusCode;
     }
 }

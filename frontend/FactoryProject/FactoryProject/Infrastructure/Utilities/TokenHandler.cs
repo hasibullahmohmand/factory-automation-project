@@ -5,7 +5,6 @@ namespace FactoryProject.Infrastructure.Utilities;
 
 public class TokenHandler: DelegatingHandler
 {
-    //private readonly ILocalStorageService _localStorage = localStorage;
     private readonly TokenContainer _tokentContainer;    
     public TokenHandler(TokenContainer tokentContainer)
     {

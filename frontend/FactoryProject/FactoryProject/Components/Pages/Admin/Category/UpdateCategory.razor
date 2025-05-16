@@ -1,0 +1,91 @@
+@page "/admin/editcategory/{categoryId:int}"
+@using FactoryProject.Infrastructure.Utilities.Services
+@layout AdminLayout
+@inject IUnitOfWork _unitOfWork
+@inject CategoryStateService _categoryStateService
+@inject NavigationManager _navigationManager
+@rendermode InteractiveServer
+
+<PageTitle>Update Category</PageTitle>
+<HeadContent>
+    <link href="/css/update.css" rel="stylesheet" />
+</HeadContent>
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Category</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-triangle-exclamation"></i>
+            @errorMessage
+        </div>
+    }
+    <EditForm FormName="UpdateForm" Model="category" OnValidSubmit="@UpdateCategoryAsync" Enhance >
+        <DataAnnotationsValidator />
+        <input type="hidden" @bind="category.id"/>
+        <div class="mb-3 form-div">
+            <label for="categoryName" class="form-label">Category Name</label>
+            <InputText type="text" class="@GetInputClass(nameof(category.name))" 
+            id="categoryName" placeholder="Enter Category Name" @bind-Value="category.name"/>
+            <ValidationMessage For="@(() => category.name)" class="text-danger" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+                Update
+            </button>
+            <a href="/admin/categories" class="btn btn-secondary ms-2">
+                <i class="fas fa-list"></i>
+                Categories
+            </a>
+        </div>
+    </EditForm>
+
+</div>
+
+@code{
+    private string errorMessage{get;set;}=string.Empty;
+    [SupplyParameterFromForm(FormName ="UpdateForm")]
+    private UpdateCategoryDto category{get;set;}=new();
+    [CascadingParameter]private EditContext? editContext{get;set;}
+    [Parameter]public int categoryId{get;set;}
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetCategoryAsync();
+
+    } 
+    private async Task GetCategoryAsync()
+    {
+        var dto=await _unitOfWork.CategoryService.GetCategoryByIdAsync(categoryId);
+        if (dto == null)
+        {
+            errorMessage = "Category is not found";
+            return;
+        }
+        category.name=dto.Name;
+        category.id=dto.Id;
+    }
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(category, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
+    private async Task UpdateCategoryAsync()
+    {
+        var response = await _unitOfWork.CategoryService.UpdateCategoryAsync(category);
+        if(!response.IsSuccessStatusCode){
+            errorMessage=response.RequestMessage.ToString();
+            StateHasChanged();
+            return;
+        }
+        _categoryStateService.UpdateItem(new ResultCategoryDto{
+            Name=category.name
+        },category.id);
+        _navigationManager.NavigateTo("/admin/categories"); 
+    }
+}

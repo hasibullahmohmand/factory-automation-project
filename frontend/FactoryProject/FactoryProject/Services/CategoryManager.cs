@@ -1,3 +1,4 @@
+using System.Text;
 using FactoryProject.Contracts;
 using FactoryProject.Models.CategoryDtos;
 
@@ -12,14 +13,18 @@ public class CategoryManager : ICategoryService
     {
         _client = clientFactory.CreateClient("FactoryApi");
     }
-    public Task CreateCategoryAsync(CreateCategoryDto createCategoryDto)
+    public async Task<bool> CreateCategoryAsync(CreateCategoryDto createCategoryDto)
     {
-        throw new NotImplementedException();
+        var jsonData = JsonConvert.SerializeObject(createCategoryDto);
+        var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+        var response = await _client.PostAsync("category/add", content);
+        return response.IsSuccessStatusCode;
     }
 
-    public Task DeleteCategoryAsync(int id)
+    public async Task<bool> DeleteCategoryAsync(int id)
     {
-        throw new NotImplementedException();
+        var response = await _client.DeleteAsync($"category/delete/{id}");
+        return response.IsSuccessStatusCode;
     }
 
     public async Task<List<ResultCategoryDto>> GetAllCategoriesAsync()
@@ -38,8 +43,11 @@ public class CategoryManager : ICategoryService
       
     }
 
-    public Task UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
+    public async Task<HttpResponseMessage> UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
     {
-        throw new NotImplementedException();
+            var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
+            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("category/update", content);
+            return response;
     }
 }

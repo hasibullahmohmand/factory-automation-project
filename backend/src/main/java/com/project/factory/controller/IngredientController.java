@@ -47,4 +47,24 @@ public class IngredientController
 
         return ResponseEntity.ok(addedIngredient);
     }
+
+    @PutMapping("/update")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> updateIngredient(@RequestBody Ingredient ingredient)
+    {
+        var updatedIngredient = ingredientService.updateIngredient(ingredient);
+        if(updatedIngredient == null)
+            return ResponseEntity.badRequest().build();
+        return ResponseEntity.ok("Ingredient  with id " + updatedIngredient.getId()+"has been updated successfully");
+    }
+    @DeleteMapping("/delete/{id}")
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
+    public ResponseEntity<?> deleteIngredient(@PathVariable int id)
+    {
+        var result= ingredientService.deleteIngredient(id);
+        if(result==0){
+            return ResponseEntity.badRequest().build();
+        }
+        return ResponseEntity.ok("Ingredient has been deleted Successfully");
+    }
 }

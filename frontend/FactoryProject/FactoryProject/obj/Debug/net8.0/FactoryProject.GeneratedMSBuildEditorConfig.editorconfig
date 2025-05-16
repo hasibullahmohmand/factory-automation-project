@@ -32,32 +32,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXJ0c1xDYXJ0TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/CategoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxDYXRlZ29yeUxpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/CreateCategory.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxDcmVhdGVDYXRlZ29yeS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/UpdateCategory.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxVcGRhdGVDYXRlZ29yeS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Ingredient/CreateIngredient.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XENyZWF0ZUluZ3JlZGllbnQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Ingredient/IngredientList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XEluZ3JlZGllbnRMaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Products/CreateProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xDcmVhdGVQcm9kdWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Products/UpdateProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Dashbord.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxEYXNoYm9yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Client/Biscuits.razor]
@@ -116,9 +92,65 @@ build_metadata.AdditionalFiles.CssScope = b-tgn1r5xgxa
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-o22f84ov6z
 
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/CategoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxDYXRlZ29yeUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-p9cxmrxivw
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/CreateCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxDcmVhdGVDYXRlZ29yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-y782brzb1j
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Category/UpdateCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxDYXRlZ29yeVxVcGRhdGVDYXRlZ29yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bh5z81nmsm
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Department/CreateDepartment.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxEZXBhcnRtZW50XENyZWF0ZURlcGFydG1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5djqmgfk68
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Department/DepartmentList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxEZXBhcnRtZW50XERlcGFydG1lbnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-rk1xjbfsrv
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Department/UpdateDepartment.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxEZXBhcnRtZW50XFVwZGF0ZURlcGFydG1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xgiv0i56wp
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Ingredient/CreateIngredient.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XENyZWF0ZUluZ3JlZGllbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fbno1ow2xx
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Ingredient/IngredientList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XEluZ3JlZGllbnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-asnq9wl8lh
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Ingredient/UpdateIngredient.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XFVwZGF0ZUluZ3JlZGllbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a4jw1fj51r
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Personal/CreatePersonal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQZXJzb25hbFxDcmVhdGVQZXJzb25hbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sdt3se0e0t
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Personal/PersonalList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQZXJzb25hbFxQZXJzb25hbExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ffbkqzvwpx
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Personal/UpdatePersonal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQZXJzb25hbFxVcGRhdGVQZXJzb25hbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o8dda8am8u
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Products/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xDcmVhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-0oj8pmwt88
+
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Products/ProductsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xQcm9kdWN0c0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-x82iuzsvdp
+
+[C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Admin/Products/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ijj2rrvkys
 
 [C:/Users/ENVY 14/Desktop/Factory Automation Project/frontend/FactoryProject/FactoryProject/Components/Pages/Authentication/Accessdenied.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoZW50aWNhdGlvblxBY2Nlc3NkZW5pZWQucmF6b3I=

@@ -4,7 +4,7 @@ using FactoryProject.Models.ProductDtos;
 namespace FactoryProject.Contracts;
 public interface IProductService
 {
-    public Task<bool> CreateProductAsync(CreateProductDto createProductDto);
+    public Task<bool> CreateProductAsync(ProductForInsertionDto createProductDto);
     public Task<bool> UpdateProductAsync(UpdateProductDto updateProductDto);
     public Task<bool> DeleteProductAsync(int id);
     public Task<List<ResultProductDto>> GetAllProductsAsync();

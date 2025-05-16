@@ -4,11 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
   </PropertyGroup>
 
   <ItemGroup>
     <Content Remove="Components\Layout\EmptyLayout.razor" />
-    <Content Remove="wwwroot\css\product.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,13 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Pages\Admin\Category\" />
     <Folder Include="Components\Pages\Admin\Carts\" />
     <Folder Include="Components\Pages\Admin\Products\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\css\product.css" />
   </ItemGroup>
 
 </Project>

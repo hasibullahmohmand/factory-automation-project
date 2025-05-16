@@ -8,7 +8,9 @@
 
 <div class="form-container">
 
-    <h4 class="text-center title">Register</h4><br />
+    <h4 class="text-center title">
+        <span class="text-danger"><i class="fas fa-users"></i></span>
+        Register</h4><br />
     @if(!String.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger text-center" role="alert">
@@ -47,7 +49,7 @@
         </div>
         <div class="d-grid justify-content-center">
             <button type="submit" class="btn btn-primary m-4">Register</button>
-            <div>Already registered? <a href="account/login"> Login</a></div>
+            <div>Already registered? <a href="/login"> Login</a></div>
         </div>
     </EditForm>
 </div>
@@ -63,7 +65,7 @@
         .AccountService
         .RegisterAysnc(registerModel);
         if (result)
-            _navigationManager.NavigateTo("account/login");
+            _navigationManager.NavigateTo("/login");
         else
         {
             errorMessage = "Please verify your information and try again";

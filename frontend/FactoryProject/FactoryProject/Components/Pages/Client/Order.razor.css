@@ -1,22 +1,43 @@
-﻿.main-container{
+﻿.order-main-container{
     display: grid;
+    gap: 20px;
+    margin-left: 230px;
 }
-.order-container{
-
+.order-container {
     border: 1px solid darkblue;
     display: flex;
     gap: 20px;
     height: 170px;
-    align-items:center;
+    align-items: center;
     padding: 10px;
+    place-items: center;
+    min-width: 400px;
 }
 .order-img{
     height: 150px;
-
 }
 
 .order-img img {
     width: 150px;
     height: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 2000px) {
+    .order-main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1180px) {
+    .order-main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 729.98px) {
+    .order-main-container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
 }

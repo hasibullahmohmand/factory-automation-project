@@ -1,0 +1,96 @@
+@page "/admin/createingredient"
+@layout AdminLayout
+@inject IUnitOfWork _unitOfWork
+@inject IngredientStateService _ingredientStateService
+@inject NavigationManager _navigationManager
+
+<!-- Header Content  Begin-->
+<PageTitle>Create Ingredient</PageTitle>
+<!-- Header Content  Begin-->
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Ingredient</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-triangle-exclamation"></i>
+            @errorMessage
+        </div>
+    }
+    <EditForm FormName="CreateForm" Model="@ingredient" OnValidSubmit="@CreateIngredientAsync" Enhance>
+        <DataAnnotationsValidator />
+        <div class="mb-3 form-div">
+            <label for="ingredientName" class="form-label">Ingredient Name</label>
+            <InputText type="text" class="@GetInputClass(nameof(ingredient.name))"
+                       id="ingredientName" placeholder="Enter Ingredient Name" @bind-Value="ingredient.name" />
+            <ValidationMessage For="@(() => ingredient.name)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="ingredientStock" class="form-label">Stock</label>
+            <InputNumber type="text" class="@GetInputClass(nameof(ingredient.stock))"
+                         id="ingredientStock" placeholder="Enter Ingredient Salary" @bind-Value="ingredient.stock" />
+            <ValidationMessage For="@(() => ingredient.stock)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="ingredientdate" class="form-label">Expire Date</label>
+            <InputDate class="@GetInputClass(nameof(ingredient.expireDate))"
+                         id="ingredientdate"  @bind-Value="ingredient.expireDate" />
+            <ValidationMessage For="@(() => ingredient.expireDate)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="ingredientUnit" class="form-label">Unit</label>
+            <InputSelect type="text" class="form-control " id="ingredientUnit" @bind-Value="ingredient.unit">
+                <option value="">Choose</option>
+                <option value="ml">ml</option>
+                <option value="mg">mg</option>
+            </InputSelect>
+            <ValidationMessage For="@(() => ingredient.unit)" class="text-danger" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Create
+            </button>
+            <a href="/admin/ingredients" class="btn btn-secondary ms-2">
+                <i class="fas fa-list"></i>
+                Ingredients
+            </a>
+        </div>
+    </EditForm>
+
+</div>
+
+@code {
+    private string errorMessage { get; set; } = string.Empty;
+    [SupplyParameterFromForm(FormName = "CreateForm")]
+    private CreateIngredientDto ingredient { get; set; } = new();
+    [CascadingParameter] private EditContext? editContext { get; set; }
+
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(ingredient, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
+    private async Task CreateIngredientAsync()
+    {
+        var response = await _unitOfWork.IngredientService.CreateIngredientAsync(ingredient);
+        if (!response)
+        {
+            errorMessage = "An error occured when trying to create this item";
+            StateHasChanged();
+            return;
+        }
+        _ingredientStateService.AddItem(new ResultIngredientDto
+            {
+                name = ingredient.name,
+                expireDate = ingredient.expireDate,
+                stock = ingredient.stock,
+                unit=ingredient.unit
+            });
+        _navigationManager.NavigateTo("/admin/departments");
+    }
+}

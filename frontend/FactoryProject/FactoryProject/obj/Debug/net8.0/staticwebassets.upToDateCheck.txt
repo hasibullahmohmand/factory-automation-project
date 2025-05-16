@@ -2,8 +2,12 @@ wwwroot\app.css
 wwwroot\beyazpulcikolata.png
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\css\creating.css
 wwwroot\css\defaultlayout.css
+wwwroot\css\listing.css
 wwwroot\css\login.css
+wwwroot\css\product.css
+wwwroot\css\update.css
 wwwroot\favicon.ico
 wwwroot\favicon.png
 wwwroot\icons\find.png

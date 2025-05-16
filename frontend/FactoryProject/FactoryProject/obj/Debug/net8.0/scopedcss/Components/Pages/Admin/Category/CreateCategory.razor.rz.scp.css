@@ -1,0 +1,45 @@
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-y782brzb1j] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-y782brzb1j] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-y782brzb1j] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-y782brzb1j] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-y782brzb1j] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-y782brzb1j] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }

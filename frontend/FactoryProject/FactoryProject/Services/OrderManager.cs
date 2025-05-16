@@ -35,16 +35,19 @@ public class OrderManager: IOrderService
         return orders.FirstOrDefault(or => or.id == orderId)!;
     }
 
-    public Task<List<ResultOrderDto>> GetOrdersByUserAsync(int userId)
+    public async Task<List<ResultOrderDto>> GetOrdersByUserAsync()
     {
-        throw new NotImplementedException();
+        var response = await _client.GetAsync("order/getByUser");
+        if (!response.IsSuccessStatusCode) return [];
+        var jsonData = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<ResultOrderDto>>(jsonData)!;
     }
 
     public async Task<bool> UpdateOrderAsync(UpdateOrderDto updateorderdto)
     {
         var jsonData = JsonConvert.SerializeObject(updateorderdto);
         var payload = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PutAsync("order/update", content: payload);
+        var response = await _client.PostAsync("order/update", content: payload);
         return response.IsSuccessStatusCode;
     }
 }

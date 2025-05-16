@@ -266,10 +266,12 @@ main[b-8scneufdle] {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-width:490px;
 }
 
 .page-top[b-tgn1r5xgxa] {
     display: flex;
+    min-width: 490px;
     border-bottom: 1px solid grey;
     height: 50px;
     justify-content: space-around;
@@ -359,9 +361,9 @@ main[b-tgn1r5xgxa] {
             text-overflow: ellipsis;
         }
 
-@media (max-width: 640.98px) {
+@media (max-width: 729.98px) {
     main[b-tgn1r5xgxa] {
-        margin-top: 55px;
+        margin-top: 110px;
     }
     .top-row[b-tgn1r5xgxa] {
         justify-content: space-between;
@@ -385,13 +387,12 @@ main[b-tgn1r5xgxa] {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 730px) {
     .page[b-tgn1r5xgxa] {
         flex-direction: row;
     }
     main[b-tgn1r5xgxa] {
         margin-top: 55px;
-        margin-left: 230px;
     }
     .top-row[b-tgn1r5xgxa] {
         position: sticky;
@@ -533,7 +534,7 @@ main[b-tgn1r5xgxa] {
     display: block;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 730px) {
     .navbar-toggler[b-o22f84ov6z] {
         display: none;
     }
@@ -547,6 +548,669 @@ main[b-tgn1r5xgxa] {
         overflow-y: auto;
     }
 }
+/* _content/FactoryProject/Components/Pages/Admin/Category/CategoryList.razor.rz.scp.css */
+@font-face {
+    font-family: 'button-icons';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.e-btn-sb-icons[b-p9cxmrxivw] {
+    font-family: 'button-icons';
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.e-add-icon[b-p9cxmrxivw]::before {
+    content: '\e70a';
+}
+
+.table-header[b-p9cxmrxivw] {
+    background-color: rgb(173, 62, 84);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title[b-p9cxmrxivw] {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin: auto 0;
+    text-align: center;
+}
+
+.tableau[b-p9cxmrxivw] {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.entete[b-p9cxmrxivw] {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* _content/FactoryProject/Components/Pages/Admin/Category/CreateCategory.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-y782brzb1j] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-y782brzb1j] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-y782brzb1j] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-y782brzb1j] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-y782brzb1j] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-y782brzb1j] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Category/UpdateCategory.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-bh5z81nmsm] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-bh5z81nmsm] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-bh5z81nmsm] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-bh5z81nmsm] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-bh5z81nmsm] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-bh5z81nmsm] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Department/CreateDepartment.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-5djqmgfk68] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-5djqmgfk68] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-5djqmgfk68] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-5djqmgfk68] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-5djqmgfk68] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-5djqmgfk68] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Department/DepartmentList.razor.rz.scp.css */
+@font-face {
+    font-family: 'button-icons';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.e-btn-sb-icons[b-rk1xjbfsrv] {
+    font-family: 'button-icons';
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.e-add-icon[b-rk1xjbfsrv]::before {
+    content: '\e70a';
+}
+
+.table-header[b-rk1xjbfsrv] {
+    background-color: rgb(173, 62, 84);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title[b-rk1xjbfsrv] {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin: auto 0;
+    text-align: center;
+}
+
+.tableau[b-rk1xjbfsrv] {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.entete[b-rk1xjbfsrv] {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* _content/FactoryProject/Components/Pages/Admin/Department/UpdateDepartment.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-xgiv0i56wp] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-xgiv0i56wp] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-xgiv0i56wp] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-xgiv0i56wp] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-xgiv0i56wp] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-xgiv0i56wp] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Ingredient/CreateIngredient.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-fbno1ow2xx] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-fbno1ow2xx] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-fbno1ow2xx] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-fbno1ow2xx] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-fbno1ow2xx] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-fbno1ow2xx] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Ingredient/IngredientList.razor.rz.scp.css */
+@font-face {
+    font-family: 'button-icons';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj1uSf8AAAEoAAAAVmNtYXDOXM6wAAABtAAAAFRnbHlmcV/SKgAAAiQAAAJAaGVhZBNt0QcAAADQAAAANmhoZWEIUQQOAAAArAAAACRobXR4NAAAAAAAAYAAAAA0bG9jYQNWA+AAAAIIAAAAHG1heHABGQAZAAABCAAAACBuYW1lASvfhQAABGQAAAJhcG9zdFAouWkAAAbIAAAA2AABAAAEAAAAAFwEAAAAAAAD9AABAAAAAAAAAAAAAAAAAAAADQABAAAAAQAAYD3WXF8PPPUACwQAAAAAANgtxgsAAAAA2C3GCwAAAAAD9AP0AAAACAACAAAAAAAAAAEAAAANAA0AAgAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQQAAZAABQAAAokCzAAAAI8CiQLMAAAB6wAyAQgAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wHnDQQAAAAAXAQAAAAAAAABAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQAQAAAAAYABAABAALnCOcN//8AAOcB5wr//wAAAAAAAQAGABQAAAABAAMABAAHAAIACgAJAAgABQAGAAsADAAAAAAADgAkAEQAWgByAIoApgDAAOAA+AEMASAAAQAAAAADYQP0AAIAADcJAZ4CxP08DAH0AfQAAAIAAAAAA9QD9AADAAcAACUhESEBIREhAm4BZv6a/b4BZv6aDAPo/BgD6AAAAgAAAAADpwP0AAMADAAANyE1ISUBBwkBJwERI1kDTvyyAYH+4y4BeQGANv7UTAxNlwEIPf6eAWI9/ukDEwAAAAIAAAAAA/QDngADAAcAADchNSETAyEBDAPo/Bj6+gPo/gxipgFy/t0CRwAAAQAAAAAD9AP0AAsAAAEhFSERMxEhNSERIwHC/koBtnwBtv5KfAI+fP5KAbZ8AbYAAQAAAAAD9AP0AAsAAAEhFSERMxEhNSERIwHh/isB1T4B1f4rPgIfPv4rAdU+AdUAAgAAAAAD9AOlAAMADAAANyE1ISUnBxc3JwcRIwwD6PwYAcWjLO7uLKI/Wj+hoSvs6iyhAm0AAAABAAAAAAP0A/QACwAAAREhFSERMxEhNSERAeH+KwHVPgHV/isD9P4rPv4rAdU+AdUAAAAAAgAAAAADdwP0AAMADAAANyE1ISUBBwkBJwERI4kC7v0SAVj+0SkBdgF4Kf7RPgw+rQEJL/64AUgv/vgC/AAAAAEAAAAAA/QD9AALAAABIRUhETMRITUhESMB2v4yAc5MAc7+MkwCJkz+MgHOTAHOAAIAAAAAA/QDzQADAAcAADchNSE1KQEBDAPo/BgB9AH0/gwzpZUCYAACAAAAAAP0A80AAwAHAAA3ITUhNSkBAQwD6PwYAfQB9P4MM6WVAmAAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAMAAEAAQAAAAAAAgAHAA0AAQAAAAAAAwAMABQAAQAAAAAABAAMACAAAQAAAAAABQALACwAAQAAAAAABgAMADcAAQAAAAAACgAsAEMAAQAAAAAACwASAG8AAwABBAkAAAACAIEAAwABBAkAAQAYAIMAAwABBAkAAgAOAJsAAwABBAkAAwAYAKkAAwABBAkABAAYAMEAAwABBAkABQAWANkAAwABBAkABgAYAO8AAwABBAkACgBYAQcAAwABBAkACwAkAV8gYnV0dG9uLWljb25zUmVndWxhcmJ1dHRvbi1pY29uc2J1dHRvbi1pY29uc1ZlcnNpb24gMS4wYnV0dG9uLWljb25zRm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABiAHUAdAB0AG8AbgAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAGIAdQB0AHQAbwBuAC0AaQBjAG8AbgBzAGIAdQB0AHQAbwBuAC0AaQBjAG8AbgBzAFYAZQByAHMAaQBvAG4AIAAxAC4AMABiAHUAdAB0AG8AbgAtAGkAYwBvAG4AcwBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANAQIBAwEEAQUBBgEHAQgBCQEKAQsBDAENAQ4ACm1lZGlhLXBsYXkLbWVkaWEtcGF1c2UQLWRvd25sb2FkLTAyLXdmLQltZWRpYS1lbmQHYWRkLW5ldwtuZXctbWFpbC13ZhB1c2VyLWRvd25sb2FkLXdmDGV4cGFuZC0wMy13Zg5kb3dubG9hZC0wMi13ZgphZGQtbmV3XzAxC21lZGlhLWVqZWN0Dm1lZGlhLWVqZWN0LTAxAAA=) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.e-btn-sb-icons[b-asnq9wl8lh] {
+    font-family: 'button-icons';
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.e-add-icon[b-asnq9wl8lh]::before {
+    content: '\e70a';
+}
+
+.table-header[b-asnq9wl8lh] {
+    background-color: rgb(173, 62, 84);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title[b-asnq9wl8lh] {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin: auto 0;
+    text-align: center;
+}
+
+.tableau[b-asnq9wl8lh] {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.entete[b-asnq9wl8lh] {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* _content/FactoryProject/Components/Pages/Admin/Ingredient/UpdateIngredient.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-a4jw1fj51r] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-a4jw1fj51r] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-a4jw1fj51r] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-a4jw1fj51r] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-a4jw1fj51r] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-a4jw1fj51r] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Personal/CreatePersonal.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-sdt3se0e0t] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-sdt3se0e0t] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-sdt3se0e0t] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-sdt3se0e0t] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-sdt3se0e0t] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-sdt3se0e0t] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Personal/PersonalList.razor.rz.scp.css */
+@font-face {
+    font-family: 'button-icons';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.e-btn-sb-icons[b-ffbkqzvwpx] {
+    font-family: 'button-icons';
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.e-add-icon[b-ffbkqzvwpx]::before {
+    content: '\e70a';
+}
+
+.table-header[b-ffbkqzvwpx] {
+    background-color: rgb(173, 62, 84);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title[b-ffbkqzvwpx] {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin: auto 0;
+    text-align: center;
+}
+
+.tableau[b-ffbkqzvwpx] {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.entete[b-ffbkqzvwpx] {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* _content/FactoryProject/Components/Pages/Admin/Personal/UpdatePersonal.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-o8dda8am8u] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-o8dda8am8u] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-o8dda8am8u] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-o8dda8am8u] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-o8dda8am8u] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-o8dda8am8u] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
+/* _content/FactoryProject/Components/Pages/Admin/Products/CreateProduct.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-0oj8pmwt88]{
+    font-size: 24px;
+    font-weight: bold;
+    color:  rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-container[b-0oj8pmwt88] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-div[b-0oj8pmwt88]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-input[b-0oj8pmwt88] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border:none;
+    transition: border-color 0.3s;
+    display: block;
+}
+.form-input.invalid[b-0oj8pmwt88] {
+    border: 1px solid #dc3545;
+}
+.form-input:focus[b-0oj8pmwt88] {
+    border-color: #b2d3f7;
+    outline: none;
+    border:none;
+    box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+}
+
+   
 /* _content/FactoryProject/Components/Pages/Admin/Products/ProductsList.razor.rz.scp.css */
 @font-face {
     font-family: 'button-icons';
@@ -605,11 +1269,53 @@ main[b-tgn1r5xgxa] {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
 }
+/* _content/FactoryProject/Components/Pages/Admin/Products/UpdateProduct.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-ijj2rrvkys]{
+    font-size: 24px;
+    font-weight: bold;
+    color:  rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-container[b-ijj2rrvkys] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-div[b-ijj2rrvkys]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-input[b-ijj2rrvkys] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border:none;
+    transition: border-color 0.3s;
+    display: block;
+}
+.form-input.invalid[b-ijj2rrvkys] {
+    border: 1px solid #dc3545;
+}
+.form-input:focus[b-ijj2rrvkys] {
+    border-color: #b2d3f7;
+    outline: none;
+    border:none;
+    box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+}
 /* _content/FactoryProject/Components/Pages/Authentication/Accessdenied.razor.rz.scp.css */
 .accessDenied[b-lvb66p6y9q]{
-    background-color: #e1e1e1;
+    background-color: #f4f4f4;
     height: 100vh;
     padding-top: 30px;
+    overflow-y: hidden;
 }
 
 .content[b-lvb66p6y9q]{
@@ -810,18 +1516,21 @@ main[b-tgn1r5xgxa] {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* _content/FactoryProject/Components/Pages/Client/Cart.razor.rz.scp.css */
-.main-container[b-t6hlux7ome]{
-    display:grid;
+.cart-main-container[b-t6hlux7ome] {
+    display: grid;
     gap: 20px;
+    min-width: 490px;
+    margin-left: 230px
 }
 
 @media (max-width: 2000px) {
-    .main-container[b-t6hlux7ome] {
+    .cart-main-container[b-t6hlux7ome] {
         grid-template-columns: 1.5fr 1fr;
+        place-items: start;
     }
 }
-@media (max-width: 1060px){
-    .main-container[b-t6hlux7ome] {
+@media (max-width: 1180px){
+    .cart-main-container[b-t6hlux7ome] {
         grid-template-columns: 1fr;
         place-items: center;
     }
@@ -837,10 +1546,23 @@ main[b-tgn1r5xgxa] {
     }
 }
 
+@media (max-width: 729.98px) {
+    .cart-main-container[b-t6hlux7ome] {
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-left: 0;
+    }
+
+    .cart-product[b-t6hlux7ome] {
+        display: grid;
+        gap: 10px;
+    }
+}
+
 .product-total[b-t6hlux7ome] {
     border: 1px solid purple;
     display: grid;
-    min-width: 430px;
+    min-width: 450px;
     padding: 20px;
     height: 330px;
 }
@@ -853,7 +1575,7 @@ main[b-tgn1r5xgxa] {
 .product[b-t6hlux7ome] {
     border: 1px solid darkblue;
     display: flex;
-    min-width: 430px;
+    min-width: 450px;
     padding: 10px;
     height: 178px;
     gap: 10px;
@@ -913,7 +1635,7 @@ main[b-tgn1r5xgxa] {
 
 .summary-row[b-t6hlux7ome] {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin-top: 10px;
     text-align:left;
 }
@@ -933,25 +1655,46 @@ main[b-tgn1r5xgxa] {
     width: 100%;
 }
 /* _content/FactoryProject/Components/Pages/Client/Order.razor.rz.scp.css */
-.main-container[b-cj75r6i4mj]{
+.order-main-container[b-cj75r6i4mj]{
     display: grid;
+    gap: 20px;
+    margin-left: 230px;
 }
-.order-container[b-cj75r6i4mj]{
-
+.order-container[b-cj75r6i4mj] {
     border: 1px solid darkblue;
     display: flex;
     gap: 20px;
     height: 170px;
-    align-items:center;
+    align-items: center;
     padding: 10px;
+    place-items: center;
+    min-width: 400px;
 }
 .order-img[b-cj75r6i4mj]{
     height: 150px;
-
 }
 
 .order-img img[b-cj75r6i4mj] {
     width: 150px;
     height: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 2000px) {
+    .order-main-container[b-cj75r6i4mj] {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1180px) {
+    .order-main-container[b-cj75r6i4mj] {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 729.98px) {
+    .order-main-container[b-cj75r6i4mj] {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
 }

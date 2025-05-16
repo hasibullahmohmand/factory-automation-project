@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "twZy21+NfY8=",
+  "dgSpecHash": "CMbisoyjBEA=",
   "success": true,
   "projectFilePath": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject.Client\\FactoryProject.Client.csproj",
   "expectedPackageFiles": [
@@ -27,10 +27,10 @@
     "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.jsinterop\\8.0.15\\microsoft.jsinterop.8.0.15.nupkg.sha512",
     "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.15\\microsoft.jsinterop.webassembly.8.0.15.nupkg.sha512",
-    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.15\\microsoft.net.illink.tasks.8.0.15.nupkg.sha512",
-    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.4\\microsoft.net.sdk.webassembly.pack.9.0.4.nupkg.sha512",
+    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.16\\microsoft.net.illink.tasks.8.0.16.nupkg.sha512",
+    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.5\\microsoft.net.sdk.webassembly.pack.9.0.5.nupkg.sha512",
     "C:\\Users\\ENVY 14\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.15.nupkg.sha512"
+    "C:\\Users\\ENVY 14\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,79 @@
+﻿@page "/admin/createdepartment"
+@layout AdminLayout
+@inject IUnitOfWork _unitOfWork
+@inject DepartmentStateService _departmentStateService
+@inject NavigationManager _navigationManager
+
+<!-- Header Content  Begin-->
+<PageTitle>Create Department</PageTitle>
+<!-- Header Content  Begin-->
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Department</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-triangle-exclamation"></i>
+            @errorMessage
+        </div>
+    }
+    <EditForm FormName="CreateForm" Model="@department" OnValidSubmit="@CreateDepartmentAsync" Enhance>
+        <DataAnnotationsValidator />
+        <div class="mb-3 form-div">
+            <label for="departmentName" class="form-label">Department Name</label>
+            <InputText type="text" class="@GetInputClass(nameof(department.name))"
+                       id="departmentName" placeholder="Enter Department Name" @bind-Value="department.name" />
+            <ValidationMessage For="@(() => department.name)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="departmentSalary" class="form-label">Salary</label>
+            <InputNumber type="text" class="@GetInputClass(nameof(department.salary))"
+                       id="departmentSalary" placeholder="Enter Department Salary" @bind-Value="department.salary" />
+            <ValidationMessage For="@(() => department.salary)" class="text-danger" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Create
+            </button>
+            <a href="/admin/departments" class="btn btn-secondary ms-2">
+                <i class="fas fa-list"></i>
+                Departments
+            </a>
+        </div>
+    </EditForm>
+
+</div>
+
+@code {
+    private string errorMessage { get; set; } = string.Empty;
+    [SupplyParameterFromForm(FormName = "CreateForm")]
+    private CreateDepartmentDto department { get; set; } = new();
+    [CascadingParameter] private EditContext? editContext { get; set; }
+
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(department, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
+    private async Task CreateDepartmentAsync()
+    {
+        var response = await _unitOfWork.DepartmentService.CreateDepartmentAsync(department);
+        if (!response)
+        {
+            errorMessage = "An error occured when trying to create this item";
+            StateHasChanged();
+            return;
+        }
+        _departmentStateService.AddItem(new ResultDepartmentDto
+            {
+                name = department.name,
+                salary = department.salary
+            });
+        _navigationManager.NavigateTo("/admin/departments");
+    }
+}

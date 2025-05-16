@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FactoryProject.yjwmv3m7k9.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FactoryProject.hjmchmemqp.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
@@ -21,12 +21,28 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\creating.css",
+      "PackagePath": "staticwebassets\\css\\creating.css"
+    },
+    {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\defaultlayout.css",
       "PackagePath": "staticwebassets\\css\\defaultlayout.css"
     },
     {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\listing.css",
+      "PackagePath": "staticwebassets\\css\\listing.css"
+    },
+    {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\update.css",
+      "PackagePath": "staticwebassets\\css\\update.css"
     },
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\favicon.ico",

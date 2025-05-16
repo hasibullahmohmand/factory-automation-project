@@ -5,8 +5,22 @@
 @attribute [Authorize]
 
 <PageTitle>Biscuits</PageTitle>
+@if (!String.IsNullOrEmpty(errorMessage))
+{
+<div class="alert alert-danger message" role="alert">
+    <i class="fas fa-exclamation-circle"></i>
+    @errorMessage
+</div>
+}
 
-<h3 class="text-center">Biscuits</h3>
+@if (!String.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-info message" role="alert">
+        <i class="fas fa-check-circle"></i>
+        @successMessage
+    </div>
+}
+<h3 class="heading">Biscuits</h3>
 
 <div class="main-container">
     @if(_products==null && _products?.Count==0){
@@ -16,7 +30,7 @@
     }else{
         @foreach (var product in _products)
         {
-            <div class="product-container">
+            <div class="product-container rounded-2">
                 <div class="product-img">
                     <img src="@product.ImageUrl" alt="Product Image" />
                 </div>
@@ -30,8 +44,8 @@
                     @product.Description
                 </div>
 
-                <button class="btn btn-danger" @onclick="() => AddToCart(product.Id)">
-                    <i class="fas fa-plus "></i> Add To Cart
+                <button class="btn btn-info text-light" @onclick="() => AddToCart(product.Id)">
+                    <i class="fas fa-shopping-cart me-2"></i> Add To Cart
                 </button>
             </div>  
         }
@@ -39,6 +53,8 @@
 </div>
 
 @code {
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
     private List<ResultProductDto> _products = [];
     private CreateCartDto createCartDto = new();
 
@@ -50,9 +66,17 @@
 
     private async Task AddToCart(int productId)
     {
-        createCartDto.quantity = 50;
-
         createCartDto.productId = productId;
-        await unitOfWork.CartService.CreateCartAsync(createCartDto);
+        var result = await unitOfWork.CartService.CreateCartAsync(createCartDto);
+        if (!result)
+        {
+            errorMessage = "An error occured!";
+            StateHasChanged();
+        }
+        else
+        {
+            successMessage = "Product added to cart!";
+            StateHasChanged();
+        }
     }
 }

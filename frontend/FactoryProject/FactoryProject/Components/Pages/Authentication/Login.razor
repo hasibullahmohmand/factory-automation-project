@@ -1,8 +1,6 @@
 @page "/account/login"
-
 @layout AuthLayout
 @inject IUnitOfWork _unitofwork
-@inject ILocalStorageService  _localstorageService
 @inject NavigationManager _navigationManager
 @rendermode InteractiveServer 
 
@@ -43,7 +41,7 @@
                 <ValidationMessage For="@(() => loginModel.password)" />
             </div>
             <div class="d-grid justify-content-center">
-                <div>Don't have an account yet? <a href="account/register">Register</a></div>
+                <div>Don't have an account yet? <a href="/register">Register</a></div>
                 <button type="submit" class="btn btn-primary m-4">
 
                     <i class="fa fa-sign-in-alt"></i>
@@ -57,7 +55,7 @@
 @code {
 
     [Inject]
-    private  IJSRuntime jS{ get; set; }
+    private  IJSRuntime JS{ get; set; }
     private string? errorMessage = String.Empty;
     [SupplyParameterFromForm(FormName = "LoginForm")]
     private LoginModel loginModel { get; set; } = new();
@@ -86,7 +84,7 @@
 
         }catch(Exception ex)
         {
-            await jS.InvokeVoidAsync("console.log", $"{ex}");
+            await JS.InvokeVoidAsync("console.log", $"{ex}");
         }
     }
     private string GetInputClass(string fieldName)

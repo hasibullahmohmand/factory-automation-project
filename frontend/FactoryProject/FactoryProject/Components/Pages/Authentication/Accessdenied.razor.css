@@ -1,7 +1,8 @@
 .accessDenied{
-    background-color: #e1e1e1;
+    background-color: #f4f4f4;
     height: 100vh;
     padding-top: 30px;
+    overflow-y: hidden;
 }
 
 .content{

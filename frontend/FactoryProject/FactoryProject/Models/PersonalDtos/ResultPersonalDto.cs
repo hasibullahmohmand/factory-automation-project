@@ -6,13 +6,8 @@ public class ResultPersonalDto
     public string name { get; set; } = string.Empty;
     public string identifier { get; set; } = string.Empty;
     public int age;
-
-    private string gender{ get; set; }=string.Empty;
-
-    private DateTime date;
-
-    private string shift{ get; set; }=string.Empty;
-
-    
+    public int gender{ get; set; }
+    public  DateTime date;
+    public string shift{ get; set; }=string.Empty;
     public ResultDepartmentDto? department;
 }

@@ -5,8 +5,22 @@
 @attribute [Authorize]
 
 <PageTitle>Cakes</PageTitle>
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+<div class="alert alert-danger message" role="alert">
+    <i class="fas fa-exclamation-circle"></i>
+    @errorMessage
+</div>
+}
 
-<h3 class="text-center">Cakes</h3>
+@if (!String.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-info" role="alert">
+        <i class="fas fa-check-circle message"></i>
+        @successMessage
+    </div>
+}
+<h3 class="heading">Cakes</h3>
 
 <div class="main-container">
     @if(_products==null && _products?.Count==0){
@@ -38,6 +52,8 @@
 </div>
 
 @code {
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
     private List<ResultProductDto> _products = [];
     private CreateCartDto createCartDto = new();
 
@@ -46,12 +62,20 @@
         _products = await unitOfWork.ProductService.GetProductByCateogryIdAsync(2);
         //2 is the of cake category
     }
-    
+
     private async Task AddToCart(int productId)
     {
-        createCartDto.quantity = 50;
-
         createCartDto.productId = productId;
-        await unitOfWork.CartService.CreateCartAsync(createCartDto);
+        var result = await unitOfWork.CartService.CreateCartAsync(createCartDto);
+        if (!result)
+        {
+            errorMessage = "An error occured!";
+            StateHasChanged();
+        }
+        else
+        {
+            successMessage = "Product added to cart!";
+            StateHasChanged();
+        }
     }
 }

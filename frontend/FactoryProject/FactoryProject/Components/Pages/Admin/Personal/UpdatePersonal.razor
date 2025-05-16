@@ -1,0 +1,180 @@
+﻿@page "/admin/editpersonal/{personalId:int}"
+@using FactoryProject.Infrastructure.Utilities.Services
+
+@layout AdminLayout
+@inject IUnitOfWork _unitOfWork
+@inject PersonalStateService _personalStateService
+@inject NavigationManager _navigationManager
+<!-- Header Content Begin-->
+<PageTitle>Update Personal</PageTitle>
+<HeadContent>
+    <link href="/css/update.css" rel="stylesheet" />
+</HeadContent>
+<!-- Header Content End-->
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Personal</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-triangle-exclamation"></i>
+            @errorMessage
+        </div>
+    }
+    <div class="mx-4">
+        <EditForm FormName="CreateForm" Model="@personal" OnValidSubmit="@UpdatePersonalAsync" Enhance>
+            <DataAnnotationsValidator />
+            <input @bind-value="personal.id" type="hidden" />
+            <div class="mb-3 form-div">
+                <label for="personalName" class="form-label">Personal Name</label>
+                <InputText type="text" class="@GetInputClass(nameof(personal.name))"
+                id="personalName" placeholder="Enter Personal Name" @bind-Value="personal.name" />
+                <ValidationMessage For="@(() => personal.name)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label for="personalIdentifier" class="form-label">Identifier</label>
+                <InputText type="text" class="@GetInputClass(nameof(personal.identifier))"
+                id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
+                <ValidationMessage For="@(() => personal.identifier)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label for="personalAge" class="form-label">Age</label>
+                <InputNumber class="@GetInputClass(nameof(personal.age))"
+                id="personalAge" placeholder="Enter Personal Age" @bind-Value="personal.age" />
+                <ValidationMessage For="@(() => personal.age)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label for="personalStartDate" class="form-label">Start Date</label>
+                <InputDate class="@GetInputClass(nameof(personal.date))"
+                id="personalStartDate" placeholder="Enter Start Date" @bind-Value="personal.date" />
+                <ValidationMessage For="@(() => personal.date)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label class="form-label">Gender</label>
+                <div class="d-flex justify-content-between">
+                    <InputRadioGroup @bind-Value="personal.gender">
+                        <label>
+                            <InputRadio Value=1 class="form-check-input" /> Male
+                        </label>
+                        <label>
+                            <InputRadio Value=0 class="form-check-input" /> Female
+                        </label>
+                    </InputRadioGroup>
+                </div>
+            </div>
+            <div class="mb-3 form-div">
+                <label for="prod" class="form-label">Department</label>
+                <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.departmentId">
+                    <option value="">Choose</option>
+                    @foreach (var department in _departments)
+                    {
+                        <option value="@department.id">@department.name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label for="prod" class="form-label">Shift</label>
+                <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.shift">
+                    <option value="">Seçiniz</option>
+                    <option value="@personal.shift">Morning</option>
+                    <option value="@personal.shift">Evening</option>
+                    <option value="@personal.shift">Night</option>
+                </InputSelect>
+                <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i>
+                    Create
+                </button>
+                <a href="/admin/personals" class="btn btn-secondary ms-2">
+                    <i class="fas fa-list"></i>
+                    Personals
+                </a>
+            </div>
+        </EditForm>
+    </div>
+
+</div>
+
+
+
+
+@code {
+    [Parameter]
+    public int personalId{ get; set; }
+    private string? errorMessage{ get; set; }
+    private PersonalForUpdateDto personal { get; set; } = new();
+    private List<ResultDepartmentDto>? _departments{ get; set; }
+    [CascadingParameter]private EditContext? editContext{ get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        await GetPersonalAsync();
+
+    }
+    private async Task GetPersonalAsync()
+    {
+        var dto = await _unitOfWork.PersonalService.GetPersonelByIdAsync(personalId);
+        if (dto == null)
+        {
+            errorMessage = "Personal is not found";
+            return;
+        }
+        personal.id = dto.id;
+        personal.name = dto.name;
+        personal.departmentId = dto.department.id;
+        personal.age = dto.age;
+        personal.gender = dto.gender;
+        personal.date = dto.date;
+        personal.identifier = dto.identifier;
+        personal.shift = dto.shift;
+
+    }
+
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(personal, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : "form-control form-input";
+    }
+    private async Task UpdatePersonalAsync()
+    {
+        var departement = await _unitOfWork
+        .DepartmentService
+        .GetDepartmentByIdAsync(personal.departmentId);
+        var personel = new UpdatePersonalDto
+         {
+            id=personal.id,
+            name = personal.name,
+            department = departement,
+            age = personal.age,
+            gender = personal.gender,
+            date = personal.date,
+            identifier = personal.identifier,
+            shift = personal.shift
+        };
+        var response = await _unitOfWork.PersonalService.UpdatePersonalAsync(personel);
+        if (!response)
+        {
+            errorMessage = "An error occured while trying updating this item";
+            StateHasChanged();
+            return;
+        }
+        _personalStateService.UpdateItem(new ResultPersonalDto
+        {
+           name=personal.name,
+           department=departement,
+           age=personal.age,
+           gender=personal.age,
+           date=personal.date,
+           shift=personal.shift,
+           identifier=personal.identifier
+        }, personalId);
+        _navigationManager.NavigateTo("/admin/personals");
+    }
+}

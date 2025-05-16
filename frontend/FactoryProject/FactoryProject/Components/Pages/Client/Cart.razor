@@ -1,125 +1,81 @@
 ﻿@page "/cart"
-@inject UnitOfWork unitOfWork
+@inject IUnitOfWork unitOfWork
+@rendermode InteractiveServer
+@inject NavigationManager navigationManager
 
 <PageTitle>Cart</PageTitle>
 
-<h3>Cart</h3>
-<div class="main-container">
-    <div class="cart-product">
-        <div class="product">
-            <div class="cart-img">
-                <img src="beyazpulcikolata.png" alt="Product image" />
-            </div>
-            <div class="product-detail">
-                <div>
-                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-                </div>
-                <div class="product-detail">
-                    A delicious chocolate made with sugar, cocoa, cocoa butter.
-                </div>
-                <div class="product-price">
-                    891TL
-                </div>
-                <div class="cart-buttons">
-                    <select class="cart-select">
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                        <option value="200">200</option>
-                        <option value="250">250</option>
-                        <option value="300">300</option>
-                        <option value="350">350</option>
-                        <option value="400">400</option>
-                        <option value="450">450</option>
-                        <option value="500">500</option>
-                        <option value="1000">1000</option>
-                    </select>
-                    <button class="btn btn-primary">Update</button>
-                    <button class="btn btn-secondary">Delete</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="cart-img">
-                <img src="beyazpulcikolata.png" alt="Product image" />
-            </div>
-            <div class="product-detail">
-                <div>
-                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-                </div>
-                <div class="product-detail">
-                    A delicious chocolate made with sugar, cocoa, cocoa butter.
-                </div>
-                <div class="product-price">
-                    891TL
-                </div>
-                <div class="cart-buttons">
-                    <select class="cart-select">
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                        <option value="200">200</option>
-                        <option value="250">250</option>
-                        <option value="300">300</option>
-                        <option value="350">350</option>
-                        <option value="400">400</option>
-                        <option value="450">450</option>
-                        <option value="500">500</option>
-                        <option value="1000">1000</option>
-                    </select>
-                    <button class="btn btn-primary">Update</button>
-                    <button class="btn btn-secondary">Delete</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="cart-img">
-                <img src="beyazpulcikolata.png" alt="Product image" />
-            </div>
-            <div class="product-detail">
-                <div>
-                    <b>ÜLKER WHITE CHOCOLATE BUTTON</b>
-                </div>
-                <div class="product-detail">
-                    A delicious chocolate made with sugar, cocoa, cocoa butter.
-                </div>
-                <div class="product-price">
-                    891TL
-                </div>
-                <div class="cart-buttons">
-                    <select class="cart-select">
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                        <option value="200">200</option>
-                        <option value="250">250</option>
-                        <option value="300">300</option>
-                        <option value="350">350</option>
-                        <option value="400">400</option>
-                        <option value="450">450</option>
-                        <option value="500">500</option>
-                        <option value="1000">1000</option>
-                    </select>
-                    <button class="btn btn-primary">Update</button>
-                    <button class="btn btn-secondary">Delete</button>
-                </div>
-            </div>
-        </div>
+<h3 class="heading">Cart</h3>
 
-
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger message" role="alert">
+        <i class="fas fa-exclamation-circle"></i>
+        @errorMessage
     </div>
-    <div class="product-total">
-        <EditForm Model="CartModel" OnValidSubmit="PlaceOrder">
+}
+
+@if(!String.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-info message" role="alert">
+        <i class="fas fa-check-circle"></i>
+        @successMessage
+    </div>
+}
+<div class="cart-main-container">
+    @if (cartProducts == null ){
+    }
+    else
+    {
+        <div class="cart-product">
+            @foreach(var cartProduct in cartProducts)
+            {
+                <div class="product">
+                    <div class="cart-img">
+                        <img src="@cartProduct.product.ImageUrl" alt="Product image" />
+                    </div>
+                    <div class="product-detail">
+                        <div>
+                            <b>@cartProduct.product.Name</b>
+                        </div>
+                        <div class="product-detail">
+                            @cartProduct.product.Description
+                        </div>
+                        <div class="product-price">
+                            @((cartProduct.quantity / 50) * cartProduct.product.Price) TL
+                        </div>
+                        <div class="cart-buttons">
+                            <select class="cart-select" @bind="cartProduct.quantity"> 
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="150">150</option>
+                                <option value="200">200</option>
+                                <option value="250">250</option>
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                            <button class="btn btn-primary" @onclick="()=> UpdateCart(cartProduct.id, cartProduct.quantity)">Update</button>
+                            <button class="btn btn-secondary" @onclick="()=> DeleteCart(cartProduct.id)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>    
+        <div class="product-total">
             <div>
                 <div>
                     <b>Order sumary:</b>
                 </div>
                 <div class="summary-row">
                     <div>
-                        Items(150):
+                        Items(@totalItems):
                     </div>
                     <div class="item-price">
-                        2673TL
+                        @(totalPrice) TL
                     </div>
                 </div>
                 <div class="summary-row">
@@ -127,7 +83,7 @@
                         Shipping and Handling:
                     </div>
                     <div class="items-price">
-                        0TL
+                        @(shipping) TL
                     </div>
                 </div>
                 <div class="summary-row">
@@ -135,7 +91,7 @@
                         Total Before Tax:
                     </div>
                     <div class="items-price">
-                        2673TL
+                        @(totalPrice + shipping) TL
                     </div>
                 </div>
                 <div class="summary-row">
@@ -143,7 +99,7 @@
                         Estimated Tax:
                     </div>
                     <div class="items-price">
-                        534.6TL
+                        @(tax) TL
                     </div>
                 </div>
                 <div class="summary-row">
@@ -151,28 +107,85 @@
                         Order Total:
                     </div>
                     <div class="product-price">
-                        3207.6TL
+                        @(totalPrice + shipping + tax) TL
                     </div>
                 </div>
-                <button class="btn btn-primary order-button" type="submit">Place Order</button>
+                <button class="btn btn-primary order-button" type="submit" @onclick="()=> PlaceOrder()">Place Order</button>
             </div>
-        </EditForm>
-    </div>
+        </div>
+    }
 </div>
 @code {
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+    private decimal totalPrice = 0;
+    private int totalItems = 0;
+    private int shipping;
+    private decimal tax;
+
     private List<ResultCartDto> cartProducts = [];
-    private string userid;
-    
+    private UpdateCartDto updateCartDto { get; set; } = new();
+
     protected override async Task OnInitializedAsync(){
 
+        cartProducts = await unitOfWork.CartService.GetCartsByUser();
+        GetTotal();
+    }
+    private void GetTotal()
+    {
+        totalPrice = 0;
+        totalItems = 0;
+        foreach(var cartProduct in cartProducts)
+        {
+            totalPrice += (cartProduct.quantity/50) * cartProduct.product.Price;
+            totalItems += cartProduct.quantity;
+        }
+        shipping = totalPrice < 2500 ? totalPrice==0 ? 0 : 500: 0;
+        tax = totalPrice * (decimal)0.2;
+    }
+    private async Task UpdateCart(int cartId, int quantity)
+    {
+        updateCartDto.cartId = cartId;
+        updateCartDto.quantity = quantity;
+        bool result = await unitOfWork.CartService.UpdateCartAsync(updateCartDto);
+        if (!result)
+        {
+            errorMessage = "An error occured !";
+            StateHasChanged();
+            return;
+        }
+        successMessage = "Cart updated successfully";
+        GetTotal();
+        StateHasChanged();
+
     }
 
-    void CartModel()
+    private async Task DeleteCart(int cartId)
     {
+        var result = await unitOfWork.CartService.DeleteCartAsync(cartId);
+        if (!result)
+        {
+            errorMessage = "An error occured !";
+            StateHasChanged();
+            return;
+        }
+        successMessage = "Product deleted successfully";
 
+        var removedItem = cartProducts.FirstOrDefault(x=>x.id==cartId);
+        cartProducts.Remove(removedItem);
+        GetTotal();
+        StateHasChanged();
     }
-    void PlaceOrder()
+
+    private async Task PlaceOrder()
     {
-        
+        foreach (var cartProduct in cartProducts)
+        {
+            await unitOfWork.OrderService.CreateOrderAsync(new CreateOrderDto
+                {
+                    cart_id = cartProduct.id
+                });
+        }
+        navigationManager.NavigateTo("/order");
     }
 }

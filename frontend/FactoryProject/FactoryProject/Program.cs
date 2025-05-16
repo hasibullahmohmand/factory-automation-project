@@ -26,6 +26,7 @@ namespace FactoryProject
             builder.Services.RegisterServices();
             builder.Services.ConfigureAuthentication();
             builder.Services.ConfigureApiSettings(builder.Configuration);
+            builder.Services.AddCascadingAuthenticationState();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

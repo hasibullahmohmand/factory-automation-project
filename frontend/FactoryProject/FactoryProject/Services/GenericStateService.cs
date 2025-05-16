@@ -15,11 +15,11 @@ public class GenericStateService<T>
             OnBooksChanged?.Invoke();
         }
     }
-    public void SetBooks(List<T> models)
+    public void SetItems(List<T> models)
     {
         Models = models;
     }
-    public void AddBook(T model)
+    public void AddItem(T model)
     {
         //book.Id = _books.Count > 0 ? _books.Max(b => b.Id) + 1 : 1; // Assign a new ID
         _models.Add(model);
@@ -27,16 +27,15 @@ public class GenericStateService<T>
         SetSuccessMessage(msg);
         OnBooksChanged?.Invoke();
     }
-    public void Remove(T model)
+    public void RemoveItem(T model)
     {
-       
-        if (model == null) return;
+        if(model == null) return;
         _models.Remove(model);
         var msg = $"An item is successfully deleted.";
         SetSuccessMessage(msg);
         OnBooksChanged?.Invoke();
     }
-    public void Update(T model, int index)
+    public void UpdateItem(T model, int index)
     {
         if (index != -1)
         {
