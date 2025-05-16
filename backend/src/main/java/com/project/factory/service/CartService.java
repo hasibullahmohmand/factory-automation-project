@@ -25,31 +25,36 @@ public class CartService
     private UserRepository userRepository;
 
     @Transactional
-    public int addCart(int productId, int quantity, String email) {
-        if (productId <= 0) {
+    public int addCart(int productId, int quantity, String email)
+    {
+        if (productId <= 0)
+        {
             throw new IllegalArgumentException("Invalid product ID");
         }
 
-        if (quantity <= 0) {
+        if (quantity <= 0)
+        {
             throw new IllegalArgumentException("Quantity must be greater than 0");
         }
 
-        if (email == null || email.isEmpty()) {
+        if (email == null || email.isEmpty())
+        {
             throw new IllegalArgumentException("Email cannot be empty");
         }
 
         int userId = userRepository.findUserIdByEmail(email);
 
-        // Check if user already has this product in an active cart
+
         Cart existingCart = cartRepository.findActiveCartByUserIdAndProductId(userId, productId);
 
-        if (existingCart != null) {
-            // Update existing cart with new quantity
+        if (existingCart != null)
+        {
             int newQuantity = existingCart.getQuantity() + quantity;
             productRepository.updateStock(quantity, productId);
             return cartRepository.updateCart(existingCart.getId(), newQuantity, userId);
-        } else {
-            // Create new cart entry
+        }
+        else
+        {
             productRepository.updateStock(quantity, productId);
             LocalDateTime createdAt = LocalDateTime.now();
             return cartRepository.createCart(quantity, createdAt, productId, userId);
