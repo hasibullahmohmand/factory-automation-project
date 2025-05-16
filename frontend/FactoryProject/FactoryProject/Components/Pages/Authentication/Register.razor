@@ -1,0 +1,88 @@
+@page "/account/register"
+@layout AuthLayout
+@inject IUnitOfWork _unitofwork
+@inject NavigationManager _navigationManager
+@rendermode InteractiveServer
+
+<PageTitle>Register</PageTitle>
+
+<div class="form-container">
+
+    <h4 class="text-center title">Register</h4><br />
+    @if(!String.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @errorMessage
+        </div>
+    }
+
+    <EditForm Model="@registerModel" OnValidSubmit="@RegisterUser" FormName="RegisterForm" Enhance>
+        <div class="my-3">
+            <label class="form-label">Username</label>
+            <InputText type="text" @bind-Value="registerModel.username"
+            class="@GetInputClass(nameof(registerModel.username))" placeholder="username" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <InputText type="email" @bind-Value="registerModel.email"
+            class="@GetInputClass(nameof(registerModel.email))" placeholder="email@example.com" />
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <InputText type="password" @bind-Value="registerModel.password"
+            class="@GetInputClass(nameof(registerModel.password))" placeholder="Password" />
+
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <InputText type="text" @bind-Value="registerModel.phone" class="@GetInputClass(nameof(registerModel.phone))"
+            placeholder="+90 5xx xxx xx xx" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <InputText type="text" @bind-Value="registerModel.address"
+            class="@GetInputClass(nameof(registerModel.address))" placeholder="Please enter your full address" />
+        </div>
+        <div class="d-grid justify-content-center">
+            <button type="submit" class="btn btn-primary m-4">Register</button>
+            <div>Already registered? <a href="account/login"> Login</a></div>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private string? errorMessage = String.Empty;
+    [SupplyParameterFromForm(FormName="RegisterForm")]
+    private RegisterModel registerModel { get; set; } = new();
+    [CascadingParameter]private EditContext? editContext { get; set; }
+    private async Task RegisterUser()
+    {
+        var result = await _unitofwork
+        .AccountService
+        .RegisterAysnc(registerModel);
+        if (result)
+            _navigationManager.NavigateTo("account/login");
+        else
+        {
+            errorMessage = "Please verify your information and try again";
+            StateHasChanged();
+        }
+    }
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null)
+            return "form-control form-input";
+
+        var fieldIdentifier = new FieldIdentifier(registerModel, fieldName);
+        var fieldState = editContext.GetValidationMessages(fieldIdentifier);
+
+        if (fieldState.Any())
+            return "form-control form-input is-invalid";
+        else
+            return "form-control form-input";
+    }
+
+
+}

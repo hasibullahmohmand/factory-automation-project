@@ -1,0 +1,182 @@
+@page "/admin/products"
+@layout AdminLayout
+@attribute [Authorize(Roles ="ADMIN")]
+@inject GenericStateService<ResultProductDto> _bookStateService
+@rendermode InteractiveServer
+@inject IUnitOfWork _unitOfWork
+
+<PageTitle> Products </PageTitle>
+
+@if (_products == null)
+{
+    <p> <em> Loading...</em></p>
+}
+else
+{
+    <div class="container mx-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="entete">
+                <h4 class="title"><i class="fa-solid fa-list me-2"></i>List of Products</h4>
+                <a href="admin/createproduct" class="btn btn-outline-primary ms-2">
+                    <i class="fa-solid fa-plus"></i>
+                    Add New Product
+                </a>
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                @errorMessage
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(_bookStateService.SuccessMessage))
+        {
+            <div class="alert alert-success" role="alert">
+                <i class="fa-solid fa-circle-check"></i>
+                @_bookStateService.SuccessMessage
+            </div>
+        }
+
+        <div class="d-flex margin-auto">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search something..." aria-label="Search something..."
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+            </div>
+            <div class="input-group mb-3 ms-2">
+                <EditForm Model="getProductCategoryById" OnValidSubmit="GetProductsByCategoryId" Enhance FormName="FilteringForm">
+                    <InputSelect class="form-select" id="inputGroupSelect02" @bind-Value="getProductCategoryById.CategoryId">
+                        <option selected>All</option>
+                        @foreach(var category in _categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </InputSelect>
+                    <button class="btn btn-outline-primary" type="submit" id="button-addon2">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+                </EditForm>
+            </div>
+
+        </div>
+        <div class="margin-auto mb-3 table-responsive tableau">
+            <table class="table table-hover table-striped table-sm ">
+                <thead class="rounded-3 table-header">
+                    <tr>
+                        <th>N°</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Category</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        count = 0;
+                    }
+                    @foreach (var product in _products)
+                    {
+                        count++;
+                        <tr class="text-nowrap">
+                            <td>@count</td>
+                            <td>
+                                <img src="@product.ImageUrl" style="width: 20px; height:20px; border-radius: 50%;">
+                            </td>
+                            <td>@product.Name</td>
+                            <td>@product.Description</td>
+                            <td>@product.Price</td>
+                            <td>@product.Stock</td>
+                            <td>@product?.Category?.Name</td>
+                            <td>
+                                <div>
+                                    <button class="btn btn-danger" @onclick="() => Delete(product.Id)">
+                                        <i class="fa fa-trash me-1"></i> Delete
+                                    </button>
+                                    <a href="admin/editProduct/@product?.Id" class="btn btn-success">
+                                        <i class="fa fa-edit me-1"></i>
+                                        Update</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="btn-group">
+                <input type="button" class="btn btn-primary" value="1"/>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private string errorMessage { get; set; } = String.Empty;
+    private List<ResultProductDto> _products = [];
+    private List<ResultCategoryDto> _categories=[];
+    [SupplyParameterFromForm(FormName ="FilteringForm")]
+    private GetProductCategoryDto? getProductCategoryById {get;set;}=new();
+    private int count { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!_bookStateService.Models.Any())
+        {
+            await GetAllProducts();
+        }
+        else
+        {
+            _products = _bookStateService.Models;
+        }
+        _bookStateService.OnBooksChanged += StateHasChanged;
+    }
+    protected override void OnParametersSet()
+    {
+        if (_bookStateService.Models != null && _bookStateService.Models.Count > 0)
+        {
+            count = 0;
+            _products = _bookStateService.Models;
+        }
+    }
+    private async Task GetAllProducts()
+    {
+        _products=await _unitOfWork
+                        .ProductService
+                        .GetAllProductsAsync();
+        _bookStateService.SetBooks(_products);
+    }
+
+    private async Task Delete(int id)
+    {
+        try
+        {
+            var product= _products.FirstOrDefault(p=>p.Id==id);
+            await _unitOfWork.ProductService.DeleteProductAsync(id);
+            _bookStateService.Remove(product);
+        }catch(Exception ex)
+        {
+            
+            errorMessage="Failed to deleted this item";
+           await Task.Run(async () =>
+            {
+                await Task.Delay(1000);
+                errorMessage=string.Empty;
+            });
+        }
+    }
+    private async Task GetProductsByCategoryId()
+    {
+        var products= await _unitOfWork
+                        .ProductService
+                        .GetProductByCateogryIdAsync(getProductCategoryById.CategoryId);
+    }
+
+}
