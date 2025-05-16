@@ -1,0 +1,53 @@
+﻿@page "/register"
+@using FactoryProject.Models.UserDtos
+
+@layout AuthLayout
+
+<PageTitle>Register</PageTitle>
+<div class="d-flex flex-column mt-5 m-auto justify-content-center w-75 border border-1 p-5 shadow shadow-sm">
+    <div><h3 class="text-center">Register</h3></div>
+
+    <EditForm Model="registerModel" OnValidSubmit="RegisterUser" class="col-form-label">
+        <label class="form-label">Username</label>
+        <InputText type="text" @bind-Value="registerModel.username" class="form-control" placeholder="username" />
+        <br />
+        <label class="form-label">Email</label>
+        <InputText type="email" @bind-Value="registerModel.email" class="form-control" placeholder="email@example.com" />
+        <br />
+        <label class="form-label">Password</label>
+        <InputText type="password" @bind-Value="registerModel.password" class="form-control" placeholder="Password" />
+        <br />
+        <label class="form-label">Confirm Password</label>
+        <InputText type="password" @bind-Value="confirmPassword" class="form-control" placeholder="Retype your password" />
+        <br />
+        <label class="form-label">Phone Number</label>
+        <InputText type="text" @bind-Value="registerModel.phone" class="form-control" placeholder="+90 5xx xxx xx xx" />
+        <br />
+        <label class="form-label">Address</label>
+        <InputText type="text" @bind-Value="registerModel.address" class="form-control" placeholder="Your address" />
+        <br />
+        <div class="d-grid justify-content-center">
+            <div>Already registered? <a href="/login"> Login</a></div>
+            <button type="submit" class="btn btn-primary m-4">Register</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private RegisterModel registerModel { get; set; } = new();
+    private string confirmPassword { get; set; }
+    [CascadingParameter]private EditContext editContext { get; set; }
+
+   private void RegisterUser()
+   {
+       if (registerModel.password != confirmPassword)
+       {
+           Console.WriteLine("Passwords do not match.");
+           return;
+       }
+
+
+       Console.WriteLine("User registered successfully.");
+   }
+
+}

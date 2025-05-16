@@ -1,0 +1,49 @@
+﻿@page "/login"
+@layout AuthLayout
+@rendermode InteractiveServer
+
+
+<PageTitle>Login</PageTitle>
+
+<div class="d-flex flex-column w-75 justify-content-center mt-5 m-auto border border-1 p-5 shadow shadow-sm">
+    
+    <div class="mb-3"><h3 class="text-center">Login</h3></div><br />
+
+    <EditForm Model="loginModel" OnValidSubmit="LoginUser" class="form-group">
+        <DataAnnotationsValidator />
+        <div class="d-grid col-auto">
+            <label class="form-label">Email</label>
+            <InputText type="email" @bind-Value="loginModel.email" class="form-control" placeholder="email@example.com" />
+            <ValidationMessage For="@(()=>loginModel.email)" />
+            <br />
+            <label class="form-label">Password</label>
+            <InputText type="password" @bind-Value="loginModel.password" class="form-control" placeholder="Password" />
+            <ValidationMessage For="@(()=>loginModel.password)" />
+            <br />
+            <div class="d-grid justify-content-center">
+                <div>Don't have an account yet? <a href="/register">Register</a></div>
+                <button type="submit" class="btn btn-primary m-4">Login</button>
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+
+@code {
+    private LoginModel loginModel { get; set; } = new();
+    [CascadingParameter]private EditContext editContext{ get; set; } 
+    [Inject]
+    private NavigationManager navigator { get; set; }
+
+
+    public void LoginUser()
+    {
+        
+        Console.WriteLine("User login successfully.");
+    }
+    public void RegisterPage()
+    {
+        navigator.NavigateTo("/register");
+    }
+
+}

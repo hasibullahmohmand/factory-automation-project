@@ -1,0 +1,22 @@
+﻿.main-container{
+    display: grid;
+}
+.order-container{
+
+    border: 1px solid darkblue;
+    display: flex;
+    gap: 20px;
+    height: 170px;
+    align-items:center;
+    padding: 10px;
+}
+.order-img{
+    height: 150px;
+
+}
+
+.order-img img {
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+}
