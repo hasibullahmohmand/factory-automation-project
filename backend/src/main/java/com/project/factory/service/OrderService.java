@@ -47,6 +47,8 @@ public class OrderService
 
         LocalDateTime orderDate = LocalDateTime.now();
 
+        cartRepository.updateCartStatus(cartId);
+
        return orderRepository.addOrderByCartId(cartId , orderDate);
     }
 
@@ -66,8 +68,7 @@ public class OrderService
             return null;
         }
 
-        int cartId = order.getCart().getId();
-        cartRepository.updateCartStatus(cartId);
+
 
         boolean statusBool = Boolean.parseBoolean(status);
 
