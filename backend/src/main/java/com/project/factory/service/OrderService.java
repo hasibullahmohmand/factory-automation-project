@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -55,7 +56,7 @@ public class OrderService
     }
 
     @Transactional
-    public Order updateOrder(int orderId, String status)
+    public Order updateOrder(int orderId, String status , LocalDateTime deliveryDate)
     {
 
         Order order = orderRepository.findById(orderId).orElseThrow(() -> new RuntimeException("Order not found"));
@@ -71,7 +72,9 @@ public class OrderService
         boolean statusBool = Boolean.parseBoolean(status);
 
         order.setDelivered(statusBool);
-        order.setDeliveryDate(LocalDateTime.now());
+
+        order.setDeliveryDate(Objects.requireNonNullElseGet(deliveryDate, LocalDateTime::now));
+
         return orderRepository.save(order);
     }
 
@@ -113,5 +116,10 @@ public class OrderService
                         (String) row[0],
                         ((Number) row[1]).longValue()))
                 .collect(Collectors.toList());
+    }
+
+    public Double getDeliveredOrdersRevenue()
+    {
+        return orderRepository.getDeliveredOrdersRevenue();
     }
 }

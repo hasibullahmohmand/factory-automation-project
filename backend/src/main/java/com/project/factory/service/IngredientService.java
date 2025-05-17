@@ -22,15 +22,12 @@ public class IngredientService
     }
 
 
-    public Ingredient addIngredient(Ingredient ingredient)
-    {
-        if (ingredientRepository.existsByName(ingredient.getName()))
-        {
-            return null;
+    public Ingredient addIngredient(Ingredient ingredient) {
+        if (ingredientRepository.existsByName(ingredient.getName())) {
+            throw new IllegalArgumentException("Ingredient with name '" + ingredient.getName() + "' already exists");
         }
 
         ingredient.setId(null);
-
         return ingredientRepository.save(ingredient);
     }
     

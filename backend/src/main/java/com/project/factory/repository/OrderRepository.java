@@ -41,4 +41,12 @@ public interface OrderRepository extends JpaRepository<Order, Integer>
             "ORDER BY order_count DESC " +
             "LIMIT 5", nativeQuery = true)
     List<Object[]> findTopOrderedProducts();
+
+
+    @Query(value = "SELECT SUM(p.price) AS revenue " +
+            "FROM factory.orders o " +
+            "LEFT JOIN factory.cart c ON o.cart_id = c.id " +
+            "LEFT JOIN factory.product p ON c.product_id = p.id " +
+            "WHERE o.delivered = true", nativeQuery = true)
+    Double getDeliveredOrdersRevenue();
 }

@@ -8,6 +8,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @RestController
@@ -38,7 +39,8 @@ public class OrderController
     {
         int orderId = Integer.parseInt(payload.get("order_id"));
         String status = payload.get("status");
-        return ResponseEntity.ok(orderService.updateOrder(orderId, status));
+        LocalDateTime deliveryDate = LocalDateTime.parse(payload.get("delivery_date"));
+        return ResponseEntity.ok(orderService.updateOrder(orderId, status , deliveryDate));
     }
 
     @GetMapping("/getByUser")
@@ -60,5 +62,16 @@ public class OrderController
     public ResponseEntity<?> getTopOrderedProducts()
     {
         return ResponseEntity.ok(orderService.getTopOrderedProducts());
+    }
+
+    @GetMapping("/revenue/delivered")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> getDeliveredRevenue()
+    {
+        Double revenue = orderService.getDeliveredOrdersRevenue();
+
+        Map<String , Double> response = Map.of("revenue", revenue);
+
+        return ResponseEntity.ok(response);
     }
 }
