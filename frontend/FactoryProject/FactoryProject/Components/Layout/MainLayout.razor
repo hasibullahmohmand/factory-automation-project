@@ -36,18 +36,18 @@
                 </div>
             </NavLink>
             </div>
-            @* <AuthorizeView Roles="ADMIN">
-                <div class="navigation-item">
-                    <NavLink href="admin/products">
-                        <div class="admin-icon">
-                            <img src="/icons/users.png" />
-                        </div>
-                        <div>
-                            Admin
-                        </div>
-                    </NavLink>
-                </div>
-            </AuthorizeView> *@
+            <AuthorizeView Roles="ADMIN">
+                <Authorized>
+                    <div class="navigation-item">
+                        <NavLink href="admin/products">
+                            <div class="admin-icon">
+                                <img src="/icons/users.png" />
+                            </div>
+                            <div>Admin</div>
+                        </NavLink>
+                    </div>
+                </Authorized>
+            </AuthorizeView>
             <div class="navigation-item">
             <NavLink href="logoutcontrol">
                 <div class="logout-icon">

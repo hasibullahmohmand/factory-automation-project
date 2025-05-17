@@ -44,8 +44,8 @@
                 <div class="product-detail">
                     @product.Description
                 </div>
-                <button class="btn btn-danger" @onclick="() => AddToCart(product.Id)">
-                    <i class="fas fa-plus "></i> Add To Cart
+                <button class="btn btn-outline-info btn-primary text-light" @onclick="() => AddToCart(product.Id)">
+                    <i class="fas fa-shopping-cart me-2"></i> Add To Cart
                 </button>
             </div>  
         }

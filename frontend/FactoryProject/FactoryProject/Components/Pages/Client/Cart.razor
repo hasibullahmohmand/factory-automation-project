@@ -23,96 +23,111 @@
     </div>
 }
 <div class="cart-main-container">
-    @if (cartProducts == null ){
+    @if (cartProducts == null)
+    {
+        <div>Loading...</div>
+
+        <div><i class="fas fa-spinner fa-spin"></i></div>
     }
     else
     {
         <div class="cart-product">
             @foreach(var cartProduct in cartProducts)
             {
-                <div class="product">
-                    <div class="cart-img">
-                        <img src="@cartProduct.product.ImageUrl" alt="Product image" />
-                    </div>
-                    <div class="product-detail">
-                        <div>
-                            <b>@cartProduct.product.Name</b>
+                @if(cartProduct.active == true)
+                {
+                    <div class="product">
+                        <div class="cart-img">
+                            <img src="@cartProduct.product.ImageUrl" alt="Product image" />
                         </div>
                         <div class="product-detail">
-                            @cartProduct.product.Description
+                            <div>
+                                <b>@cartProduct.product.Name</b>
+                            </div>
+                            <div class="product-detail">
+                                @cartProduct.product.Description
+                            </div>
+                            <div class="product-price">
+                                @((cartProduct.quantity / 50) * cartProduct.product.Price) TL
+                            </div>
+                            <div class="cart-buttons">
+                                <select class="cart-select" @bind="cartProduct.quantity"> 
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                    <option value="250">250</option>
+                                    <option value="300">300</option>
+                                    <option value="350">350</option>
+                                    <option value="400">400</option>
+                                    <option value="450">450</option>
+                                    <option value="500">500</option>
+                                    <option value="1000">1000</option>
+                                </select>
+                                <button class="btn btn-primary" @onclick="()=> UpdateCart(cartProduct.id, cartProduct.quantity)">Update</button>
+                                <button class="btn btn-secondary" @onclick="()=> DeleteCart(cartProduct.id)">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        @if(totalPrice !=0)
+        {
+            <div class="product-total">
+                <div>
+                    <div>
+                        <b>Order sumary:</b>
+                    </div>
+                    <div class="summary-row">
+                        <div>
+                            Items(@totalItems):
+                        </div>
+                        <div class="item-price">
+                            @(totalPrice) TL
+                        </div>
+                    </div>
+                    <div class="summary-row">
+                        <div>
+                            Shipping and Handling:
+                        </div>
+                        <div class="items-price">
+                            @(shipping) TL
+                        </div>
+                    </div>
+                    <div class="summary-row">
+                        <div>
+                            Total Before Tax:
+                        </div>
+                        <div class="items-price">
+                            @(totalPrice + shipping) TL
+                        </div>
+                    </div>
+                    <div class="summary-row">
+                        <div>
+                            Estimated Tax:
+                        </div>
+                        <div class="items-price">
+                            @(tax) TL
+                        </div>
+                    </div>
+                    <div class="summary-row">
+                        <div class="product-price">
+                            Order Total:
                         </div>
                         <div class="product-price">
-                            @((cartProduct.quantity / 50) * cartProduct.product.Price) TL
-                        </div>
-                        <div class="cart-buttons">
-                            <select class="cart-select" @bind="cartProduct.quantity"> 
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                                <option value="150">150</option>
-                                <option value="200">200</option>
-                                <option value="250">250</option>
-                                <option value="300">300</option>
-                                <option value="350">350</option>
-                                <option value="400">400</option>
-                                <option value="450">450</option>
-                                <option value="500">500</option>
-                                <option value="1000">1000</option>
-                            </select>
-                            <button class="btn btn-primary" @onclick="()=> UpdateCart(cartProduct.id, cartProduct.quantity)">Update</button>
-                            <button class="btn btn-secondary" @onclick="()=> DeleteCart(cartProduct.id)">Delete</button>
+                            @(totalPrice + shipping + tax) TL
                         </div>
                     </div>
+                    <button class="btn btn-primary order-button" type="submit" @onclick="()=> PlaceOrder()">Place Order</button>
                 </div>
-            }
-        </div>    
-        <div class="product-total">
-            <div>
-                <div>
-                    <b>Order sumary:</b>
-                </div>
-                <div class="summary-row">
-                    <div>
-                        Items(@totalItems):
-                    </div>
-                    <div class="item-price">
-                        @(totalPrice) TL
-                    </div>
-                </div>
-                <div class="summary-row">
-                    <div>
-                        Shipping and Handling:
-                    </div>
-                    <div class="items-price">
-                        @(shipping) TL
-                    </div>
-                </div>
-                <div class="summary-row">
-                    <div>
-                        Total Before Tax:
-                    </div>
-                    <div class="items-price">
-                        @(totalPrice + shipping) TL
-                    </div>
-                </div>
-                <div class="summary-row">
-                    <div>
-                        Estimated Tax:
-                    </div>
-                    <div class="items-price">
-                        @(tax) TL
-                    </div>
-                </div>
-                <div class="summary-row">
-                    <div class="product-price">
-                        Order Total:
-                    </div>
-                    <div class="product-price">
-                        @(totalPrice + shipping + tax) TL
-                    </div>
-                </div>
-                <button class="btn btn-primary order-button" type="submit" @onclick="()=> PlaceOrder()">Place Order</button>
             </div>
-        </div>
+        
+        }
+        else
+        {
+            <div class="m-auto text-xxl-center">Your Cart Is Empty!</div>
+        }
     }
 </div>
 @code {
@@ -137,6 +152,8 @@
         totalItems = 0;
         foreach(var cartProduct in cartProducts)
         {
+            if (cartProduct.active == false)
+                continue;
             totalPrice += (cartProduct.quantity/50) * cartProduct.product.Price;
             totalItems += cartProduct.quantity;
         }

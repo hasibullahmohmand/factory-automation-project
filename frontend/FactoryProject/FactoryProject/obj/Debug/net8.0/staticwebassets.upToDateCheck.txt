@@ -23,3 +23,4 @@ wwwroot\src\favicon-16x16.png
 wwwroot\src\favicon-32x32.png
 wwwroot\src\lrbg.jpg
 wwwroot\src\notfoundpage.jpg
+wwwroot\ulker.png

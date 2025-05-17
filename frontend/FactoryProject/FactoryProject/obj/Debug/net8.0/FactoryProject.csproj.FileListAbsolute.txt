@@ -170,7 +170,6 @@ C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\Fact
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\NotFoundPage.razor.rz.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Register.razor.rz.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Cart.razor.rz.scp.css
-C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\bundle\FactoryProject.styles.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\projectbundle\FactoryProject.bundle.scp.css
 C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.build.json
@@ -280,3 +279,4 @@ C:\Users\ENVY 14\Desktop\Factory_Automation\factory-automation-project\frontend\
 C:\Users\ENVY 14\Desktop\Factory_Automation\factory-automation-project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.pdb
 C:\Users\ENVY 14\Desktop\Factory_Automation\factory-automation-project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.genruntimeconfig.cache
 C:\Users\ENVY 14\Desktop\Factory_Automation\factory-automation-project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\ref\FactoryProject.dll
+C:\Users\ENVY 14\Desktop\Factory Automation Project\frontend\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css

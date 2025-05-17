@@ -8,21 +8,31 @@
 <div class="order-main-container">
     @if (orderProducts == null)
     {
-        <p>Loading...</p>
+        <div>Loading...</div><div><i class="fas fa-spinner fa-spin"></i></div>
     }
     else
     {
         @foreach (var orderProduct in orderProducts)
         {
-        <div class="order-container">
-            <div class="order-img">
-                <img src="@orderProduct.cart.product.ImageUrl" alt="Product image" />
-            </div>
-            <div class="order-details">
-                <div><b>@orderProduct.cart.product.Name</b></div>
+            <div class="order-container">
+                <div class="order-img">
+                    <img src="@orderProduct.cart.product.ImageUrl" alt="Product image" />
+                </div>
+                <div class="order-details">
+                    <div><b>@orderProduct.cart.product.Name</b></div>
                 @orderProduct.cart.product.Description
                 <div><strong>Price:</strong> @((orderProduct.cart.quantity / 50) * orderProduct.cart.product.Price) TL</div>
-                <div><strong>Quantity:</strong> @orderProduct.cart.quantity</div>
+                <div>
+                    <strong>Quantity:</strong> @orderProduct.cart.quantity
+                        @if (orderProduct.delivered == true)
+                        {
+                            <span class="text-success delivered-bage"><i class="fas fa-check-circle">Deliverd</i></span>
+                        }
+                        else
+                        {
+                            <span class="text-primary delivered-bage"><i class="fas fa-spinner fa-pulse"></i>Preparing your order</span> 
+                        }
+                </div>
                 <div><strong>Order Date:</strong> @orderProduct.orderDate</div>
             </div>
         </div>    

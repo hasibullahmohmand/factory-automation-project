@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FactoryProject.hjmchmemqp.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FactoryProject.n0a97q5fqe.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
@@ -103,6 +103,10 @@
     {
       "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\src\\notfoundpage.jpg",
       "PackagePath": "staticwebassets\\src\\notfoundpage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\ulker.png",
+      "PackagePath": "staticwebassets\\ulker.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FactoryProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

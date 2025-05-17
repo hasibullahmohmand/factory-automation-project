@@ -2,6 +2,8 @@ using FactoryProject.Components;
 using FactoryProject.DependencyInjection;
 using FactoryProject.Infrastructure.Extensions;
 using Blazored.LocalStorage;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace FactoryProject
 {
@@ -10,6 +12,12 @@ namespace FactoryProject
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            JsonConvert.DefaultSettings = () => new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                MissingMemberHandling = MissingMemberHandling.Ignore,
+            };
 
             builder.Services.AddBlazoredLocalStorage(); 
 
