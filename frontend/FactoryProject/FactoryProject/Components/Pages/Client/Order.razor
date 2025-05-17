@@ -1,36 +1,40 @@
 ﻿@page "/order"
+@inject IUnitOfWork unitOfWork
+@rendermode InteractiveServer
 
 <PageTitle>Orders</PageTitle>
 
 <h3 class="heading">Orders</h3>
 <div class="order-main-container">
-    <div class="order-container">
-        <div class="order-img">
-            <img src="beyazpulcikolata.png" alt="Product image" />
-        </div>
-        <div class="order-details">
-            <div><b>ÜLKER WHITE CHOCOLATE BUTTON</b></div>
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-            <div><strong>Price:</strong> 2673TL</div>
-            <div><strong>Quantity:</strong> 50</div>
-            <div><strong>Order Date:</strong> 2023-10-01</div>
-        </div>
-    </div>
-    <div class="order-container">
-        <div class="order-img">
-            <img src="beyazpulcikolata.png" alt="Product image" />
-        </div>
-        <div class="order-details">
-            <div><b>ÜLKER WHITE CHOCOLATE BUTTON</b></div>
-            A delicious chocolate made with sugar, cocoa, cocoa butter.
-            <div><strong>Price:</strong> 2673TL</div>
-            <div><strong>Quantity:</strong> 50</div>
-            <div><strong>Order Date:</strong> 2023-10-01</div>
-        </div>
-    </div>
-
+    @if (orderProducts == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        @foreach (var orderProduct in orderProducts)
+        {
+        <div class="order-container">
+            <div class="order-img">
+                <img src="@orderProduct.cart.product.ImageUrl" alt="Product image" />
+            </div>
+            <div class="order-details">
+                <div><b>@orderProduct.cart.product.Name</b></div>
+                @orderProduct.cart.product.Description
+                <div><strong>Price:</strong> @((orderProduct.cart.quantity / 50) * orderProduct.cart.product.Price) TL</div>
+                <div><strong>Quantity:</strong> @orderProduct.cart.quantity</div>
+                <div><strong>Order Date:</strong> @orderProduct.orderDate</div>
+            </div>
+        </div>    
+        }
+}
 </div>
 
 @code {
+    private List<ResultOrderDto> orderProducts = [];
+    protected override async Task OnInitializedAsync()
+    {
+        orderProducts = await unitOfWork.OrderService.GetOrdersByUserAsync();
+    }
 
 }
