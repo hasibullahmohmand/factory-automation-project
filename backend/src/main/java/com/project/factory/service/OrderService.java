@@ -1,6 +1,8 @@
 package com.project.factory.service;
 
 
+import com.project.factory.dto.PendingOrderDTO;
+import com.project.factory.dto.TopProductDTO;
 import com.project.factory.model.Cart;
 import com.project.factory.model.Order;
 import com.project.factory.repository.CartRepository;
@@ -15,6 +17,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderService
@@ -95,5 +98,20 @@ public class OrderService
         }
 
         return orders;
+    }
+
+    public List<PendingOrderDTO> getPendingOrders()
+    {
+        return orderRepository.findPendingOrders();
+    }
+
+    public List<TopProductDTO> getTopOrderedProducts()
+    {
+        List<Object[]> results = orderRepository.findTopOrderedProducts();
+        return results.stream()
+                .map(row -> new TopProductDTO(
+                        (String) row[0],
+                        ((Number) row[1]).longValue()))
+                .collect(Collectors.toList());
     }
 }

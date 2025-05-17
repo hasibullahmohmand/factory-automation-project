@@ -47,4 +47,18 @@ public class OrderController
         String username = principal.getName();
         return ResponseEntity.ok(orderService.getOrderById(username));
     }
+
+    @GetMapping("/getPendingOrders")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> getPendingOrders()
+    {
+        return ResponseEntity.ok(orderService.getPendingOrders());
+    }
+
+    @GetMapping("/getTopProducts")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> getTopOrderedProducts()
+    {
+        return ResponseEntity.ok(orderService.getTopOrderedProducts());
+    }
 }
