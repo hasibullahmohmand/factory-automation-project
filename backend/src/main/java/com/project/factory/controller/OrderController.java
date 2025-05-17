@@ -37,9 +37,21 @@ public class OrderController
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> updateOrder(@RequestBody Map<String , String> payload)
     {
+        LocalDateTime deliveryDate;
         int orderId = Integer.parseInt(payload.get("order_id"));
         String status = payload.get("status");
-        LocalDateTime deliveryDate = LocalDateTime.parse(payload.get("delivery_date"));
+        String deliveryDateStr = payload.get("delivery_date");
+
+
+        if (deliveryDateStr == null || deliveryDateStr.isEmpty())
+        {
+            deliveryDate = LocalDateTime.now();
+        }
+        else
+        {
+            deliveryDate = LocalDateTime.parse(deliveryDateStr);
+        }
+
         return ResponseEntity.ok(orderService.updateOrder(orderId, status , deliveryDate));
     }
 
@@ -54,6 +66,11 @@ public class OrderController
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> getPendingOrders()
     {
+        if(orderService.getPendingOrders().isEmpty())
+        {
+            return ResponseEntity.ok("No pending orders found");
+        }
+
         return ResponseEntity.ok(orderService.getPendingOrders());
     }
 
@@ -61,6 +78,10 @@ public class OrderController
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> getTopOrderedProducts()
     {
+        if(orderService.getTopOrderedProducts().isEmpty())
+        {
+            return ResponseEntity.ok("No orders found");
+        }
         return ResponseEntity.ok(orderService.getTopOrderedProducts());
     }
 
@@ -69,6 +90,11 @@ public class OrderController
     public ResponseEntity<?> getDeliveredRevenue()
     {
         Double revenue = orderService.getDeliveredOrdersRevenue();
+
+        if(revenue == null)
+        {
+            return ResponseEntity.ok("No delivered orders found");
+        }
 
         Map<String , Double> response = Map.of("revenue", revenue);
 
