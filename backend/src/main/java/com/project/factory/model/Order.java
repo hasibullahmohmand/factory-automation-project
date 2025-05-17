@@ -24,6 +24,8 @@ public class Order
 
     private LocalDateTime deliveryDate;
 
+    private LocalDateTime orderDate;
+
     private boolean delivered = false;
 
 }

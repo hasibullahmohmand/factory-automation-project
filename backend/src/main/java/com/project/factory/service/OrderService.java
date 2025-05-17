@@ -41,7 +41,9 @@ public class OrderService
             return order.get().getId();
         }
 
-       return orderRepository.addOrderByCartId(cartId);
+        LocalDateTime orderDate = LocalDateTime.now();
+
+       return orderRepository.addOrderByCartId(cartId , orderDate);
     }
 
     public List<Order> getOrder()
