@@ -31,4 +31,7 @@ public interface CartRepository extends JpaRepository<Cart, Integer>
 
     @Query(value = "SELECT * FROM cart WHERE user_id = :userId", nativeQuery = true)
     List<Cart> findAllByUserId(int userId);
+
+    @Query(value = "SELECT * FROM cart WHERE user_id = :userId AND product_id = :productId AND active = true", nativeQuery = true)
+    Cart findActiveCartByUserIdAndProductId(@Param("userId") int userId, @Param("productId") int productId);
 }

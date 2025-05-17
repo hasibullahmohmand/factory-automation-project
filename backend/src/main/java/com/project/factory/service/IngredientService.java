@@ -42,7 +42,8 @@ public class IngredientService
     }
     public int deleteIngredient(int ingredientId)
     {
-        if(ingredientRepository.existsById(ingredientId)){
+        if(ingredientRepository.existsById(ingredientId))
+        {
             ingredientRepository.deleteById(ingredientId);
             return 1;
         }

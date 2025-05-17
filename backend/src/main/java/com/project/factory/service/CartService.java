@@ -42,13 +42,22 @@ public class CartService
             throw new IllegalArgumentException("Email cannot be empty");
         }
 
-        productRepository.updateStock(quantity, productId);
+        int userId = userRepository.findUserIdByEmail(email);
 
-        int id = userRepository.findUserIdByEmail(email);
+        Cart existingCart = cartRepository.findActiveCartByUserIdAndProductId(userId, productId);
 
-        LocalDateTime createdAt  = LocalDateTime.now();
-
-        return cartRepository.createCart(quantity,createdAt,productId, id);
+        if (existingCart != null)
+        {
+            int newQuantity = existingCart.getQuantity() + quantity;
+            productRepository.updateStock(quantity, productId);
+            return cartRepository.updateCart(existingCart.getId(), newQuantity, userId);
+        }
+        else
+        {
+            productRepository.updateStock(quantity, productId);
+            LocalDateTime createdAt = LocalDateTime.now();
+            return cartRepository.createCart(quantity, createdAt, productId, userId);
+        }
     }
 
 
