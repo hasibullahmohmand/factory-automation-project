@@ -1,5 +1,4 @@
 @page "/admin/editcategory/{categoryId:int}"
-@using FactoryProject.Infrastructure.Utilities.Services
 @layout AdminLayout
 @inject IUnitOfWork _unitOfWork
 @inject CategoryStateService _categoryStateService
@@ -7,9 +6,6 @@
 @rendermode InteractiveServer
 
 <PageTitle>Update Category</PageTitle>
-<HeadContent>
-    <link href="/css/update.css" rel="stylesheet" />
-</HeadContent>
 
 <div class="form-container mx-3">
     <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Category</h4>
@@ -17,7 +13,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -31,7 +27,7 @@
             <ValidationMessage For="@(() => category.name)" class="text-danger" />
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-success">
                 <i class="fas fa-edit"></i>
                 Update
             </button>
@@ -64,8 +60,8 @@
             errorMessage = "Category is not found";
             return;
         }
-        category.name=dto.Name;
-        category.id=dto.Id;
+        category.name=dto.name;
+        category.id=dto.id;
     }
     private string GetInputClass(string fieldName)
     {
@@ -79,13 +75,14 @@
     {
         var response = await _unitOfWork.CategoryService.UpdateCategoryAsync(category);
         if(!response.IsSuccessStatusCode){
-            errorMessage=response.RequestMessage.ToString();
+            errorMessage = "An error occured while trying to update this items";
             StateHasChanged();
             return;
         }
-        _categoryStateService.UpdateItem(new ResultCategoryDto{
-            Name=category.name
-        },category.id);
+        _categoryStateService.UpdateCategory(new ResultCategoryDto{
+            id=category.id,
+            name=category.name
+        });
         _navigationManager.NavigateTo("/admin/categories"); 
     }
 }

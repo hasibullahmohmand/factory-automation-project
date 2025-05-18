@@ -3,7 +3,7 @@
 @inject IUnitOfWork _unitOfWork
 @inject DepartmentStateService _departmentStateService
 @inject NavigationManager _navigationManager
-
+@rendermode InteractiveServer
 <!-- Header Content  Begin-->
 <PageTitle>Create Department</PageTitle>
 <!-- Header Content  Begin-->
@@ -14,7 +14,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -69,7 +69,7 @@
             StateHasChanged();
             return;
         }
-        _departmentStateService.AddItem(new ResultDepartmentDto
+        _departmentStateService.AddDepartment(new ResultDepartmentDto
             {
                 name = department.name,
                 salary = department.salary

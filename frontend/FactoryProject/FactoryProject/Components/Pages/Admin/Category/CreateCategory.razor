@@ -3,7 +3,7 @@
 @inject IUnitOfWork _unitOfWork
 @inject CategoryStateService _categoryStateService
 @inject NavigationManager _navigationManager
-
+@rendermode InteractiveServer
 <!-- Header Content  Begin-->
 <PageTitle>Create Category</PageTitle>
 
@@ -16,7 +16,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -64,8 +64,8 @@
             StateHasChanged();
             return;
         }
-        _categoryStateService.AddItem(new ResultCategoryDto{
-            Name=category.name
+        _categoryStateService.AddCategory(new ResultCategoryDto{
+            name=category.name
         });
         _navigationManager.NavigateTo("/admin/categories");
     }

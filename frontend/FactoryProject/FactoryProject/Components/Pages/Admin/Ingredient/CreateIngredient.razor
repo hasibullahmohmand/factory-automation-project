@@ -3,7 +3,7 @@
 @inject IUnitOfWork _unitOfWork
 @inject IngredientStateService _ingredientStateService
 @inject NavigationManager _navigationManager
-
+@rendermode InteractiveServer
 <!-- Header Content  Begin-->
 <PageTitle>Create Ingredient</PageTitle>
 <!-- Header Content  Begin-->
@@ -14,7 +14,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -84,13 +84,13 @@
             StateHasChanged();
             return;
         }
-        _ingredientStateService.AddItem(new ResultIngredientDto
+        _ingredientStateService.AddIngredient(new ResultIngredientDto
             {
                 name = ingredient.name,
                 expireDate = ingredient.expireDate,
                 stock = ingredient.stock,
                 unit=ingredient.unit
             });
-        _navigationManager.NavigateTo("/admin/departments");
+        _navigationManager.NavigateTo("/admin/ingredients");
     }
 }

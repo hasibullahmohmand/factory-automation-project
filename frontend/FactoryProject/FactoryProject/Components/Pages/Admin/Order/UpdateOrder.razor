@@ -1,0 +1,81 @@
+﻿@page "/admin/editorder/{orderId:int}"
+
+@layout AdminLayout
+@inject IUnitOfWork _unitOfWork
+@inject NavigationManager _navigationManager
+@inject OrderStateService _orderStateService
+@rendermode InteractiveServer
+
+<PageTitle>Edit Order</PageTitle>
+
+
+<div class="form-container mx-3">
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Order</h4>
+    <hr class="mb-4" />
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            @errorMessage
+        </div>
+    }
+    <EditForm FormName="UpdateForm" Model="order" OnValidSubmit="@UpdateOrderAsync" Enhance>
+        <DataAnnotationsValidator />
+        <input type="hidden" @bind="order.order_id" />
+        <div class="mb-3 form-div">
+            <label for="orderdate" class="form-label">Delivery Date</label>
+            <InputDate  class="form-control"
+            id="orderdate" placeholder="Enter Delivery Date" @bind-Value="order.delivery_date" />
+            <ValidationMessage For="@(() => order.delivery_date)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="departmentSalary" class="form-label">Status</label>
+            <InputCheckbox type="text" class="@GetInputClass(nameof(order.status))"
+            id="departmentSalary" @bind-Value="order.status" />
+            <ValidationMessage For="@(() => order.status)" class="text-danger" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-edit"></i>
+                Update
+            </button>
+            <a href="/admin/orders" class="btn btn-secondary ms-2">
+                <i class="fas fa-list"></i>
+                Departments
+            </a>
+        </div>
+    </EditForm>
+
+</div>
+
+@code {
+    public int orderId{ get; set; }
+    private string errorMessage;
+    private UpdateOrderDto order = new();
+    [CascadingParameter]private EditContext? editContext { get; set; }
+    protected void OnInitialize()
+    {
+        order.order_id = orderId;
+    }
+    private async Task UpdateOrderAsync()
+    {
+        var result = await _unitOfWork.OrderService.UpdateOrderAsync(order);
+        if (!result)
+        {
+            errorMessage = "An error occured while trying to updae this order";
+            StateHasChanged();
+            return;
+        }
+        _orderStateService.UpdateOrder(order);
+        _navigationManager.NavigateTo("/admin/orders");
+
+    }
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null) return "form-control form-input";
+        // Check if the field is valid
+        var fieldIdentifier = new FieldIdentifier(order, fieldName);
+        var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
+        return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
+}

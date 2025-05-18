@@ -5,59 +5,6 @@
     min-width:490px;
 }
 
-.page-top[b-tgn1r5xgxa] {
-    display: flex;
-    min-width: 490px;
-    border-bottom: 1px solid grey;
-    height: 50px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
-    font-size: small;
-    position: fixed;
-    padding: 10px;
-    gap: 15px;
-    z-index: 100;
-}
-.page-top img[b-tgn1r5xgxa]{
-    height: 25px;
-}
-.page-top img:hover[b-tgn1r5xgxa] {
-    background-color:lightblue;
-}
-.search-bar[b-tgn1r5xgxa] {
-    display: flex;
-    flex: 1;
-    max-width: 450px;
-}
-
-.search-bar button[b-tgn1r5xgxa]{
-    border: none;
-}
-
-.search-bar img[b-tgn1r5xgxa]{
-    height: 35px;
-    border: 1px solid darkblue;
-    margin-left: -7px;
-    margin-top: -1px;
-}
-.search-bar input[b-tgn1r5xgxa]{
-    height: 35px;
-    border: 1px solid darkblue;
-    width: 100%;
-    padding-left: 10px;
-    border-right: none;
-}
-
-.order-icon[b-tgn1r5xgxa]{
-    margin-left: 4px;
-}
-.profile-icon[b-tgn1r5xgxa], .admin-icon[b-tgn1r5xgxa] {
-    margin-left: 6px;
-}
-.logout-icon[b-tgn1r5xgxa]{
-    margin-left:8px;
-}
 
 .navigation-item[b-tgn1r5xgxa] {
     display: flex;
@@ -110,11 +57,7 @@ main[b-tgn1r5xgxa] {
     .top-row[b-tgn1r5xgxa]  a, .top-row[b-tgn1r5xgxa]  .btn-link {
         margin-left: 0;
     }
-    .page-top[b-tgn1r5xgxa] {
-        top: 55px;
-        right: 0;
-        left: 0;
-    }
+
     .sidebar[b-tgn1r5xgxa] {
         position: fixed;
         right: 0;
@@ -151,12 +94,6 @@ main[b-tgn1r5xgxa] {
         width: 250px;
         height: 100vh;
         position:fixed;
-    }
-
-    .page-top[b-tgn1r5xgxa]{
-        left:250px;
-        right:0;
-        top:0;
     }
 }
 

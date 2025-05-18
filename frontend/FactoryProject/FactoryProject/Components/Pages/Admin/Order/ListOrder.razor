@@ -1,28 +1,29 @@
-@page "/admin/ingredients"
+﻿@page "/admin/orders"
 @layout AdminLayout
 @attribute [Authorize(Roles = "ADMIN")]
 @rendermode InteractiveServer
 @implements IDisposable
-@inject IngredientStateService _ingredientStateService
+@inject OrderStateService _orderStateService
 @inject IUnitOfWork _unitOfWork
 
 
-<PageTitle> Ingredients </PageTitle>
+<PageTitle>Orders </PageTitle>
 
-@if (_ingredients == null)
+@if (_orders == null || _orders.Count==0)
 {
-    <p> <em> Loading...</em></p>
+    <div class="alert alert-info rounded-4 shadow-2" role="alert" style="border:none;border-radius:30px;">
+        <p class="text-center fs-3">
+            <i class="fas fa-exclamation-triangle"></i>
+            There is no order Yet !
+        </p>
+    </div>
 }
 else
 {
     <div class="container mx-3">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="entete">
-                <h4 class="title"><i class="fas fa-list me-2"></i>List of Ingredients</h4>
-                <a href="admin/createingredient" class="btn btn-outline-primary ms-2">
-                    <i class="fas fa-plus"></i>
-                    Add New Ingredient
-                </a>
+                <h4 class="title"><i class="fas fa-list me-2"></i>List of Orders</h4>
             </div>
         </div>
         @if (!string.IsNullOrEmpty(errorMessage))
@@ -33,21 +34,22 @@ else
             </div>
         }
 
-        @if (!String.IsNullOrEmpty(_ingredientStateService.SuccessMessage))
+        @if (!String.IsNullOrEmpty(_orderStateService.SuccessMessage))
         {
             <div class="alert alert-info" role="alert">
                 <i class="far fa-check-circle"></i>
-                @_ingredientStateService.SuccessMessage
+                @_orderStateService.SuccessMessage
             </div>
         }
         <div class="container margin-auto mb-3 table-responsive tableau">
             <table class="table table-hover table-striped table-sm ">
                 <thead class="rounded-3 table-header">
                     <tr>
-                        <th>N�</th>
-                        <th>Name</th>
-                        <th>Stock</th>
-                        <th>Expire Date</th>
+                        <th>N°</th>
+                        <th>Product Name</th>
+                        <th>Total Price</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
                         <th class="text-center">Operations</th>
                     </tr>
                 </thead>
@@ -55,21 +57,30 @@ else
                     @{
                         count = 0;
                     }
-                    @foreach (var ingredient in _ingredients)
+                    @foreach (var order in _orders)
                     {
                         count++;
                         <tr class="text-nowrap">
                             <td>@count</td>
-                            <td>@ingredient.name</td>
-                            <td>@ingredient.stock @ingredient.unit</td>
-                            <td>@ingredient.expireDate.ToShortDateString()</td>
+                            <td>@order.cart?.product?.Name</td>
+                            <td>@((order.cart.quantity/50)* order.cart.product.Price) </td>
+                            <td>@order.cart.createdAt </td>
+                            <td>
+                                @if(order.delivered)
+                                {
+                                    <span class="badge rounded-pill text-bg-info text-light">Delivered</span>
+                                }
+                                else{
+                                    <span class="badge rounded-pill text-bg-warning text-light">Not Delivered Yet</span>
+                                }
+                            </td>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-danger" @onclick="() => Delete(ingredient.id,count)">
+                                    <button class="btn btn-danger" @onclick="() => Delete(order.id,count)">
                                         <i class="fa fa-trash me-1"></i>
                                         Delete
                                     </button>
-                                    <a href="admin/editingredient/@ingredient?.id" class="btn btn-success">
+                                    <a class="btn btn-success" href="/admin/editorder/@order.id">
                                         <i class="fa fa-edit me-1"></i>
                                         Update
                                     </a>
@@ -84,52 +95,53 @@ else
 }
 
 @code {
-    private List<ResultIngredientDto> _ingredients { get; set; } = [];
+    private List<ResultOrderDto> _orders { get; set; } = [];
     private string? errorMessage { get; set; } = string.Empty;
+    private UpdateOrderDto updateOrder = new();
     private int count { get; set; }
     private IJSRuntime JS { get; set; }
     protected async override Task OnInitializedAsync()
     {
-        if (!_ingredientStateService.Ingredients.Any())
+        if (!_orderStateService.Orders.Any())
         {
-            await GetAllIngredients();
-            _ingredientStateService.SetIngredients(_ingredients);
+            await GetAllOrdersAsync();
+            _orderStateService.SetOrders(_orders);
 
         }
         else
         {
-            _ingredients = _ingredientStateService.Ingredients;
+            _orders = _orderStateService.Orders;
         }
-        _ingredientStateService.OnIngredientsChanged += StateHasChanged;
+        _orderStateService.OnOrderChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
     {
-        if (_ingredientStateService.Ingredients != null && _ingredientStateService.Ingredients.Count > 0)
+        if (_orderStateService.Orders != null && _orderStateService.Orders.Count > 0)
         {
             count = 0;
-            _ingredients = _ingredientStateService.Ingredients;
+            _orders = _orderStateService.Orders;
         }
     }
     public void Dispose()
     {
-        _ingredientStateService.OnIngredientsChanged -= StateHasChanged;
+        _orderStateService.OnOrderChanged -= StateHasChanged;
     }
 
-    private async Task GetAllIngredients()
+    private async Task GetAllOrdersAsync()
     {
-        _ingredients = await _unitOfWork
-                        .IngredientService
-                        .GetAllIngredientsAsync();
+        _orders = await _unitOfWork
+                        .OrderService
+                        .GetAllOrderAsync();
     }
-    private async Task Delete(int id,int cacheIndex)
+    private async Task Delete(int id, int cacheIndex)
     {
         try
         {
             await _unitOfWork
                     .IngredientService
                     .DeleteIngredientAsync(id);
-            _ingredientStateService.RemoveIngredient(cacheIndex);
-            _ingredients = _ingredientStateService.Ingredients;
+            _orderStateService.RemoveOrder(cacheIndex);
+            _orders = _orderStateService.Orders;
         }
         catch (Exception ex)
         {
@@ -143,6 +155,7 @@ else
             });
         }
     }
+  
 
 
 

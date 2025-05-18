@@ -31,7 +31,7 @@ else
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="alert alert-danger" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
                 @errorMessage
             </div>
         }
@@ -39,7 +39,7 @@ else
         @if (!String.IsNullOrEmpty(_departmentStateService.SuccessMessage))
         {
             <div class="alert alert-info" role="alert">
-                <i class="fa-solid fa-circle-check"></i>
+                <i class="far fa-check-circle"></i>
                 @_departmentStateService.SuccessMessage
             </div>
         }
@@ -66,7 +66,7 @@ else
                             <td>@department.salary</td>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-danger" @onclick="() => Delete(department.id)">
+                                    <button class="btn btn-danger" @onclick="() => Delete(department.id,count)">
                                         <i class="fa fa-trash me-1"></i>
                                         Delete
                                     </button>
@@ -92,28 +92,29 @@ else
     private IJSRuntime JS { get; set; }
     protected async override Task OnInitializedAsync()
     {
-        if (!_departmentStateService.Models.Any())
+        if (!_departmentStateService.Departments.Any())
         {
             await GetAllDepartments();
+            _departmentStateService.SetDepartments(_departments);
+
         }
         else
         {
-            _departments = _departmentStateService.Models;
+            _departments = _departmentStateService.Departments;
         }
-        _departments = await _unitOfWork.DepartmentService.GetAllDepartmentAsync();
-        _departmentStateService.OnModelsChanged += StateHasChanged;
+        _departmentStateService.OnDepartmentsChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
     {
-        if (_departmentStateService.Models != null && _departmentStateService.Models.Count > 0)
+        if (_departmentStateService.Departments != null && _departmentStateService.Departments.Count > 0)
         {
             count = 0;
-            _departments = _departmentStateService.Models;
+            _departments = _departmentStateService.Departments;
         }
     }
     public void Dispose()
     {
-        _departmentStateService.OnModelsChanged -= StateHasChanged;
+        _departmentStateService.OnDepartmentsChanged -= StateHasChanged;
     }
 
     private async Task GetAllDepartments()
@@ -122,14 +123,13 @@ else
                         .DepartmentService
                         .GetAllDepartmentAsync();
     }
-    private async Task Delete(int id)
+    private async Task Delete(int id,int index)
     {
         try
         {
-            var department = _departments.FirstOrDefault(p => p.id == id);
             await _unitOfWork.DepartmentService.DeleteDeprtmentAsync(id);
-            _departmentStateService.RemoveItem(department);
-            _departments = _departmentStateService.Models;
+            _departmentStateService.RemoveDepartment(index);
+            _departments = _departmentStateService.Departments;
         }
         catch (Exception ex)
         {
@@ -139,6 +139,7 @@ else
             {
                 await Task.Delay(1000);
                 errorMessage = string.Empty;
+                StateHasChanged();
             });
         }
     }

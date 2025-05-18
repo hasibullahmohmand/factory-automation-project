@@ -1,0 +1,18 @@
+.content{
+    width: 600px;
+    margin: auto 0;
+    position: relative;
+    left: 25%;
+    padding: 20px;
+}
+.title{
+     color:  rgb(173, 62, 84);
+}
+
+
+.product_detail{
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px 5px rgba(rgb(205, 142, 142), rgb(54, 114, 54), blue, 0.7);
+    border-radius: 20px;
+    border: none;
+}

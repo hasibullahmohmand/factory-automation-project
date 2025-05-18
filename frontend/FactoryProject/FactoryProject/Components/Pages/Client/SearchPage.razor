@@ -1,14 +1,13 @@
-﻿@page "/biscuits"
-@inject IJSRuntime JS
+﻿@page "/search/{searchText}"
 @inject IUnitOfWork unitOfWork
-@rendermode InteractiveServer
-@attribute [Authorize]
 @inject NavigationManager Navigation
+
+<PageTitle>@searchText</PageTitle>
 
 <div class="page-top">
     <div class="search-bar"> 
-        <input type="search" @bind="searchText" name="search-bar" @onkeypress="OnKeyPress" placeholder="Search" />
-        <button @onclick="() => Search(searchText)"><img src="/icons/find.png" /></button>
+        <input type="search" @bind="searchInput" name="search-bar" @onkeypress="OnKeyPress" placeholder="Search" />
+        <button @onclick="() => Search(searchInput)"><img src="/icons/find.png" /></button>
     </div>
     <div class="navigation-item">
         <NavLink href="order">
@@ -55,13 +54,12 @@
 </div>
 
 
-<PageTitle>Biscuits</PageTitle>
 @if (!String.IsNullOrEmpty(errorMessage))
 {
-<div class="alert alert-danger message" role="alert">
-    <i class="fas fa-exclamation-circle"></i>
-    @errorMessage
-</div>
+    <div class="alert alert-danger message" role="alert">
+        <i class="fas fa-exclamation-circle"></i>
+        @errorMessage
+    </div>
 }
 
 @if (!String.IsNullOrEmpty(successMessage))
@@ -71,49 +69,64 @@
         @successMessage
     </div>
 }
-<h3 class="heading">Biscuits</h3>
-
+<h3 class="heading">Search Results for: "@searchText"</h3>
 <div class="main-container">
-    @if(_products==null && _products?.Count==0){
-        <p>
-            <em> Loading...</em>
-        </p>
-    }else{
-        @foreach (var product in _products)
+
+    <div class="border p-3 overflow-auto">
+        @if (searchProducts == null)
         {
-            <div class="product-container rounded-2">
-                <div class="product-img">
-                    <img src="@product.ImageUrl" alt="Product Image" />
-                </div>
-                <div class="product-name">
-                    <b>@product.Name</b>
-                </div>
-                <div class="product-price">
-                    @product.Price TL
-                </div>
-                <div class="product-detail">
-                    @product.Description
+            <p>Loading...</p>
+        }
+        else if (!searchProducts.Any())
+        {
+            <p>No results found for "@searchText".</p>
+        }
+        else
+        {
+            @foreach (var product in searchProducts)
+            {
+                <div class="product-container rounded-2">
+                    <div class="product-img">
+                        <img src="@product.ImageUrl" alt="Product Image" />
+                    </div>
+                    <div class="product-name">
+                        <b>@product.Name</b>
+                    </div>
+                    <div class="product-price">
+                        @product.Price TL
+                    </div>
+                    <div class="product-detail">
+                        @product.Description
+                    </div>
+
+                    <button class="btn btn-outline-info btn-primary text-light" @onclick="() => AddToCart(product.Id)">
+                        <i class="fas fa-shopping-cart me-2"></i> Add To Cart
+                    </button>
                 </div>
 
-                <button class="btn btn-outline-info btn-primary text-light" @onclick="() => AddToCart(product.Id)">
-                    <i class="fas fa-shopping-cart me-2"></i> Add To Cart
-                </button>
-            </div>  
+            }
         }
-    }
+    </div>
 </div>
 
+
 @code {
+    [Parameter]
+    public string searchText { get; set; } = string.Empty;
+
+    private CreateCartDto createCartDto = new();
+    private List<ResultProductDto> searchProducts = [];
     private string errorMessage = string.Empty;
     private string successMessage = string.Empty;
-    private List<ResultProductDto> _products = [];
-    private CreateCartDto createCartDto = new();
-    private string searchText = "";
+    private string searchInput = string.Empty;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
-        _products=await unitOfWork.ProductService.GetProductByCateogryIdAsync(4);
-        //4 is the of biscuit category
+        var allProducts = await unitOfWork.ProductService.GetAllProductsAsync();
+        searchProducts = allProducts
+            .Where(p => !string.IsNullOrWhiteSpace(p.Name) &&
+                        p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase))
+            .ToList();
     }
 
     private async Task AddToCart(int productId)
@@ -122,18 +135,17 @@
         var result = await unitOfWork.CartService.CreateCartAsync(createCartDto);
         if (!result)
         {
-            errorMessage = "An error occured!";
-            StateHasChanged();
+            errorMessage = "An error occurred!";
         }
         else
         {
             successMessage = "Product added to cart!";
-            StateHasChanged();
         }
     }
 
     private void Search(string searchText)
     {
+        Navigation.Refresh();
         Navigation.NavigateTo($"/search/{searchText}");
     }
 

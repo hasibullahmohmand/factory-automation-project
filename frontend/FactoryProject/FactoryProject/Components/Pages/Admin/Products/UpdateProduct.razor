@@ -5,6 +5,7 @@
 @inject IUnitOfWork _unitOfWork
 @inject ProductStateService _productStateService
 @inject NavigationManager _navigationManager
+@rendermode InteractiveServer
 
 <PageTitle>Update Product</PageTitle>
 
@@ -15,13 +16,13 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fa-solid fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
-    <EditForm FormName="UpdateForm" Model="@product" OnValidSubmit="@UpdateProductAsync" Enhance>
+    <EditForm FormName="UpdateForm" Model="product" OnValidSubmit="@UpdateProductAsync" Enhance>
         <DataAnnotationsValidator />
-        <input type="hidden" @bind-value="product.id"/>
+        <input type="hidden" @bind="product.id"/>
         <div class="mb-3 form-div">
             <label for="productName" class="form-label">Product Name</label>
             <InputText type="text" class="@GetInputClass(nameof(product.name))" 
@@ -31,34 +32,48 @@
         <div class="mb-3 form-div">
             <label for="productPrice" class="form-label">Price</label>
             <InputNumber type="number" class="@GetInputClass(nameof(product.price))"
-             id="productPrice" placeholder="Enter Price" @bind-Value="product.price" />
-           <ValidationMessage For="@(() => product.price)" class="text-danger" />
+            id="productPrice" placeholder="Enter Price" @bind-Value="product.price" />
+            <ValidationMessage For="@(() => product.price)" class="text-danger" />
         </div>
         <div class="mb-3 form-div">
             <label for="productStock" class="form-label">Stock</label>
             <InputNumber type="number" class="@GetInputClass(nameof(product.stock))"
-             id="productStock" placeholder="Enter Price" @bind-Value="product.stock" />
-           <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+            id="productStock" placeholder="Enter Price" @bind-Value="product.stock" />
+            <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="productImage" class="form-label">Image</label>
+            <InputText class="@GetInputClass(nameof(product.imageUrl))"
+            id="productImage" placeholder="Enter Image Url" @bind-Value="product.imageUrl" />
+            <ValidationMessage For="@(() => product.stock)" class="text-danger" />
         </div>
 
         <div class="mb-3 form-div">
-            <label for="prod" class="form-label">Category</label>
-            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="product.CategoryId">
+            <label for="productStock" class="form-label">Description</label>
+            <InputTextArea class="@GetInputClass(nameof(product.description))"
+            id="productStock" placeholder="Enter Description" @bind-Value="product.description">
+            </InputTextArea>
+            <ValidationMessage For="@(() => product.description)" class="text-danger" />
+        </div>
+
+        <div class="mb-3 form-div">
+            <label for="productCategory" class="form-label">Category</label>
+            <InputSelect type="number" class="form-control " id="productCategory" @bind-Value="product.CategoryId">
                 <option value="">Choose</option>
                 @foreach (var category in _categories)
                 {
-                    <option value="@category.Id">@category.Name</option>
+                    <option value="@category.id">@category.name</option>
                 }
             </InputSelect>
             <ValidationMessage For="@(() => product.CategoryId)"class="text-danger" />
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-success">
                 <i class="fas fa-edit"></i>
                 Update
             </button>
             <a href="/admin/products" class="btn btn-secondary ms-2">
-            <i class="fas fa-list"></i>
+                <i class="fas fa-list"></i>
                 Products
             </a>
         </div>
@@ -69,7 +84,7 @@
 @code{
     private string errorMessage{get;set;}=string.Empty;
     [SupplyParameterFromForm(FormName="UpdateForm")]
-    private UpdateProductDto product{get;set;}=new();
+    private ProductForEditDto product{get;set;}=new();
     [CascadingParameter]
     private EditContext? editContext {get;set;}
     private List<ResultCategoryDto> _categories{get;set;}=[];
@@ -84,11 +99,13 @@
     private async Task GetProductAsync()
     {
         var dto=await _unitOfWork.ProductService.GetProductByIdAsync(productId);
+        product.id = dto.Id;
         product.name=dto.Name;
         product.price=dto.Price;
-        product.category=dto.Category;
+        product.CategoryId=dto.Category.id;
         product.stock=dto.Stock;
         product.description=dto.Description;
+        product.imageUrl=dto.ImageUrl;
     }
     private async Task UpdateProductAsync()
     {
@@ -104,18 +121,20 @@
         };
         var response= await _unitOfWork.ProductService.UpdateProductAsync(dto);
         if(!response){
-            errorMessage="An error occured when trying to delete this item";
+            errorMessage="An error occured when trying to update this item";
             StateHasChanged();
             return;
         }
-        _productStateService.UpdateItem( new ResultProductDto
+        _productStateService.UpdateProduct( new ResultProductDto
         {
+            Id=productId,
             Name=dto.name,
             Price=dto.price,
             Description=dto.description,
             ImageUrl=dto.imageUrl,
             Category=dto.category,
-        },productId);
+            Stock=dto.stock
+        });
         _navigationManager.NavigateTo("/admin/products");
     }
     private string GetInputClass(string fieldName)

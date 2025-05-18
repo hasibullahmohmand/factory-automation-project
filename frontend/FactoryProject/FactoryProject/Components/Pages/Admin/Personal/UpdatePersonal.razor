@@ -1,15 +1,12 @@
 ﻿@page "/admin/editpersonal/{personalId:int}"
-@using FactoryProject.Infrastructure.Utilities.Services
-
 @layout AdminLayout
 @inject IUnitOfWork _unitOfWork
 @inject PersonalStateService _personalStateService
 @inject NavigationManager _navigationManager
+@rendermode InteractiveServer
 <!-- Header Content Begin-->
 <PageTitle>Update Personal</PageTitle>
-<HeadContent>
-    <link href="/css/update.css" rel="stylesheet" />
-</HeadContent>
+
 <!-- Header Content End-->
 
 <div class="form-container mx-3">
@@ -18,14 +15,14 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
     <div class="mx-4">
         <EditForm FormName="CreateForm" Model="@personal" OnValidSubmit="@UpdatePersonalAsync" Enhance>
             <DataAnnotationsValidator />
-            <input @bind-value="personal.id" type="hidden" />
+            <input  type="hidden" @bind="personal.id" />
             <div class="mb-3 form-div">
                 <label for="personalName" class="form-label">Personal Name</label>
                 <InputText type="text" class="@GetInputClass(nameof(personal.name))"
@@ -75,9 +72,9 @@
                 <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
             </div>
             <div class="mb-3 form-div">
-                <label for="prod" class="form-label">Shift</label>
-                <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.shift">
-                    <option value="">Seçiniz</option>
+                <label for="personalShift" class="form-label">Shift</label>
+                <InputSelect  class="form-control " id="personalShift" @bind-Value="personal.shift">
+                    <option value="">Choose</option>
                     <option value="@personal.shift">Morning</option>
                     <option value="@personal.shift">Evening</option>
                     <option value="@personal.shift">Night</option>
@@ -86,9 +83,9 @@
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-plus"></i>
-                    Create
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-edit"></i>
+                    Update
                 </button>
                 <a href="/admin/personals" class="btn btn-secondary ms-2">
                     <i class="fas fa-list"></i>
@@ -104,15 +101,16 @@
 
 
 @code {
-    [Parameter]
-    public int personalId{ get; set; }
+   
+    [Parameter]public int personalId{ get; set; }
     private string? errorMessage{ get; set; }
     private PersonalForUpdateDto personal { get; set; } = new();
-    private List<ResultDepartmentDto>? _departments{ get; set; }
+    private List<ResultDepartmentDto>? _departments{ get; set; }=[];
     [CascadingParameter]private EditContext? editContext{ get; set; }
     protected override async Task OnInitializedAsync()
     {
         await GetPersonalAsync();
+        _departments=await _unitOfWork.DepartmentService.GetAllDepartmentAsync();
 
     }
     private async Task GetPersonalAsync()
@@ -165,8 +163,9 @@
             StateHasChanged();
             return;
         }
-        _personalStateService.UpdateItem(new ResultPersonalDto
+        _personalStateService.UpdatePersonal(new ResultPersonalDto
         {
+            id=personalId,
            name=personal.name,
            department=departement,
            age=personal.age,
@@ -174,7 +173,7 @@
            date=personal.date,
            shift=personal.shift,
            identifier=personal.identifier
-        }, personalId);
+        });
         _navigationManager.NavigateTo("/admin/personals");
     }
 }

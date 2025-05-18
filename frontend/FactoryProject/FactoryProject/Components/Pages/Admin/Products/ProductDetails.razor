@@ -1,0 +1,47 @@
+@page "/admin/products/{productId:int}"
+@layout AdminLayout
+@rendermode InteractiveServer
+@inject IUnitOfWork _unitOfWork
+@inject NavigationManager _navigationManager
+
+<PageTitle> Product Details </PageTitle>
+
+    <div class="content">
+        @if (_product != null)
+        {
+            <div class="card product_detail">
+                <h4 class="title text-center py-3">@(_product?.Name ?? "Loading...")</h4>
+                <div class="d-flex justify-content-center">
+                    <img src="@(_product?.ImageUrl ?? "placeholder.png")" class="rounded-3" />
+                </div>
+                
+                <div class="d-flex justify-content-around py-4 px-3">
+                    <p class="btn btn-info fw-bolder text-light">@(_product?.Price.ToString() ?? "0") ₺</p>
+                    <p class="btn btn-primary fw-bolder text-light">@(_product?.Category?.name ?? "N/A")</p>
+                    <p class="btn btn-warning fw-lighter text-light">@(_product?.Stock.ToString() ?? "0")</p>
+                </div>
+                <div class="description">
+                    <p class="fw-light p-2 text-center text-secondary">
+                        @(_product?.Description ?? "No description available")
+                    </p>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="text-center">Loading product details...</div>
+        }
+    </div>
+    
+
+
+
+
+@code {
+    [Parameter]public int productId{get;set;}
+    private ResultProductDto _product=new();
+    protected override async Task OnInitializedAsync()
+    {
+        _product=await _unitOfWork.ProductService.GetProductByIdAsync(productId);
+    }
+}

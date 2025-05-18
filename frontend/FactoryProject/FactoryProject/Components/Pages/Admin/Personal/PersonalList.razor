@@ -7,14 +7,11 @@
 @inject IUnitOfWork _unitOfWork
 @inject PersonalStateService _personalStateService
 <PageTitle> Personals</PageTitle>
-<HeadContent>
-    <link href="/css/listing.css" rel="stylesheet" />
-</HeadContent>
 
 <div class="container mx-2">
      <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="entete">
-                <h4 class="title"><i class="fas fa-list me-2"></i>List of Products</h4>
+                <h4 class="title"><i class="fas fa-list me-2"></i>List of Personals</h4>
                 <a href="admin/createpersonal" class="btn btn-outline-primary ms-2">
                     <i class="fas fa-plus"></i>
                     Add New Personal
@@ -22,70 +19,63 @@
             </div>
      </div>
              @if (!string.IsNullOrEmpty(errorMessage))
-            {
-                <div class="alert alert-danger" role="alert">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                    @errorMessage
-                </div>
-            }
-            @if (!string.IsNullOrEmpty(_personalStateService.SuccessMessage))
-            {
-                <div class="alert alert-success" role="alert">
-                    <i class="fa-solid fa-circle-check"></i>
-                    @_personalStateService.SuccessMessage
-                </div>
-            }
-            <div class="input-group mb-3 w-50">
-                <input type="text" class="form-control" placeholder="Search someone..." aria-label="Search someone..."
-                aria-describedby="button-addon2">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                    <i class="fas fa-search"></i>
-                    Search
-                </button>
-            </div>
-        <div class="container margin-auto mb-3 table-responsive tableau">
-            <table class="table table-hover table-striped table-sm ">
-                <thead class="rounded-3 table-header">
-                    <tr>
-                        <th>N°</th>
-                        <th>Identifier</th>
-                        <th>Name</th>
-                        <th>Shift</th>
-                        <th>Department</th>
-                        <th>Start Date</th>
-                        <th>Operations</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @{
-                        count = 0;
-                    }
-                    @foreach (var personal in _personals)
-                    {
-                        count++;
-                        <tr class="text-nowrap">
-                            <td>@count</td>
-                            <td>@personal.identifier</td>                          
-                            <td>@personal.name</td>
-                            <td>@personal.shift</td>
-                            <td>@personal.department?.name</td>
-                            <td>@personal.date.ToShortDateString()</td>
-                            <td>
-                                <div class="btn btn-group">
-                                    <button class="btn btn-danger" @onclick="() => Delete(personal.id)">
-                                        <i class="fa fa-trash me-1"></i> 
-                                    </button>
-                                    <a href="admin/editpersonal/@personal?.id" class="btn btn-success">
-                                        <i class="fa fa-edit me-1"></i>
-                                        </a>
-                                </div>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            @errorMessage
         </div>
+    }
+    @if (!string.IsNullOrEmpty(_personalStateService.SuccessMessage))
+    {
+        <div class="alert alert-success" role="alert">
+            <i class="far fa-check-circle"></i>
+            @_personalStateService.SuccessMessage
+        </div>
+    }
+    <div class="container margin-auto mb-3 table-responsive tableau">
+        <table class="table table-hover table-striped table-sm ">
+            <thead class="rounded-3 table-header">
+                <tr>
+                    <th>N°</th>
+                    <th>Identifier</th>
+                    <th>Name</th>
+                    <th>Shift</th>
+                    <th>Department</th>
+                    <th>Start Date</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    count = 0;
+                }
+                @foreach (var personal in _personals)
+                {
+                    count++;
+                    <tr class="text-nowrap">
+                        <td>@count</td>
+                        <td>@personal.identifier</td>                          
+                        <td>@personal.name</td>
+                        <td>@personal.shift</td>
+                        <td>@personal.department?.name</td>
+                        <td>@personal.date.ToShortDateString()</td>
+                        <td>
+                            <div class="btn btn-group">
+                                <button class="btn btn-danger" @onclick="() => Delete(personal.id,count)">
+                                    <i class="fa fa-trash me-1"></i> 
+                                </button>
+                                <a href="admin/editpersonal/@personal?.id" class="btn btn-success">
+                                    <i class="fa fa-edit me-1"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 @code{
@@ -94,24 +84,26 @@
     private List<ResultPersonalDto> _personals=[];
     private List<ResultDepartmentDto> _departments=[];
     [Inject] private IJSRuntime JS{get;set;}
-     protected async override Task OnInitializedAsync()
+    protected async override Task OnInitializedAsync()
     {
-        if (!_personalStateService.Models.Any())
+        if (!_personalStateService.Personals.Any())
         {
             await GetAllPersonels();
+            _personalStateService.SetPersonals(_personals);
+
         }
         else
         {
-            _personals = _personalStateService.Models;
+            _personals = _personalStateService.Personals;
         }
-        _personalStateService.OnModelsChanged += StateHasChanged;
+        _personalStateService.OnPersonalsChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
     {
-        if (_personalStateService.Models != null && _personalStateService.Models.Count > 0)
+        if (_personalStateService.Personals != null && _personalStateService.Personals.Count > 0)
         {
             count = 0;
-            _personals = _personalStateService.Models;
+            _personals = _personalStateService.Personals;
         }
     }
     private async Task GetAllPersonels()
@@ -119,25 +111,24 @@
         _personals=await _unitOfWork
                         .PersonalService
                         .GetAllPersonalAsync();
-        _personalStateService.SetItems(_personals);
     }
 
-    private async Task Delete(int id)
+    private async Task Delete(int id,int cacheIndex)
     {
         try
         {
-            var product= _personals.FirstOrDefault(p=>p.id==id);
             await _unitOfWork.PersonalService.DeletePersonalAsync(id);
-            _personalStateService.RemoveItem(product);
+            _personalStateService.RemovePersonal(id);
         }catch(Exception ex)
         {
             await JS.InvokeVoidAsync("console.log",ex);
             errorMessage="Failed to deleted this item";
-           await Task.Run(async () =>
-            {
-                await Task.Delay(1000);
-                errorMessage=string.Empty;
-            });
+            await Task.Run(async () =>
+             {
+                 await Task.Delay(1000);
+                 errorMessage=string.Empty;
+                 StateHasChanged();
+             });
         }
     }
 }

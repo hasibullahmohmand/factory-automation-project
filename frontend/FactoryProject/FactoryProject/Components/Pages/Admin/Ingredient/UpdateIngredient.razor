@@ -6,18 +6,16 @@
 @inject NavigationManager _navigationManager
 @rendermode InteractiveServer
 
-<PageTitle>Update Category</PageTitle>
-<HeadContent>
-    <link href="/css/update.css" rel="stylesheet" />
-</HeadContent>
+<PageTitle>Update Ingredient</PageTitle>
+
 
 <div class="form-container mx-3">
-    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Category</h4>
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Ingredient</h4>
     <hr class="mb-4" />
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -52,7 +50,7 @@
             <ValidationMessage For="@(() => ingredient.unit)" class="text-danger" />
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-success">
                 <i class="fas fa-edit"></i>
                 Update
             </button>
@@ -110,14 +108,15 @@
             StateHasChanged();
             return;
         }
-        _ingredientStateService.UpdateItem(new ResultIngredientDto
+        _ingredientStateService.UpdateIngredient(new ResultIngredientDto
             {
+                id=ingredientId,
               name=ingredient.name,
               stock=ingredient.stock,
               expireDate=ingredient.expireDate,
               unit=ingredient.unit
-            }, ingredientId);
-        _navigationManager.NavigateTo("/admin/departments");
+            });
+        _navigationManager.NavigateTo("/admin/ingredients");
     }
 }
 

@@ -8,9 +8,7 @@
 
 
 <PageTitle> Categories </PageTitle>
-<HeadContent>
-    <link href="/css/listing.css" rel="stylesheet" />
-</HeadContent>
+
 
 @if (_categories == null)
 {
@@ -29,7 +27,7 @@
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="alert alert-danger" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
                 @errorMessage
             </div>
         }
@@ -37,7 +35,7 @@
         @if(!String.IsNullOrEmpty(_categoryStateService.SuccessMessage))
         {
             <div class="alert alert-info" role="alert">
-                <i class="fa-solid fa-circle-check"></i>
+                <i class="far fa-check-circle"></i>
                 @_categoryStateService.SuccessMessage
             </div>
         }
@@ -59,19 +57,19 @@
                         count++;
                         <tr class="text-nowrap">
                             <td>@count</td>
-                            <td>@category.Name</td>
+                            <td>@category.name</td>
                             <td>
-                               
-                                    <button class="btn btn-danger" @onclick="() => Delete(category.Id)">
-                                        <i class="fa fa-trash me-1"></i> 
-                                        Delete
-                                    </button>
-                                
+
+                                <button class="btn btn-danger" @onclick="() => Delete(category.id,count)">
+                                    <i class="fa fa-trash me-1"></i> 
+                                    Delete
+                                </button>
+
                             </td>
                             <td>
-                                <a href="admin/editcategory/@category?.Id" class="btn btn-success">
-                                   <i class="fa fa-edit me-1"></i>
-                                     Update
+                                <a href="admin/editcategory/@category?.id" class="btn btn-success">
+                                    <i class="fa fa-edit me-1"></i>
+                                    Update
                                 </a>
                             </td>
                         </tr>
@@ -90,28 +88,29 @@
     private IJSRuntime JS{get;set;}
     protected async override Task OnInitializedAsync()
     {
-        if (!_categoryStateService.Models.Any())
+        if (!_categoryStateService.Categories.Any())
         {
             await GetAllCategories();
+            _categoryStateService.SetCategories(_categories);
         }
         else
         {
-            _categories = _categoryStateService.Models;
+            _categories = _categoryStateService.Categories;
         }
         _categories=await _unitOfWork.CategoryService.GetAllCategoriesAsync();
-        _categoryStateService.OnModelsChanged += StateHasChanged;
+        _categoryStateService.OnCategoriesChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
     {
-        if (_categoryStateService.Models != null && _categoryStateService.Models.Count > 0)
+        if (_categoryStateService.Categories != null && _categoryStateService.Categories.Count > 0)
         {
             count = 0;
-            _categories = _categoryStateService.Models;
+            _categories = _categoryStateService.Categories;
         }
     }
     public void Dispose()
     {
-        _categoryStateService.OnModelsChanged -= StateHasChanged;
+        _categoryStateService.OnCategoriesChanged -= StateHasChanged;
     }
 
     private async Task GetAllCategories()
@@ -119,15 +118,15 @@
         _categories= await _unitOfWork
                         .CategoryService
                         .GetAllCategoriesAsync();
+        
     }
-    private async Task Delete(int id)
+    private async Task Delete(int id,int index)
     {
         try
         {
-            var category= _categories.FirstOrDefault(p=>p.Id==id);
             await _unitOfWork.CategoryService.DeleteCategoryAsync(id);
-            _categoryStateService.RemoveItem(category);
-            _categories = _categoryStateService.Models;
+            _categoryStateService.RemoveCategory(index);
+            _categories = _categoryStateService.Categories;
         }catch(Exception ex)
         {
             await JS.InvokeVoidAsync("console.log",ex);
@@ -136,6 +135,7 @@
             {
                 await Task.Delay(1000);
                 errorMessage=string.Empty;
+                StateHasChanged();
             });
         }
     }

@@ -11,55 +11,6 @@
     </div>
 
     <main>
-        <div class="page-top">
-            <div class="search-bar"> 
-                <input type="search" name="search-bar" class="" placeholder="Search" />
-                <button><img src="/icons/find.png" /></button>
-            </div>
-            <div class="navigation-item">
-            <NavLink href="order">
-                <div class="order-icon">
-                    <img src="/icons/order.png" />
-                </div> 
-                <div>
-                    Order
-                </div>
-            </NavLink>
-            </div>
-            <div class="navigation-item">
-            <NavLink href="cart">
-                <div>
-                     <img src="/icons/shopping-cart.png" />
-                </div> 
-                <div>
-                    Cart
-                </div>
-            </NavLink>
-            </div>
-            <AuthorizeView Roles="ADMIN">
-                <Authorized>
-                    <div class="navigation-item">
-                        <NavLink href="admin/products">
-                            <div class="admin-icon">
-                                <img src="/icons/users.png" />
-                            </div>
-                            <div>Admin</div>
-                        </NavLink>
-                    </div>
-                </Authorized>
-            </AuthorizeView>
-            <div class="navigation-item">
-            <NavLink href="logoutcontrol">
-                <div class="logout-icon">
-                    <img src="/icons/logout.png" />
-                </div>
-                <div>
-                    Logout
-                </div>
-            </NavLink>
-            </div>
-        </div>
-
         <article class="content px-4">
             @Body
         </article>

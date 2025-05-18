@@ -1,5 +1,4 @@
 @page "/admin/createProduct"
-@using FactoryProject.Infrastructure.Utilities.Services
 @layout AdminLayout
 @attribute [Authorize(Roles="ADMIN")]
 @inject IUnitOfWork _unitOfWork
@@ -15,7 +14,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fa-solid fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -30,14 +29,46 @@
         <div class="mb-3 form-div">
             <label for="productPrice" class="form-label">Price</label>
             <InputNumber type="number" class="@GetInputClass(nameof(product.price))"
-             id="productPrice" placeholder="Enter Price" @bind-Value="product.price" />
-           <ValidationMessage For="@(() => product.price)" class="text-danger" />
+            id="productPrice" placeholder="Enter Price" @bind-Value="product.price" />
+            <ValidationMessage For="@(() => product.price)" class="text-danger" />
         </div>
         <div class="mb-3 form-div">
             <label for="productStock" class="form-label">Stock</label>
             <InputNumber type="number" class="@GetInputClass(nameof(product.stock))"
-             id="productStock" placeholder="Enter Price" @bind-Value="product.stock" />
-           <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+            id="productStock" placeholder="Enter Price" @bind-Value="product.stock" />
+            <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="productImage" class="form-label">Image</label>
+            <InputText class="@GetInputClass(nameof(product.imageUrl))"
+            id="productImage" placeholder="Enter Image Url" @bind-Value="product.imageUrl" />
+            <ValidationMessage For="@(() => product.imageUrl)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="productImage" class="form-label">Select Ingredients :</label>
+            <div class="row">
+                @foreach(var ingredient in _ingredients)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label class="form-label">
+                            <input type="checkbox"
+                            placeholder="Enter Image Url" value="ingredient.id" 
+                            @onchange="e =>ToggleIngredientHandler(ingredient.id,e.Value?.ToString() )" />
+                            @ingredient.name
+                        </label>
+                    </div>
+
+                }
+            </div>
+            <ValidationMessage For="@(() => product.stock)" class="text-danger" />
+        </div>
+
+        <div class="mb-3 form-div">
+            <label for="productStock" class="form-label">Description</label>
+            <InputTextArea class="@GetInputClass(nameof(product.description))"
+            id="productStock" placeholder="Enter Description" @bind-Value="product.description">
+            </InputTextArea>
+            <ValidationMessage For="@(() => product.description)" class="text-danger" />
         </div>
 
         <div class="mb-3 form-div">
@@ -46,7 +77,7 @@
                 <option value="">Choose</option>
                 @foreach (var category in _categories)
                 {
-                    <option value="@category.Id">@category.Name</option>
+                    <option value="@category.id">@category.name</option>
                 }
             </InputSelect>
             <ValidationMessage For="@(() => product.CategoryId)"class="text-danger" />
@@ -57,7 +88,7 @@
                 Create
             </button>
             <a href="/admin/products" class="btn btn-secondary ms-2">
-            <i class="fas fa-list"></i>
+                <i class="fas fa-list"></i>
                 Products
             </a>
         </div>
@@ -68,20 +99,23 @@
 @code{
     private string errorMessage{get;set;}=string.Empty;
     [SupplyParameterFromForm(FormName="CreateForm")]
-    private CreateProductDto product{get;set;}=new();
+    private ProductForInsertionDto product{get;set;}=new();
+    private ProductForInsertionWithIngredientDto productDto=new();
     [CascadingParameter]
     private EditContext? editContext {get;set;}
+    private List<ResultIngredientDto> _ingredients{get;set;}=[];
     private List<ResultCategoryDto> _categories{get;set;}=[];
     protected override async Task OnInitializedAsync()
     {
         _categories=await _unitOfWork
                     .CategoryService
                     .GetAllCategoriesAsync();
-        
+        _ingredients=await _unitOfWork.IngredientService.GetAllIngredientsAsync();
+
     } 
     private async Task CreateProductAsync()
     {
-        var dto=new ProductForInsertionDto
+        productDto.product=new CreateProductDto
         {
             name=product.name,
             price=product.price,
@@ -90,19 +124,21 @@
             category=await _unitOfWork.CategoryService.GetCategoryByIdAsync(product.CategoryId),
             imageUrl=product.imageUrl
         };
-        var response= await _unitOfWork.ProductService.CreateProductAsync(dto);
+        productDto.ingredientIds=product.ingredientIds;
+        var response= await _unitOfWork.ProductService.CreateProductAsync(productDto);
         if(!response){
-            errorMessage="An error occured when trying to delete this item";
+            errorMessage="An error occured when trying to add this item";
             StateHasChanged();
             return;
         }
-        _productStateService.AddItem( new ResultProductDto
+        _productStateService.AddProduct( new ResultProductDto
         {
-            Name=dto.name,
-            Price=dto.price,
-            Description=dto.description,
-            ImageUrl=dto.imageUrl,
-            Category=dto.category,
+            Name=productDto.product.name,
+            Price=productDto.product.price,
+            Description=productDto.product.description,
+            ImageUrl=productDto.product.imageUrl,
+            Category=productDto.product.category,
+            Stock=productDto.product.stock
         });
         _navigationManager.NavigateTo("/admin/products");
     }
@@ -113,5 +149,29 @@
         var fieldIdentifier = new FieldIdentifier(product, fieldName);
         var isInvalid = editContext?.GetValidationMessages(fieldIdentifier).Any() == true;
         return isInvalid ? "form-control form-input invalid" : " form-control form-input";
+    }
+    private void ToggleIngredientHandler(int ingredientId, string? isChecked)
+    {
+        bool isSeleted= isChecked=="True" || isChecked=="On";
+        if(isSeleted){
+            if(product.ingredientIds is null)
+            {
+                product.ingredientIds.Add(ingredientId);
+                return;
+            }
+            if(!product.ingredientIds.Contains(ingredientId))
+            {
+                product.ingredientIds.Add(ingredientId);
+            }
+        }
+        else
+        {
+            if (product.ingredientIds is not null && product.ingredientIds.Contains(ingredientId))
+            {
+                product.ingredientIds.Remove(ingredientId);
+            }
+            
+        }
+
     }
 }

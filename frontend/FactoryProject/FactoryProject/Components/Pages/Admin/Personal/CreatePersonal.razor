@@ -5,11 +5,10 @@
 @inject IUnitOfWork _unitOfWork
 @inject PersonalStateService _personalStateService
 @inject NavigationManager _navigationManager
+@rendermode InteractiveServer
 <!-- Header Content Begin-->
 <PageTitle>Create Personal</PageTitle>
-<HeadContent>
-    <link href="/css/creating.css" rel="stylesheet" />
-</HeadContent>
+
 <!-- Header Content End-->
 
 <div class="form-container mx-3">
@@ -18,84 +17,84 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
     <div class="mx-4">
         <EditForm FormName="CreateForm" Model="@personal" OnValidSubmit="@CreatePersonalAsync" Enhance>
-        <DataAnnotationsValidator />
+            <DataAnnotationsValidator />
 
-        <div class="mb-3 form-div">
-            <label for="personalName" class="form-label">Personal Name</label>
-            <InputText type="text" class="@GetInputClass(nameof(personal.name))"
-            id="personalName" placeholder="Enter Personal Name" @bind-Value="personal.name" />
-            <ValidationMessage For="@(() => personal.name)" class="text-danger" />
-        </div>
-        <div class="mb-3 form-div">
-            <label for="personalIdentifier" class="form-label">Identifier</label>
-            <InputText type="text" class="@GetInputClass(nameof(personal.identifier))"
-            id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
-            <ValidationMessage For="@(() => personal.identifier)" class="text-danger" />
-        </div>  
-        <div class="mb-3 form-div">
-            <label for="personalAge" class="form-label">Age</label>
-            <InputNumber  class="@GetInputClass(nameof(personal.age))"
-            id="personalAge" placeholder="Enter Personal Age" @bind-Value="personal.age" />
-            <ValidationMessage For="@(() => personal.age)" class="text-danger" />
-        </div>
-        <div class="mb-3 form-div">
-            <label for="personalStartDate" class="form-label">Start Date</label>
-            <InputDate  class="@GetInputClass(nameof(personal.date))"
-            id="personalStartDate" placeholder="Enter Start Date" @bind-Value="personal.date" />
-            <ValidationMessage For="@(() => personal.date)" class="text-danger" />
-        </div> 
-        <div class="mb-3 form-div">
-            <label class="form-label">Gender</label>
-            <div class="d-flex justify-content-between">
-                <InputRadioGroup @bind-Value="personal.gender">
-                    <label>
-                        <InputRadio Value=1 class="form-check-input" /> Male
-                    </label>
-                    <label>
-                        <InputRadio Value=0 class="form-check-input" /> Female
-                    </label>
-                </InputRadioGroup>
+            <div class="mb-3 form-div">
+                <label for="personalName" class="form-label">Personal Name</label>
+                <InputText type="text" class="@GetInputClass(nameof(personal.name))"
+                id="personalName" placeholder="Enter Personal Name" @bind-Value="personal.name" />
+                <ValidationMessage For="@(() => personal.name)" class="text-danger" />
             </div>
-        </div>
-        <div class="mb-3 form-div">
-            <label for="prod" class="form-label">Department</label>
-            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.departmentId">
+            <div class="mb-3 form-div">
+                <label for="personalIdentifier" class="form-label">Identifier</label>
+                <InputText type="text" class="@GetInputClass(nameof(personal.identifier))"
+                id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
+                <ValidationMessage For="@(() => personal.identifier)" class="text-danger" />
+            </div>  
+            <div class="mb-3 form-div">
+                <label for="personalAge" class="form-label">Age</label>
+                <InputNumber  class="@GetInputClass(nameof(personal.age))"
+                id="personalAge" placeholder="Enter Personal Age" @bind-Value="personal.age" />
+                <ValidationMessage For="@(() => personal.age)" class="text-danger" />
+            </div>
+            <div class="mb-3 form-div">
+                <label for="personalStartDate" class="form-label">Start Date</label>
+                <InputDate  class="@GetInputClass(nameof(personal.date))"
+                id="personalStartDate" placeholder="Enter Start Date" @bind-Value="personal.date" />
+                <ValidationMessage For="@(() => personal.date)" class="text-danger" />
+            </div> 
+            <div class="mb-3 form-div">
+                <label class="form-label">Gender</label>
+                <div class="d-flex justify-content-between">
+                    <InputRadioGroup @bind-Value="personal.gender">
+                        <label>
+                            <InputRadio Value=1 class="form-check-input" /> Male
+                        </label>
+                        <label>
+                            <InputRadio Value=0 class="form-check-input" /> Female
+                        </label>
+                    </InputRadioGroup>
+                </div>
+            </div>
+            <div class="mb-3 form-div">
+                <label for="prod" class="form-label">Department</label>
+                <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.departmentId">
                     <option value="">Choose</option>
-                @foreach (var department in _departments)
-                {
-                    <option value="@department.id">@department.name</option>
-                }
-            </InputSelect>
-            <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
-        </div> 
-        <div class="mb-3 form-div">
-            <label for="prod" class="form-label">Shift</label>
-            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.shift">
-                <option value="">Seçiniz</option>
-                <option value="@personal.shift">Morning</option>
-                <option value="@personal.shift">Evening</option>
-                <option value="@personal.shift">Night</option>
-            </InputSelect>
-            <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
-        </div>
+                    @foreach (var department in _departments)
+                    {
+                        <option value="@department.id">@department.name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+            </div> 
+            <div class="mb-3 form-div">
+                <label for="prod" class="form-label">Shift</label>
+                <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.shift">
+                    <option value="">Choose</option>
+                    <option value="Mornıng">Morning</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Night">Night</option>
+                </InputSelect>
+                <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+            </div>
 
-        <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">
-                <i class="fas fa-plus"></i>
-                Create
-            </button>
-            <a href="/admin/personals" class="btn btn-secondary ms-2">
-                <i class="fas fa-list"></i>
-                Personals
-            </a>
-        </div>
-    </EditForm>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i>
+                    Create
+                </button>
+                <a href="/admin/personals" class="btn btn-secondary ms-2">
+                    <i class="fas fa-list"></i>
+                    Personals
+                </a>
+            </div>
+        </EditForm>
     </div>
 
 </div>
@@ -136,8 +135,9 @@
         {
             errorMessage = "An occured when trying to add this item";
             StateHasChanged();
+            return;
         }
-        _personalStateService.AddItem(new ResultPersonalDto
+        _personalStateService.AddPersonal(new ResultPersonalDto
         {
            name = personal.name,
            department = departement,

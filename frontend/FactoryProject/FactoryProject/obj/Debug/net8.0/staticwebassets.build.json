@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c5tFRc/aAUd7DHDtFYr5oFtZPJkEvn9V8m8EhYDscPY=",
+  "Hash": "FSqyNW98Fpo7s5HQyJuMXMIVJWmQcKm5KQvlPgcZrX0=",
   "Source": "FactoryProject",
   "BasePath": "_content/FactoryProject",
   "Mode": "Default",
@@ -8702,8 +8702,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "n0a97q5fqe",
-      "Integrity": "CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=",
+      "Fingerprint": "bhvju9c340",
+      "Integrity": "4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css"
@@ -8723,8 +8723,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "n0a97q5fqe",
-      "Integrity": "CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=",
+      "Fingerprint": "bhvju9c340",
+      "Integrity": "4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css"
@@ -8912,8 +8912,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "941em2h9yg",
-      "Integrity": "15SKceOnlbWjSxDUmGX1curiO9u2R9JbkqgZ/tD43UY=",
+      "Fingerprint": "oqwre1qw2r",
+      "Integrity": "gPACiBsiHDdMDYFxRjGighd7jGzmCwx4zcpKAQCBaGg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\product.css"
@@ -38183,51 +38183,6 @@
       ]
     },
     {
-      "Route": "css/product.941em2h9yg.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1797"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"15SKceOnlbWjSxDUmGX1curiO9u2R9JbkqgZ/tD43UY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 21:14:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "941em2h9yg"
-        },
-        {
-          "Name": "label",
-          "Value": "css/product.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-15SKceOnlbWjSxDUmGX1curiO9u2R9JbkqgZ/tD43UY="
-        }
-      ]
-    },
-    {
       "Route": "css/product.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
       "Selectors": [],
@@ -38238,7 +38193,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "2989"
         },
         {
           "Name": "Content-Type",
@@ -38246,11 +38201,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"15SKceOnlbWjSxDUmGX1curiO9u2R9JbkqgZ/tD43UY=\""
+          "Value": "\"gPACiBsiHDdMDYFxRjGighd7jGzmCwx4zcpKAQCBaGg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 21:14:48 GMT"
+          "Value": "Sun, 18 May 2025 14:53:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38260,7 +38215,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-15SKceOnlbWjSxDUmGX1curiO9u2R9JbkqgZ/tD43UY="
+          "Value": "sha256-gPACiBsiHDdMDYFxRjGighd7jGzmCwx4zcpKAQCBaGg="
+        }
+      ]
+    },
+    {
+      "Route": "css/product.oqwre1qw2r.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gPACiBsiHDdMDYFxRjGighd7jGzmCwx4zcpKAQCBaGg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 14:53:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oqwre1qw2r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/product.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gPACiBsiHDdMDYFxRjGighd7jGzmCwx4zcpKAQCBaGg="
         }
       ]
     },
@@ -38347,6 +38347,96 @@
       ]
     },
     {
+      "Route": "FactoryProject.bhvju9c340.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54171"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 14:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bhvju9c340"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.bhvju9c340.styles.css",
+      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54171"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 14:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bhvju9c340"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs="
+        }
+      ]
+    },
+    {
       "Route": "FactoryProject.bundle.scp.css",
       "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
       "Selectors": [],
@@ -38357,7 +38447,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55451"
+          "Value": "54171"
         },
         {
           "Name": "Content-Type",
@@ -38365,11 +38455,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=\""
+          "Value": "\"4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:59:27 GMT"
+          "Value": "Sun, 18 May 2025 14:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38379,97 +38469,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M="
-        }
-      ]
-    },
-    {
-      "Route": "FactoryProject.n0a97q5fqe.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55451"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:59:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "n0a97q5fqe"
-        },
-        {
-          "Name": "label",
-          "Value": "FactoryProject.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M="
-        }
-      ]
-    },
-    {
-      "Route": "FactoryProject.n0a97q5fqe.styles.css",
-      "AssetFile": "C:\\Users\\ENVY 14\\Desktop\\Factory Automation Project\\frontend\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55451"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:59:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "n0a97q5fqe"
-        },
-        {
-          "Name": "label",
-          "Value": "FactoryProject.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M="
+          "Value": "sha256-4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs="
         }
       ]
     },
@@ -38484,7 +38484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55451"
+          "Value": "54171"
         },
         {
           "Name": "Content-Type",
@@ -38492,11 +38492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M=\""
+          "Value": "\"4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:59:27 GMT"
+          "Value": "Sun, 18 May 2025 14:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38506,7 +38506,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CUYuSggW/OTWqO7rQCWQoykbBCprUd0vR9a9fcH/c1M="
+          "Value": "sha256-4bcdr+RDx1vIpwKr2rg11VXaIoMVW3LrQ0fMrfXN8bs="
         }
       ]
     },

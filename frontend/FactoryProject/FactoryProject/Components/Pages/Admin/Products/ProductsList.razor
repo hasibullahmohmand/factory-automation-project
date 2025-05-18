@@ -1,5 +1,4 @@
 @page "/admin/products"
-@using FactoryProject.Infrastructure.Utilities.Services
 @layout AdminLayout
 @attribute [Authorize(Roles ="ADMIN")]
 @rendermode InteractiveServer
@@ -29,35 +28,27 @@ else
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="alert alert-danger" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
                 @errorMessage
             </div>
         }
         @if (!string.IsNullOrEmpty(_productStateService.SuccessMessage))
         {
             <div class="alert alert-success" role="alert">
-                <i class="fa-solid fa-circle-check"></i>
+                <i class="far fa-check-circle"></i>
                 @_productStateService.SuccessMessage
             </div>
         }
 
-        <div class="d-flex margin-auto justify-content-between">
-            <div class="input-group mb-3 w-50">
-                <input type="text" class="form-control" placeholder="Search something..." aria-label="Search something..."
-                aria-describedby="button-addon2">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                    <i class="fas fa-search"></i>
-                    Search
-                </button>
-            </div>
+        <div class="d-flex margin-auto justify-content-center">
             <div>
                 <EditForm Model="getProductCategoryById" OnValidSubmit="GetProductsByCategoryId" Enhance FormName="FilteringForm">
                     <div class="input-group mb-3 ms-2">
                         <InputSelect class="form-select" id="inputGroupSelect02" @bind-Value="getProductCategoryById.CategoryId">
-                            <option selected>All</option>
+                            <option selected >All</option>
                             @foreach(var category in _categories)
                             {
-                                <option value="@category.Id">@category.Name</option>
+                                <option value="@category.id">@category.name</option>
                             }
                         </InputSelect>
                         <button class="btn btn-outline-primary" type="submit" id="button-addon2">
@@ -75,7 +66,7 @@ else
                         <th>N°</th>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Description</th>
+                        <th>Details</th>
                         <th>Price</th>
                         <th>Stock</th>
                         <th>Operations</th>
@@ -95,16 +86,13 @@ else
                             </td>
                             <td>@product.Name</td>
                             <td>
-                                <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" 
-                                data-bs-target="#modal_@product.Id">
-                                    Description
-                                </button>
+                               <a href="/admin/products/@product.Id" class="btn btn-outline-warning"> Details</a>
                             </td>
-                            <td>@product.Price</td>
+                            <td>@product.Price ₺</td>
                             <td>@product.Stock</td>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-danger" @onclick="() => Delete(product.Id)">
+                                    <button class="btn btn-danger" @onclick="() => Delete(product.Id,count)">
                                         <i class="fa fa-trash me-1"></i> 
                                     </button>
                                     <a href="admin/editProduct/@product?.Id" class="btn btn-success">
@@ -117,37 +105,10 @@ else
                 </tbody>
             </table>
         </div>
-        <div class="container">
-            <div class="btn-group">
-                <input type="button" class="btn btn-primary" value="1"/>
-            </div>
-        </div>
     </div>
 
-    @foreach(var item in _products)
-    {
-        <div class="modal fade" id="modal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="d-flex">
-                            <img class="@item.ImageUrl" style="width: 20px; height:20px; border-radius: 50%;" />
-                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">@item.Name</h1>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <b>Category: <span class="text-primary">@item.Category?.Name</span></b>
-                        <br>
-                        <p >@item.Description</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
+   
+    
 }
 
 @code {
@@ -161,41 +122,46 @@ else
 
     protected async override Task OnInitializedAsync()
     {
-        if (!_productStateService.Models.Any())
+        if (!_productStateService.Products.Any())
         {
             await GetAllProducts();
+            _productStateService.SetProducts(_products);
+
         }
         else
         {
-            _products = _productStateService.Models;
+            _products = _productStateService.Products;
         }
         _categories=await _unitOfWork.CategoryService.GetAllCategoriesAsync();
-        _productStateService.OnModelsChanged += StateHasChanged;
+        _productStateService.OnProductsChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
     {
-        if (_productStateService.Models != null && _productStateService.Models.Count > 0)
+        if (_productStateService.Products != null && _productStateService.Products.Count > 0)
         {
             count = 0;
-            _products = _productStateService.Models;
+            _products = _productStateService.Products;
         }
     }
     private async Task GetAllProducts()
     {
         _products=await _unitOfWork
-                        .ProductService
-                        .GetAllProductsAsync();
-        _productStateService.SetItems(_products);
+                            .ProductService
+                            .GetAllProductsAsync();
     }
 
-    private async Task Delete(int id)
+    private async Task Delete(int id,int cacheIndex)
     {
         try
         {
-            var product= _products.FirstOrDefault(p=>p.Id==id);
-            await _unitOfWork.ProductService.DeleteProductAsync(id);
-            _productStateService.RemoveItem(product);
-            _products = _productStateService.Models;
+            var result=await _unitOfWork.ProductService.DeleteProductAsync(id);
+            if(!result)
+            {
+                errorMessage="An error occured while trying to delete this item";
+                return;
+            }
+            _productStateService.RemoveProduct(cacheIndex);
+            _products = _productStateService.Products;
         }catch(Exception ex)
         {
             await JS.InvokeVoidAsync("console.log",ex);
@@ -204,20 +170,21 @@ else
              {
                  await Task.Delay(1000);
                  errorMessage=string.Empty;
+                 StateHasChanged();
+                 
              });
         }
     }
-
     public void Dispose()
     {
-        _productStateService.OnModelsChanged -= StateHasChanged;
+        _productStateService.OnProductsChanged -= StateHasChanged;
     }
-
     private async Task GetProductsByCategoryId()
     {
-        var products= await _unitOfWork
+        _products= await _unitOfWork
                         .ProductService
                         .GetProductByCateogryIdAsync(getProductCategoryById.CategoryId);
+        StateHasChanged();
     }
 
 }
